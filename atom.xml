@@ -1,0 +1,1687 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Hexo</title>
+  <subtitle>A funny, exciting blog.</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2017-05-24T00:13:03.000Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>John Doe</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Notes on Shell Scripting</title>
+    <link href="http://yoursite.com//post/Notes-on-Shell-Scripting/"/>
+    <id>http://yoursite.com//post/Notes-on-Shell-Scripting/</id>
+    <published>2017-05-23T16:00:00.000Z</published>
+    <updated>2017-05-24T00:13:03.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Shell-相关命令"><a href="#Shell-相关命令" class="headerlink" title="Shell 相关命令"></a>Shell 相关命令</h2><h3 id="Shell-文件管理命令"><a href="#Shell-文件管理命令" class="headerlink" title="Shell 文件管理命令"></a>Shell 文件管理命令</h3><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line"><span class="built_in">cd</span>              <span class="comment"># 切换目录</span></div><div class="line">ls              <span class="comment"># 列出文件(夹)</span></div><div class="line">cp              <span class="comment"># 复制文件(夹)</span></div><div class="line">mv              <span class="comment"># 移动/重命名文件(夹)</span></div><div class="line">rm              <span class="comment"># 删除文件(夹)</span></div><div class="line"><span class="built_in">pwd</span>             <span class="comment"># 显示当前目录</span></div><div class="line">mkdir           <span class="comment"># 创建目录</span></div><div class="line">open            <span class="comment"># 打开文件</span></div><div class="line">sudo            <span class="comment"># 以 root 账号执行命令</span></div><div class="line"><span class="built_in">echo</span>            <span class="comment"># 打印输出</span></div><div class="line"><span class="built_in">printf</span>          <span class="comment"># 格式化打印输出</span></div></pre></td></tr></table></figure>
+<h3 id="帮助相关命令"><a href="#帮助相关命令" class="headerlink" title="帮助相关命令"></a>帮助相关命令</h3><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">-h              <span class="comment"># 打开命令自带帮助</span></div><div class="line">--help          <span class="comment"># 打开命令自带帮助</span></div><div class="line">man             <span class="comment"># 打开 man 文档</span></div><div class="line">info            <span class="comment"># 打开 info 文档</span></div><div class="line"><span class="built_in">help</span>            <span class="comment"># 等同于 --help</span></div><div class="line"><span class="built_in">which</span>           <span class="comment"># 显示脚本位置或函数定义或别名定义</span></div><div class="line">mandoc          <span class="comment"># 以 pdf 格式查看 man 帮助文档</span></div></pre></td></tr></table></figure>
+<h3 id="查看文件相关命令"><a href="#查看文件相关命令" class="headerlink" title="查看文件相关命令"></a>查看文件相关命令</h3><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">open            <span class="comment"># 用默认应用打开文件或网址</span></div><div class="line">show            <span class="comment"># 快速预览文件, defined by me</span></div><div class="line">img             <span class="comment"># 在终端打开图片, need imgcat</span></div><div class="line">cat</div><div class="line">less</div><div class="line">more</div><div class="line">head</div><div class="line">tail</div></pre></td></tr></table></figure>
+<h3 id="字符处理相关命令"><a href="#字符处理相关命令" class="headerlink" title="字符处理相关命令"></a>字符处理相关命令</h3><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">sed</div><div class="line">awk</div><div class="line">grep</div><div class="line">sort</div><div class="line">uniq</div><div class="line">cut</div><div class="line">tr</div><div class="line">paste</div><div class="line">split</div></pre></td></tr></table></figure>
+<h3 id="Shell-配置相关命令"><a href="#Shell-配置相关命令" class="headerlink" title="Shell 配置相关命令"></a>Shell 配置相关命令</h3><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line"><span class="built_in">history</span>         <span class="comment"># 打印输出历史命令</span></div><div class="line"><span class="built_in">alias</span>           <span class="comment"># 设定别名</span></div><div class="line"><span class="built_in">unalias</span>         <span class="comment"># 取消别名</span></div><div class="line"><span class="keyword">function</span>        <span class="comment"># 定义函数</span></div><div class="line"><span class="built_in">source</span>          <span class="comment"># 读取并执行脚本, 简写为 .</span></div><div class="line">~/.profile      <span class="comment"># shell 配置文件, 多个 shell 共用</span></div><div class="line">~/.bash_profile <span class="comment"># bash 配置文件</span></div><div class="line">~/.zshrc        <span class="comment"># zsh 配置文件</span></div></pre></td></tr></table></figure>
+<h2 id="Shell-相关程序"><a href="#Shell-相关程序" class="headerlink" title="Shell 相关程序"></a>Shell 相关程序</h2><h3 id="安装软件相关程序"><a href="#安装软件相关程序" class="headerlink" title="安装软件相关程序"></a>安装软件相关程序</h3><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">brew            <span class="comment"># macOS package manager</span></div><div class="line">pip             <span class="comment"># python package manager</span></div><div class="line">npm             <span class="comment"># nodejs package manager</span></div><div class="line">gem             <span class="comment"># ruby package manager</span></div></pre></td></tr></table></figure>
+<h3 id="一些非常有用的-Linux-程序"><a href="#一些非常有用的-Linux-程序" class="headerlink" title="一些非常有用的 Linux 程序"></a>一些非常有用的 Linux 程序</h3><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">git             <span class="comment"># 版本管理, 配合 sourcetree 使用更方便</span></div><div class="line">make            <span class="comment"># 自动化编译, makefile for latex, markdown</span></div><div class="line">pandoc          <span class="comment"># 文档转换器, 支持 md, latex, html, pdf 等</span></div><div class="line">wget            <span class="comment"># 用于下载</span></div><div class="line">curl            <span class="comment"># 用于下载</span></div></pre></td></tr></table></figure>
+<h3 id="我写的一些函数-脚本"><a href="#我写的一些函数-脚本" class="headerlink" title="我写的一些函数/脚本"></a>我写的一些函数/脚本</h3><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">fy              <span class="comment"># 中英翻译</span></div><div class="line"><span class="built_in">help</span>            <span class="comment"># 等价于 --help</span></div><div class="line">makepdf         <span class="comment"># 转换 tex/md/tm/wiki 等为 pdf</span></div><div class="line">mandoc          <span class="comment"># 在预览中打开 man 文档</span></div><div class="line">show/ql         <span class="comment"># 预览文件, 等同于空格键</span></div></pre></td></tr></table></figure>
+<h3 id="其他常用的一些命令"><a href="#其他常用的一些命令" class="headerlink" title="其他常用的一些命令"></a>其他常用的一些命令</h3><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">texdoc          <span class="comment"># 查看 LaTeX 帮助文档</span></div><div class="line">chmod a+x       <span class="comment"># 设置可运行权限</span></div><div class="line">ping            <span class="comment"># 检查网络连接</span></div><div class="line">du -sh          <span class="comment"># 显示文件夹大小</span></div><div class="line">unzip           <span class="comment"># 解压缩文件</span></div><div class="line">say             <span class="comment"># 朗读文字</span></div><div class="line">pbcopy          <span class="comment"># 复制到剪切板</span></div><div class="line">pbpaste         <span class="comment"># 读取剪切板</span></div></pre></td></tr></table></figure>
+<h3 id="当你在程序中迷失了方向时-请使用以下命令"><a href="#当你在程序中迷失了方向时-请使用以下命令" class="headerlink" title="当你在程序中迷失了方向时, 请使用以下命令"></a>当你在程序中迷失了方向时, 请使用以下命令</h3><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">whoami          <span class="comment"># 我是谁</span></div><div class="line"><span class="built_in">where</span>           <span class="comment"># 我在哪里</span></div><div class="line">whatis          <span class="comment"># = man -f</span></div><div class="line">whereis         <span class="comment"># = which -a</span></div></pre></td></tr></table></figure>
+<h3 id="oh-my-zsh-macos-插件-OSX-提供的命令"><a href="#oh-my-zsh-macos-插件-OSX-提供的命令" class="headerlink" title="oh-my-zsh macos 插件 OSX 提供的命令"></a>oh-my-zsh macos 插件 OSX 提供的命令</h3><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">tab             <span class="comment"># 在一个新标签打开当前目录;</span></div><div class="line">cdf             <span class="comment"># cd 到当前 Finder 打开的目录;</span></div><div class="line">itunes          <span class="comment"># 命令行操作 iTunes;</span></div><div class="line">quick-look      <span class="comment"># = show/ql, 快速查看文件, 类似于空格键;</span></div><div class="line">man-preview     <span class="comment"># = mandoc, 在预览中打开 man 帮助文档.</span></div></pre></td></tr></table></figure>
+<h2 id="Shell-语法知识"><a href="#Shell-语法知识" class="headerlink" title="Shell 语法知识"></a>Shell 语法知识</h2><h3 id="Shell-通配符"><a href="#Shell-通配符" class="headerlink" title="Shell 通配符"></a>Shell 通配符</h3><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">?               <span class="comment"># 匹配任意一个字符</span></div><div class="line">*               <span class="comment"># 匹配任意 0 个或多个字符</span></div><div class="line">[list]          <span class="comment"># 匹配 list 中的任意一个字符</span></div><div class="line">[!list]         <span class="comment"># 匹配 list 之外的任意一个字符</span></div><div class="line">[c1-c2]         <span class="comment"># 匹配 c1-c2 中的任意一个字符</span></div><div class="line">&#123;s1,s2,...&#125;     <span class="comment"># 匹配 s1, s2 或 ... 中的一个字符串</span></div></pre></td></tr></table></figure>
+<h3 id="Shell-元字符"><a href="#Shell-元字符" class="headerlink" title="Shell 元字符"></a>Shell 元字符</h3><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">=               <span class="comment"># 设定变量(注意等号两边不要有空格)</span></div><div class="line">;               <span class="comment"># 按顺序执行命令</span></div><div class="line">&amp;&amp;              <span class="comment"># 若前者返回 true, 则继续执行后续命令</span></div><div class="line">||              <span class="comment"># 若前者返回 false, 则继续执行后续命令</span></div><div class="line">$()             <span class="comment"># 命令替换</span></div><div class="line"><span class="variable">$&#123;&#125;</span>             <span class="comment"># 变量替换</span></div><div class="line">|               <span class="comment"># 命令管道</span></div><div class="line">``              <span class="comment"># 命令替换, 推荐使用 $()</span></div><div class="line">&lt;               <span class="comment"># 重定向 stdin</span></div><div class="line">&gt;               <span class="comment"># 重定向 stdout</span></div><div class="line">&gt;&gt;              <span class="comment"># 追加到文件</span></div><div class="line">2&gt;              <span class="comment"># 重定向 stderr</span></div><div class="line">&amp;&gt;              <span class="comment"># 重定向 strout 和 stderr</span></div></pre></td></tr></table></figure>
+<h3 id="Shell-转义符"><a href="#Shell-转义符" class="headerlink" title="Shell 转义符"></a>Shell 转义符</h3><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line"><span class="string">''</span>              <span class="comment"># 硬转义, 关闭所有的元字符, 通配符</span></div><div class="line"><span class="string">""</span>              <span class="comment"># 软转义, 只允许 $ 和 ` 做变量和命令替换</span></div><div class="line">\               <span class="comment"># 转义, 转义其后的通配符和元字符</span></div></pre></td></tr></table></figure>
+<h3 id="Shell-脚本中的变量"><a href="#Shell-脚本中的变量" class="headerlink" title="Shell 脚本中的变量"></a>Shell 脚本中的变量</h3><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line"><span class="variable">$#</span>              <span class="comment"># 传递给函数的参数个数</span></div><div class="line">$*              <span class="comment"># "$*"="$1c$2c$3c...", 是一个字符串, 其中 c 表示 $&#123;IFS&#125; 的第一个字符</span></div><div class="line"><span class="variable">$@</span>              <span class="comment"># "$@"=$@=$*="$1" "$2" "$3" ..., 是多个字符串</span></div><div class="line"><span class="variable">$n</span>              <span class="comment"># 传递给函数的第 n 个参数</span></div><div class="line">$?              <span class="comment"># 显示最后命令的退出状态, 0 表示没有错误</span></div></pre></td></tr></table></figure>
+<h3 id="终端中的变量"><a href="#终端中的变量" class="headerlink" title="终端中的变量"></a>终端中的变量</h3><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">!!              <span class="comment"># 上一条命令</span></div><div class="line">!*              <span class="comment"># 上一条命令的所有参数</span></div><div class="line">!^              <span class="comment"># 上一条命令的第一个参数</span></div><div class="line">!$              <span class="comment"># 上一条命令的最后一个参数</span></div><div class="line">!:-             <span class="comment"># 上一条命令中除了最后一个参数的部分</span></div><div class="line">!!:gs/1/2       <span class="comment"># 将上一条命令中的 1 替换为 2</span></div></pre></td></tr></table></figure>
+<h3 id="控制流"><a href="#控制流" class="headerlink" title="控制流"></a>控制流</h3><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line"><span class="keyword">if</span></div><div class="line"><span class="keyword">elif</span></div><div class="line"><span class="keyword">else</span></div><div class="line"><span class="keyword">case</span></div><div class="line"><span class="keyword">for</span></div><div class="line"><span class="keyword">while</span></div><div class="line">until</div><div class="line"><span class="built_in">test</span></div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      A short note on shell scripting.
+    
+    </summary>
+    
+      <category term="Coding" scheme="http://yoursite.com/categories/coding/"/>
+    
+    
+      <category term="Linux" scheme="http://yoursite.com/tags/linux/"/>
+    
+      <category term="macOS" scheme="http://yoursite.com/tags/macos/"/>
+    
+      <category term="Shell" scheme="http://yoursite.com/tags/shell/"/>
+    
+      <category term="CLI" scheme="http://yoursite.com/tags/cli/"/>
+    
+      <category term="Notes" scheme="http://yoursite.com/tags/notes/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何卡片创作之西蒙篇</title>
+    <link href="http://yoursite.com//post/CardWriteSimon/"/>
+    <id>http://yoursite.com//post/CardWriteSimon/</id>
+    <published>2016-12-20T16:00:00.000Z</published>
+    <updated>2017-05-15T14:44:07.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>1955 年 12 月 15 日，西蒙构想出「逻辑理论家」框架。「逻辑理论家」是个通过计算机启发式寻找答案的程序，它不仅可以下棋，还可以作为符号逻辑搜索并发现定理证明。虽当时构思已经出来，但由客观条件限制，计算机还没有到位，但他已迫不及待行动。</p>
+<p>在构思完成后，<strong>西蒙和纽厄尔在索引卡片用英文写出了这个程序的构成部分规则，并为各个存储器的内容（逻辑学公理）准备好卡片组合。</strong></p>
+<p>1956 年 1 月，冬天夜晚，在工业管理研究生大楼，西蒙把他的妻子和三个孩子以及一些研究生集叫来，给他们每人一张卡片。每一个人实际上成了「逻辑理论家」计算机程序的一个构成部分，或是执行某种特殊功能的子程序，或是存储器的一个构成部分。每个参与者的任务是在上一个层次的控制程序要求下执行他的子程序，或输出他的存储内容。</p>
+<p>这样，西蒙和和纽厄尔用<strong>自然的人去模仿人工物对自然人的模拟</strong>，实现了由人构成的计算机模拟了「逻辑理论家」的行为。</p>
+<p>在西蒙手上，卡片变成了一段段由人身承载的代码及可执行的组块，自然人之卡片构成了计算机之大脑，而计算机之大脑本就设计为模拟人之大脑。</p>
+<p><img src="http://openmindclub.qiniudn.com/omt/CardSimon01.jpg" alt="&gt; 人-卡片-计算机交互图片"></p>
+<p>卡片作为大脑的外延，试图创造出比人脑运算更快的计算机；卡片作为原始计算机的最小运算单位，试图模拟出人脑的最初形态。第一代人工智能机器用人工的智能实现人工智能，卡片功不可没。</p>
+<p>在设计出「逻辑理论家」4 个月后，西蒙参加了由约翰·麦卡锡、马文·明斯基、纳撒尼尔·罗切斯特和克劳德·香农组织的人工智能专题讨论会，这个会议也就是<strong>历史有名的达特茅斯夏季研讨会，被认定是人工智能研究的诞生之日。</strong>西蒙在这个会议提出「逻辑理论家」的设计方案，成为会上仅有的两个具体实现人工智能的方案之一。</p>
+<p><img src="http://openmindclub.qiniudn.com/omt/CardSimon03.jpg" alt=""></p>
+<p>同年 8 月，「逻辑理论家」首次完成定理证明了伯特兰德·罗素《数学定理》。10月，西蒙写信给他说，「我们认为自己的发明不是一种算术的定理演绎和有条理的决策过程，<strong>因为我们的目的是，尽可能近似地模拟人类在不能运用有系统的程序时所采用的处理过程，以及真正包含发现的问题解决办法。</strong>」</p>
+<p>由此可见，西蒙想创造的并不是算法工具，也不是想发明可替代人类的机器人，而是想解决人类有限理性下的决策难题，从而辅助人类更好地作出判断。</p>
+<p>如上所见，<strong>卡片就是设计这台复杂机器的桥梁。</strong></p>
+<p>当初西蒙和纽厄尔为何借助卡片来设计这台机器？是卡片轻便灵活？是卡片适合创作，容易记忆？还是卡片适合作为简化的外部大脑？更或者是当时西蒙和纽厄尔刚好手头只有卡片？</p>
+<p><strong>暂时我还没有找到确切解释，但我知道，用卡片来构建框架、连接记忆、创造新型感觉的人，却远远不止西蒙一个，我相信这不是巧合。</strong></p>
+<h3 id="ChangeLog"><a href="#ChangeLog" class="headerlink" title="ChangeLog"></a>ChangeLog</h3><ul>
+<li>2016-12-21 修订细节发布</li>
+<li>2016-12-20 完稿</li>
+<li>2016-12-17 增补</li>
+<li>2016-12-16 构思</li>
+</ul>
+<h3 id="The-End"><a href="#The-End" class="headerlink" title="-The End-"></a>-The End-</h3><p><img src="http://openmindclub.qiniudn.com/omt/CardWriting03.jpg" alt=""></p>
+<h3 id="本文使用卡片创作法写成"><a href="#本文使用卡片创作法写成" class="headerlink" title="本文使用卡片创作法写成"></a>本文使用<a href="http://cnfeat.com/blog/2016/11/20/NabokovWriteStyle/" target="_blank" rel="external">卡片创作法</a>写成</h3><h3 id="六经注我"><a href="#六经注我" class="headerlink" title="六经注我"></a>六经注我</h3><p>写完这篇文章，我刚好看到手头的片与 iPhone 6P ，一比对，发现卡片与 6P 的屏幕竟然相差无几，一边是 60 年前第一代人工智能机器的设计原型，一边是当今智能机器的顶尖代表，我也不相信这是巧合。</p>
+<p><img src="http://openmindclub.qiniudn.com/omt/CardSimon02.jpg" alt=""></p>
+]]></content>
+    
+    <summary type="html">
+    
+      第一代人工智能机器用人工的智能实现人工智能，卡片功不可没。
+    
+    </summary>
+    
+      <category term="blog" scheme="http://yoursite.com/categories/blog/"/>
+    
+    
+      <category term="西蒙" scheme="http://yoursite.com/tags/%E8%A5%BF%E8%92%99/"/>
+    
+      <category term="卡片创作" scheme="http://yoursite.com/tags/%E5%8D%A1%E7%89%87%E5%88%9B%E4%BD%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>西蒙一生研究学习的秘密武器</title>
+    <link href="http://yoursite.com//post/BestVSGood/"/>
+    <id>http://yoursite.com//post/BestVSGood/</id>
+    <published>2016-12-12T16:00:00.000Z</published>
+    <updated>2017-05-15T14:44:07.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>诺贝尔奖得主西蒙（Herbert Alexander Simon）一生爱两个隐喻，迷宫和花园，尤其是写他的自传《我生活的种种模式》时。</p>
+<p>他使用迷宫隐喻描述科学探索，写出《雨果：苹果的故事》，简单理解有科学模型之美；他使用花园隐喻描述生活经历，将他的人生之路交叉呈现，展现其中意外与惊喜。</p>
+<p>迷宫和花园于西蒙的魅力在于：它们都没有目标。迷宫的魅力在于探索，花园的乐趣在于游览，如果真有一条「阿里阿德涅之线」，那便失去了思维快乐。</p>
+<p><strong>但，所有智者毕其生之力，也不过是为找到那条细细闪闪的线，不是吗？</strong></p>
+<p><img src="http://openmindclub.qiniudn.com/omt/SimonMaze04.png" alt="&gt;  寻找图"></p>
+<p>所以，西蒙在《我生活的种种模式》最后一章用「原则」指代「阿里阿德涅之线」，它曾帮助西蒙在生活的分叉作出选择，在迷宫保持正确的选择，还可以为做出的选择提供合适理由，作出解释。</p>
+<p><strong>简而言之，这条线可以当作是正确的指导，也可以视作错误的借口，所以，使用者往往需要有分清前者的聪明和承认后者的智慧。</strong></p>
+<p>西蒙有一句名言：One of the first rules of science is if somebody delivers a secret weapon to you, you better use it 。在这本自传中，他也曾教他的学生如此使用：我劝我的研究生选择重要议题时，最好得备有一件秘密武器。为什么呢？因为如果这个议题真的十分重要的话，其他人也会选择，那你就得掌握一些其他人所没有的知识或研究方法才能拿到第一。</p>
+<p><img src="http://openmindclub.qiniudn.com/omt/SimonMaze02.png" alt="&gt; 引言图"></p>
+<p>这本自传你可能最想知道的，就是西蒙一生研究学习的秘密武器。它在哪里？我认为就在最后一章《选择的指南》中。</p>
+<p>人类所有知识可以简单分成两种：一是世界观——你如何看待世界；二是方法论——你如何认识、适应和改变世界。</p>
+<p>西蒙的世界观可简化成两条：<strong>1）我无法完整认识这个世界，2）我依然想认识这个世界。</strong></p>
+<p>如何解释呢？用西蒙的话来说就是：</p>
+<p><strong>作为有限理性的生物，我不能完全正确、客观地理解世界。但是我不能忽视这个世界，我必须尽我所能，通过我的科学和哲学伙伴的帮助去理解它，协调个人与世界的关系。</strong></p>
+<p>同时，这个世界依然可以为我提供最深厚愉快的源泉。无论是户外夜晚，还是在森林，还是通过显微镜，只有凝视它，我就会发现不可思议的变化、格调和美，那人类艺术家远不能及的。</p>
+<p><img src="http://openmindclub.qiniudn.com/omt/SimonMaze03.png" alt="&gt; 世界之美图"></p>
+<p>与之对应，<strong>西蒙的方法论就是：1）理性有限，与其追求完美，不如追求满意；2）用科学发现世界隐藏之美。</strong></p>
+<p>既然世界广阔，人类理性有限，「我必须避免尽善尽美的目标……我是一个自适应系统，无论目标是什么，我的生存和成功都取决与对我周围的人和事的环境合理地保持真实的图像。由于我的世界图像知识大致接近于真实，因此任何事我都不追求尽善尽美，至多追求做得满意。<strong>追求最好只会浪费可贵的认知资源，「最好」是「好」的敌人。」</strong></p>
+<p>同时，世界之美并不都外在显现，隐藏之美需要使用科学才能解码。世界隐藏之美是西蒙一直从事科学的内在动机，他学习过去与现在的科学家的著作，通过数据、计算、规律创造出新模式，只为这种最激动的体验。</p>
+<p><strong>世界观与方法论交错相织，便汇成了线，串起了西蒙一生最灿烂的三颗珠子：理性、社会与科学。</strong></p>
+<p><img src="http://openmindclub.qiniudn.com/omt/SimonMaze05.png" alt="&gt; 珠子图"></p>
+<p>西蒙的理性兴趣始于对人的决策行为，后扩展至组织的决策行为，一直试图找出不确定性下资源的最优分配。</p>
+<p>这个寻找的过程漫长而曲折，不停地各个迷宫版图游走：人的决策行为 &gt; 预算决策 &gt; 政治学与经济学 &gt; 决策思维 &gt; 心理学 &gt; 有限理性 &gt; 计算机科学 &gt; 人工智能 &gt; 人的决策行为。</p>
+<p>若干年后，当西蒙再回顾这块迷宫版图时，虽惊奇，但也觉得合理。</p>
+<p>这是巧合、是兴趣、还是科学必经之路？如何看待这种巧合？西蒙如此解释，<strong>「解决问题的需要和对新工具的激情将我吸引到相似的迷宫之路，使我既能将我的科学生命用于追寻一个我认为是理解人的状态的核心问题，又能沉浸在数学和计算机形式体系，对于后者，仅仅是研究本身就带给我无比的快乐。」</strong></p>
+<p>这条路是否正确？西蒙的意思是，不妨将结果置放在大历史长河中，你就知道胜者的成功不是靠精湛的辩术，不是迷惑众人的能力，也不是靠政治的影响，而是靠逐步积累的数据和事实的支持。</p>
+<p>日月经天，江河行地，终见真章。</p>
+<p>西蒙的社会观是合作与责任。根据满意论，生活在社会，当然是期待与社会共享进步。如果你希望社会给予帮助，就必须肩负起让其变得更好的责任——包括保证可持续使用的资源、继承有趣有用的文化、守护可值得守护的价值观和感情，创造可提高生产力的技术。</p>
+<p>虽每代人的理性有限，但文明，毕竟是一代代的传承累积而来的。</p>
+<p><img src="http://openmindclub.qiniudn.com/omt/SimonMaze06.png" alt="&gt; 科学之美"></p>
+<p>发现世界隐藏之美需要科学，科学因有限理性划分为学科，这让人类能够简化自己的目标，使选择空间缩小到一个可计算的范围，这个范围包括物理范围与知识范围。</p>
+<p><strong>所以，这个世界总需要一类人，他超越国界和跨学科，将新知识从一个地方带到另一个地方，在迷宫版图的交汇点，最容易有惊奇的发现。</strong></p>
+<p>显然，现在互联网如此发达，你已经无须四处旅行去获取新知，你需要做的是掌握更多可与世界沟通的语言，无论是英语抑或是编程，但重要的是跨学科研究，站立在迷宫版图的交汇点。</p>
+<p>如果你还是要问西蒙，哪个迷宫版图的交汇点更代表未来？</p>
+<p>西蒙可能回答：计算机科学与认知科学，因为它们的交汇点是人工智能。</p>
+<h3 id="ChangeLog"><a href="#ChangeLog" class="headerlink" title="ChangeLog"></a>ChangeLog</h3><ul>
+<li>2016-12-13 小修补</li>
+<li>2016-12-10 完稿</li>
+<li>2016-12-06 念起</li>
+</ul>
+<h3 id="本文使用卡片创作法写成"><a href="#本文使用卡片创作法写成" class="headerlink" title="本文使用卡片创作法写成"></a>本文使用<a href="http://cnfeat.com/blog/2016/11/20/NabokovWriteStyle/" target="_blank" rel="external">卡片创作法</a>写成</h3><p><img src="http://openmindclub.qiniudn.com/omt/CardWriting01.jpg" alt=""></p>
+<h3 id="六经注我"><a href="#六经注我" class="headerlink" title="六经注我"></a>六经注我</h3><p>思维导图 from 《我生活的种种模式》最后一章《选择的指南》</p>
+<p><img src="http://openmindclub.qiniudn.com/omt/CardWriting02.jpg" alt=""></p>
+]]></content>
+    
+    <summary type="html">
+    
+      你只需做一小部分有价值的事情就可以改变现状。
+    
+    </summary>
+    
+      <category term="blog" scheme="http://yoursite.com/categories/blog/"/>
+    
+    
+      <category term="西蒙" scheme="http://yoursite.com/tags/%E8%A5%BF%E8%92%99/"/>
+    
+      <category term="有限理性" scheme="http://yoursite.com/tags/%E6%9C%89%E9%99%90%E7%90%86%E6%80%A7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>靠谱的人生指南：万花筒策略</title>
+    <link href="http://yoursite.com//post/KaleidoscopeStrategy/"/>
+    <id>http://yoursite.com//post/KaleidoscopeStrategy/</id>
+    <published>2016-11-30T16:00:00.000Z</published>
+    <updated>2017-05-15T14:44:07.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>研三即将毕业的你，收到了两份 offer ：一来自实习过的科技公司，公司同事优秀，老板不错，培训制度完善；二是来自申请多次的学校，学校不错，研究方向也正是你要的。此时的你犹豫，因为你虽在厌倦校园生活，但早已习惯，父母也比较倾向继续读书，同时你也明白进入快发展的科技公司，才会让自己快速成长，但未来不可知，该如何选择？</p>
+<p>刚到深圳工作的你，开始喜欢上一线城市的生活，觉得这里公平，可以发挥能力，创造价值，但此时，你的家人却叫你回三线的家乡参加考试，回国企上班谋一份稳定的工作，你想继续在城市学习成长，但也不愿与父母疏远，你心里很矛盾，该怎么应对？</p>
+<p>刚进入创业公司工作的你，正有一个困扰：你不确定是否再有精力加入一个全球性组织担任志愿者。正职工作有挑战性，需要全身投入，而志愿者的组织结构虽好，但协作方式与公司的大大不同，你觉得需分配大量时间才能适应，你该如何衡量？</p>
+<p><img src="http://openmindclub.qiniudn.com/omt/MazeWestworld.jpg" alt=""></p>
+<p>在人生迷宫的分岔路口，你会困惑，你期盼有一份人生选择指南，帮助自己作出决定。</p>
+<p>就算是获得过诺贝尔奖的赫伯特·亚历山大·西蒙（Herbert Alexander Simon）也不例外。</p>
+<h2 id="西蒙的迷宫"><a href="#西蒙的迷宫" class="headerlink" title="西蒙的迷宫"></a>西蒙的迷宫</h2><p>西蒙一生游走在不同迷宫。他大学时先是在政治学迷宫探索，毕业后转移至管理行为迷宫，后来拓展研究与科学政治学迷宫，最后将余生奉献给了计算机科学与心理学迷宫。63 岁的他凭「经济组织内的决策过程进行的开创性的研究」获诺贝尔经济学奖，一生获得 9 个博士学位。</p>
+<p>他曾经这样说过：「我是个科学家，但涉及许多学科。我在许多迷宫探索过，然而它们并不是连成一个迷宫。我不想把我的一生写成单一的统一体。」……<strong>「我对迷宫着迷的原因是我一直想观察<a href="http://www.yangzhiping.com/psy/Working-Identity.html" target="_blank" rel="external">人们在面临岔道时的行为以及背后的逻辑。</a>」</strong></p>
+<p>他在自传《我生活的种种模式》也提过：</p>
+<blockquote>
+<p>我在生活道理的迷宫中遇到过许多分岔，我时而向右拐，而是向左拐……我把生活描绘得像迷宫一样，并不意味着我曾作过大量精心思考过的痛苦的决定，去沿着某一个方向走。相反，我只作过极少的决定。使我走上我所走过的特定道路是对机会和环境的明确反应，而不是经过研究的决定。</p>
+</blockquote>
+<p>由此可知，西蒙人生空间并不是一个大迷宫，而是多个小迷宫，多个小迷宫均抵达一定深度。</p>
+<p>但你可能好奇，如何能在迷宫中游走还能抵达一定深度？如何在遇上迷宫分岔时还可以做出「明确反应」？</p>
+<p>因为西蒙有秘密武器——「有限理性」。</p>
+<p>所谓<a href="http://www.mesule.com/2016/06/BoundedRationality" target="_blank" rel="external">有限理性</a>是指：<strong>你的理性（精力）有限，你永远不可能得出最优的决定，所以你只能做出满意的决定。</strong></p>
+<p>也就是说，在迷宫中，你的时间与精力已决定你的探索程度，你永不可能完整探索迷宫再作决定，而只能根据当时的机会与环境判定，选择满意的路线。</p>
+<h2 id="如何选出满意的路线？"><a href="#如何选出满意的路线？" class="headerlink" title="如何选出满意的路线？"></a>如何选出满意的路线？</h2><p>美国哈佛大学院士劳拉·纳什（Laura Nash）和霍华德·史蒂文逊（Howard Stevenson）观察采访了 60 多个成功人士，调查了 90 多个高管，进行几十个模型测试，最终发现一个「令人满意」的人生选择策略——<a href="http://mp.weixin.qq.com/s?__biz=MzA4ODM4ODQ3MQ==&amp;mid=2651930162&amp;idx=1&amp;sn=c5d24850f8738b0d910b18face76b143&amp;chksm=8bcf782abcb8f13ce372d9bf655113ebf8e61ced75830740437f71407510870e08d01338b28d#rd" target="_blank" rel="external">万花筒策略</a>。</p>
+<p>万花筒策略将满意分成四个最基本的要素，其策略核心就是维护这四个要素的平衡：</p>
+<ul>
+<li>快乐：内心满足，你所做的事情能给你带来快乐或满足；</li>
+<li>成就：价值实现，你完成了其他人难以达成的目标；</li>
+<li>意义：维护亲密关系，你的言行对你关心的人有积极的影响；</li>
+<li>传承：传播优秀思想行为，你取得成就自己方法，未来也能成就别人。</li>
+</ul>
+<p>如果你去知乎去<a href="https://www.zhihu.com/search?type=content&amp;q=%E6%BB%A1%E6%84%8F" target="_blank" rel="external">搜索「满意」</a>，你可能会发现这些<strong>令人满意的事情的确是达到了以上四要素的平衡</strong></p>
+<p>有的是充满故事的一张照片、有的是完成某个小朋友的愿望、有的是遇上了一生中的最爱、有的是刚生下的可爱宝宝、有的是一场不期而遇的旅行、有的是自己发表的第一篇文章……</p>
+<p>而你平时所遇所见的苦恼或不满，皆来自四个要素的失衡。例如过于追求成就而成为别人眼中的工作狂，顾不上家庭，虽解决了工作问题，但家人相处时间渐少，同时也就失去了快乐与意义；例如为了照顾家庭，辞去工作，虽然感觉家庭稳定了，但是内心缺乏了向上的动力，能力与成就无法挂钩，就感觉到了空虚。</p>
+<p>那么，如何维护满意四要素的平衡呢？可以尝试以下两种方法：</p>
+<p>一、合理分类。每个活动的快乐、成就、意义和传承占比不均，合理配置期待会更你更满意。如果你期待在工作中寻找快乐，那满意率就可能会低；但如果你期待在逛博物馆中寻找传承与意义，那满意率就会提高。所以<strong>明晰活动中的期望，合理分类，并因地制宜地制定最合适的方案实现，你如何对待人生，人生也如何对待你。</strong></p>
+<p><strong>多重活动组合：</strong>如果工作仅仅给你带来成就，你可以考虑在八小时之外参与其他活动，已补充其他因素的不足，例如参加旅行带来快乐，参加社群传承知识，参加志愿活动赋予意义。</p>
+<h2 id="如何运用万花筒策略？"><a href="#如何运用万花筒策略？" class="headerlink" title="如何运用万花筒策略？"></a>如何运用万花筒策略？</h2><p>遵循以下三个小原则，会有助你更好地运用万花筒策略。</p>
+<p>一、合理分类。每个活动的快乐、成就、意义和传承各自占比不均，所以你就需要对各类活动期待进行合理分类。如果你期待在工作中寻找快乐，那成功率就可能会低一点；但如果你期待在逛博物馆中寻找传承与意义，那就不一样了。所以<strong>明晰活动中的期望，合理分类，并因地制宜地制定最合适的方案去实现，这样你会更满意。</strong></p>
+<blockquote>
+<p>P.S. 此原则也是一个说服别人的小技巧，假如你明白对方在活动中的诉求，并灵活运作万花筒四要素去劝说对方，成功率更高。例如说如果你要说服朋友加入志愿团队，说服点明显集中是在快乐、意义和传承，而不是成就。</p>
+</blockquote>
+<p>二、量力而为。既然万花筒策略要求的是要素均衡，那么再继续追求某一因素的极限就再无必要，所以你需要明白自己在快乐、成就、意义和传承这四个要素的极限，并能从容应对各种限度，<strong>将自己有限的精力集中于一点，做到一定程度的满意，然后放下，再去做满足其他要素的事情。</strong></p>
+<p>三、高屋建瓴。从纵向看，满意并不是一个活动、一个事件或者一个分水岭，满意是一个广义的持续发展的动态过程；从横向看，满意并不集中在某一个因素的极限，而是四个因素的集合平衡，所以，<strong>在设定目标上，单一目标不宜设定过高，而是将其分散在多个因素的小目标上，保持其动态平衡。</strong></p>
+<p>既然如此，那么文章最前面三个故事主角的困惑该如何解决？</p>
+<p>这三个例子是发生在我身边朋友的真实故事，他们的做法如下，我认为他们的做法符合万花筒策略。</p>
+<p>研三即将毕业的你，选择了科技公司。因为长期在校园生活，容易失去社会竞争比较，造成你的成就维度失衡，所以在科技公司工作更有助于你的潜力发挥，创造更多价值，带来更多快乐。</p>
+<p>刚来到深圳工作的你，选择了继续留在深圳打拼。理由是为提高成就维度，但你为了维护家人关系，你开了一个公众号，一是随时更新动态，二写下自己的内心轨迹，让家人随时知道你的近况及内心思考，从而维护亲情及爱情关系。</p>
+<p>正犹豫要不要参与志愿工作的你，选择了参与。在公司工作可能得到更多的是成就，而在志愿者组织，你得到的更多是快乐、意义与传承，原来的协作方式虽不能完全运用在志愿者组织，但你可能有极大的机会与更多优秀的人接触，已积攒的好习惯、好工具、好思想可能会影响更多的人，这才是成为志愿者的乐趣。</p>
+<h2 id="如何实操万花筒策略？"><a href="#如何实操万花筒策略？" class="headerlink" title="如何实操万花筒策略？"></a>如何实操万花筒策略？</h2><p>现在的你，不管有没有行走至人生迷宫，也可以试试万花筒策略，人生可能会更满意。</p>
+<p><img src="http://openmindclub.qiniudn.com/omt/ADelicateBalance.jpg" alt=""></p>
+<ol>
+<li>划分区域：模仿上图，自行粗略画出四个区域，分别代表快乐、成就、意义与传承的，其中，快乐代表内心满足，成就代表价值实现，意义代表亲密关系的积极影响，传承代表优秀行为思想的传播。</li>
+<li>自由分配：在四个区域各写出可让快乐、成就、意义和传承最大化的活动，这些活动可以在公司、家庭、社群、志愿工作和个人事务中挑选。活动可以重复，可以是做过的，也可以是没有做过的，各列出四项，不足四项也没关系。</li>
+<li>评估打分：分别这些列出的活动总体打分，打分标准：投入精力。</li>
+<li>未来计划：检查四要素缺失的区域，思考填补，重新规划未来的行动规划。</li>
+</ol>
+<h2 id="践行参考"><a href="#践行参考" class="headerlink" title="践行参考"></a>践行参考</h2><p>以下万花筒策略的践行实例可供你参考：</p>
+<h3 id="组合工作：丁健"><a href="#组合工作：丁健" class="headerlink" title="组合工作：丁健"></a>组合工作：丁健</h3><p>丁健老师一直<a href="http://weibo.com/1667781677/DDV2NCRe6?from=page_1005051667781677_profile&amp;wvr=6&amp;mod=weibotime&amp;type=comment" target="_blank" rel="external">践行组合式工作</a>：支薪工作、志愿事务、家庭事务、个人创作。他会随着生涯阶段的进展，在不同时间段，调整这四个部分的构成比例。建立这样的组合式结构，弹性地发展维护，可让自己的各种潜能最大化地发挥出来。</p>
+<p>启示：万花筒四要素的综合平衡实践，当一项活动只能明显提高某个要素时，不妨将多参加活动达成平衡。具体可以看看丁健老师的践行记录<a href="http://skmzq.qiniucdn.com/data/20151029091501/index.html" target="_blank" rel="external">《Oliver Ding：善用网络，助益生涯发展》</a>和<a href="https://oliverding.gitbooks.io/freesoul/content/" target="_blank" rel="external">《自由灵魂》</a>。</p>
+<h3 id="内在驱动：阳志平"><a href="#内在驱动：阳志平" class="headerlink" title="内在驱动：阳志平"></a>内在驱动：阳志平</h3><p>阳志平老师说，「越凭兴趣去做的事，越容易取得预想不到的成就，如果一上来精打细算，奔着名利去，那么它也就是那么回事。」……「成年后，我最自豪的事情是始终坚持内在动机，自我决定。好奇，热情且独立地做自己喜欢的事十来年。出身小镇，初中毕业不考中专，数学奥赛保送；大学逃课，自修为主，拿个首届北京市挑战杯特等奖；放弃学术生涯，直接工作；工作第一年即注册公司，先兼职，后全职创业至今。」</p>
+<p>启示：内在动机驱动更容易实现四要素平衡，实现起来略有挑战性。更多具体实践可查看<a href="http://www.yangzhiping.com/psy/YangQ&amp;A-SelfDetermination.html" target="_blank" rel="external">《如何成为内在动机驱使的人？》</a>和<a href="http://www.yangzhiping.com/psy/Stanine.html" target="_blank" rel="external">《人生标准九》</a></p>
+<h3 id="以点带面：大妈"><a href="#以点带面：大妈" class="headerlink" title="以点带面：大妈"></a>以点带面：大妈</h3><p>大妈乃是我见过社区建设最活跃的人，没有之一。大妈首先是通过自由软件社区，遇到了 Python，完成了技术进化，此后与社区结下各种缘：啄木鸟、CPyUG、蠎营、PyCon、GDG……得出体悟：无论是进入社区，成为管理员，成为社区主机系统管理员，成为社区列表管理员…一系列的各种资源/关系/人脉, 都不是求来的，而是自发推给你的。</p>
+<p>启示：万花筒的四要素可单点突破，然后带动其他要素提升平衡。大妈的生涯可以看做是由成就（Python 编程）与传承（分享编程知识）带动快乐与意义。更多具体实践可查看<a href="http://wiki.zoomquiet.io/IMHO/om-how2b-dama" target="_blank" rel="external">《我是如何成为大妈的》</a></p>
+<h2 id="ChangeLog"><a href="#ChangeLog" class="headerlink" title="ChangeLog"></a>ChangeLog</h2><ul>
+<li>2016-11-31 增补手绘图片，删除部分文字，填补链接</li>
+<li>2016-11-30 增补实例及实操方法</li>
+<li>2016-11-27 填补素材</li>
+<li>2016-11-21 拟定框架</li>
+</ul>
+<p><em>本文使用<a href="http://cnfeat.com/blog/2016/11/20/NabokovWriteStyle/" target="_blank" rel="external">卡片创作法</a>写成</em></p>
+<p><img src="http://openmindclub.qiniudn.com/omt/NabokovWriteStyle01.jpg" alt=""></p>
+<h3 id="The-End"><a href="#The-End" class="headerlink" title="-The End-"></a>-The End-</h3><p><img src="https://mmbiz.qlogo.cn/mmbiz_jpg/HRoY0QT1GiaYf17zBvXhaOZRN6chic1qyf8okaeb4gicxhviaribuC9JRy0RRq9z2LS3aSNXJOfBhqghia08pANfW4Jw/0?wx_fmt=jpeg" alt=""></p>
+<ul>
+<li><a href="http://mp.weixin.qq.com/s?__biz=MzA4MTQ0NDQxNg==&amp;mid=2650639139&amp;idx=1&amp;sn=4276b4edeb1d7b89d38dba98b5c733e4#rd" target="_blank" rel="external">具身认知：身体不是大脑的外衣，而是大脑的肉体本身</a></li>
+<li><a href="http://mp.weixin.qq.com/s?__biz=MzA4MTQ0NDQxNg==&amp;mid=2650639168&amp;idx=1&amp;sn=a612b22c336488479b91505978feab40&amp;chksm=879dc06fb0ea497984d5760371bd8e5c0e6b050a8237c7859f48bdc72141650eab719eb6e7f5#rd" target="_blank" rel="external">像纳博科夫一样写作：卡片创作法</a></li>
+<li><a href="http://mp.weixin.qq.com/s?__biz=MzA4MTQ0NDQxNg==&amp;mid=2650639136&amp;idx=1&amp;sn=514165fe8a649937424d98d377b5b391#rd" target="_blank" rel="external">故事花生米</a></li>
+</ul>
+<h3 id="六经注我"><a href="#六经注我" class="headerlink" title="六经注我"></a>六经注我</h3><p>一个有高度竞争感的人生活很艰难。除非竞争是激烈而且公正的，否则他赢了也不会满足。</p>
+<p>我劝我的研究生在做重大选择前，得有一种秘密武器在某种程度可助其成功。原因是我的学生只有掌握一些其他人所没有的知识或研究方法时才会得到第一。</p>
+<p>——赫伯特·亚历山大·西蒙（Herbert Alexander Simon）</p>
+]]></content>
+    
+    <summary type="html">
+    
+      我只作过极少的决定。使我走上我所走过的特定道路是对机会和环境的明确反应，而不是经过研究的决定。
+    
+    </summary>
+    
+      <category term="blog" scheme="http://yoursite.com/categories/blog/"/>
+    
+    
+      <category term="西蒙" scheme="http://yoursite.com/tags/%E8%A5%BF%E8%92%99/"/>
+    
+      <category term="万花筒策略" scheme="http://yoursite.com/tags/%E4%B8%87%E8%8A%B1%E7%AD%92%E7%AD%96%E7%95%A5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>像纳博科夫一样写作：卡片创作法</title>
+    <link href="http://yoursite.com//post/NabokovWriteStyle/"/>
+    <id>http://yoursite.com//post/NabokovWriteStyle/</id>
+    <published>2016-11-19T16:00:00.000Z</published>
+    <updated>2017-05-15T14:44:07.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="引子"><a href="#引子" class="headerlink" title="引子"></a>引子</h2><p>日本著名诗人、小说家高桥源一郎（TakahashiGenyitiro）曾把纳博科夫和博尔赫斯、卡尔维诺、温贝尔特·艾科等作家并列，称他们「<strong>无论在技法上，还是在理论上，他们分明都是在文学的最前沿进行创作的作家。</strong>」</p>
+<p>哪个作品最能体现纳博科夫的最前沿创作？</p>
+<p>答案是《微暗的火》。</p>
+<p>美国著名作家玛丽·麦卡锡（MaCarthyMaryTherese）认为《微暗的火》是「一个玩偶匣，一块瑰丽的宝石，一个上弦的玩具，一个象棋难题，一场地狱般的布局，一个评论者的陷阱，一场猫鼠游戏，一部由你自行组织的小说。」并称赞它是20世纪最伟大的艺术作品之一。</p>
+<p>1962 年，纳博科夫出版《微暗的火》，这部小说的形式独特，由前言、长诗、注释和索引组成，作品的主体为四个篇章长诗，共 999 行，篇幅却只占全书的十分之一，剩下的都是为长诗所做的注释。</p>
+<p>如此文本形式在当时不被理解，读者如果要读懂这本小说，必须经常在前言、长诗和注释之间跳转，或在书上贴满标签，或在书上画画写写。但如今，这种文本可以被轻易理解，叫超文本。《微暗的火》在现在看来，就是一首布满超链接的长诗，每个词句有超链接，超链接之外还有超链接……</p>
+<p><img src="http://openmindclub.qiniudn.com/omt/PaleFire.jpg" alt="微暗的火图"></p>
+<p>以上便是《微暗的火》结构图。</p>
+<p>受限于创作方式，同时代的作家必定无法创作出如此的小说，但纳博科夫毕竟是纳博科夫，他用科学思维来看待文学创作，所以，创作的方式必定与众不同——卡片创作法。</p>
+<p>通过解构《微暗的火》的链接，你就可以轻易理解，这是他用成百上千张悬浮在空中的卡片结网而成的艺术创作。</p>
+<p>史蒂芬·平克（Steven Pinker）在《写作风格的意识》中写道：「写作是将网状的思想，通过树状的句法，组织为线状展开的文字。」大师与大师相遇，得出的结论惊人一致。</p>
+<h2 id="纳博科夫如何创作"><a href="#纳博科夫如何创作" class="headerlink" title="纳博科夫如何创作"></a>纳博科夫如何创作</h2><p>纳博科夫认为，最理想的作家是讲故事的人、教育家和魔法师。「一个大作家集三者于一身，但魔法师是其中最重要的因素，他之所以成为大作家，得力于此。」</p>
+<p>纳博科夫擅长卡片魔法。</p>
+<blockquote>
+<p>我现在发现索引卡片真的是进行写作的绝佳纸张，我并不从开头写起，一章接一章地写到结尾。我只是对画面上的空白进行填充，完成我脑海中相当清晰的拼图玩具，这儿取出一块，那儿取出一块，拼出一角天空，再拼出山水景物，再拼出 —— 我不知道，也许是喝得醉醺醺的猎手。</p>
+</blockquote>
+<p>1938 年，纳博科夫开始使用索引卡创作，这种与以往不同的卡片写作给他带来了全新的创作体验，让他在此后的 39 年创作生涯中持续使用，成为他一生最爱的创作利器。</p>
+<p>为何纳博科夫如此钟情卡片创作？</p>
+<p><strong>卡片创作不单是指在卡片上书写灵感，还包括在已写作好的卡片之间寻找「交互」的可能性，这种卡片的创作与交互，正是纳博科夫的卡片魔法。</strong></p>
+<p><img src="http://openmindclub.qiniudn.com/omt/CardsInteraction.jpg" alt="卡片交互图"></p>
+<h2 id="我如何实践卡片创作法"><a href="#我如何实践卡片创作法" class="headerlink" title="我如何实践卡片创作法"></a>我如何实践卡片创作法</h2><p>像纳博科夫一样创作，该如何实践呢？先说说我与卡片创作的四个小故事吧。</p>
+<p>2015 年 1 月，我刚加入开智社群，<a href="http://www.yangzhiping.com/" target="_blank" rel="external">阳志平</a>老师在微信群直播的形式演示快速写作，我全场目睹勾勒大纲、分组块、填占位符、查找证据和润色文章的过程，一篇文章从无到有，从从草稿变成可发布在财新杂志的文章<a href="http://www.yangzhiping.com/psy/Implementation-intentions.html" target="_blank" rel="external">《新年好，好新年》</a>。那时正在<a href="http://www.jianshu.com/p/2621444b619d" target="_blank" rel="external">练习千字文写作</a>的我愣住了，感觉之前练习写作的方法是好像有问题。</p>
+<p> 2015 年 3 月，看到阳志平老师写的<a href="https://site.douban.com/210084/widget/notes/13276908/note/488643066/" target="_blank" rel="external">《纳博科夫的卡片》</a>，才发现阳老师采用的是纳博科夫卡片写作法，此后将这篇文章反复读了几遍，后来《巴黎评论》采访纳博科夫的章节找来读了两三遍，萌生了践行卡片写作的想法。</p>
+<p>2015 年 6 月，参加阳老师的一期写作班，每周一节，每节课两到三个小时，一共十节，同时阅读指定写作书籍 7 本。在高密度学习的 60 多天，深度参与课程笔记整理，大量阅读各种写作著作，多次看到阳老师推荐及使用卡片创作，开始逐渐了解卡片创作的符合人类认知规律，采用卡片创作可提高创作效率。</p>
+<p>2016 年 3 月，认知写作学二期开课，课程采用全卡片式学习，视频、知识、术语、作业等全部采用卡片输出，已加入开智的我有参与一期课程经验，于是幸运成为二期课程的卡片撰写人。当时课程进度非常紧张，每周日录制完课程，我就必须在周一拿到一刀未剪的课程视频来制作视频，每个视频平均三个小时，一边看，一边用 A4 纸记录课程知识，写成知识点大纲，后来我将这些手写的知识点大纲汇成了 <a href="https://cnfeat.gitbooks.io/metawrite/content/" target="_blank" rel="external">GitBook</a>，每周生成卡片约 100 多张，到课程结束就生成了 700+ 张卡片。就在那个时候，我开始在工作和学习中践行卡片创作法。</p>
+<p>践行卡片创作法到至今（ 2016 年 11 月 15 日），已经有 240 多天，发现卡片写作至少有四个好处。</p>
+<ul>
+<li>习得快速写作：构思先行，快速成文；</li>
+<li>减少写作畏惧：力注卡片，降低难度；</li>
+<li>锻炼远距联想：卡片交互，新思迸发；</li>
+<li>养成组块思维：分割篇章，理顺逻辑；</li>
+</ul>
+<p>所以，如果你也想像纳博科夫一样创作，或者这个四处也打动了你，不妨试试卡片写作法。</p>
+<h3 id="卡片准备"><a href="#卡片准备" class="headerlink" title="卡片准备"></a>卡片准备</h3><p>在实践卡片创作之前，你需要准备好卡片创作工具：</p>
+<p>纳博科夫的卡片创作工具：铅笔和卡片。</p>
+<p>纳博科夫使用削好的、不太硬的铅笔写作，笔头带有橡皮，他喜欢大幅修改文字，橡皮总是比铅笔消耗得更快，他钟爱的品牌是 Eberhard Faber Blackwing 602。</p>
+<p>建议：优先使用你最趁手的笔，例如我就习惯使用钢笔，经常的情况是：想法来了，随便拿起一枝笔就开始写。毕竟相对于洁净与习惯，你的创作的灵感更重要。</p>
+<p> <img src="http://openmindclub.qiniudn.com/omt/EberhardFaberBlackwing602.jpg" alt="EberhardFaberBlackwing602"></p>
+<p>纳博科夫使用卡片是带横线的布里斯托索引卡片（bristol index card）。布里斯托是一种介于纸和纸板之间的一种厚纸，纸面细致平滑，坚挺耐磨，因最初产于英国的 Bristol 城而得名。</p>
+<p>建议：使用淘宝购买的 Index Card 索引卡，尺寸约12.5厘米x7.6厘米，卡片的质量可能不及布里斯托索引卡片，但大小一致，硬度相仿，买上一盒（白色 210 张），至少使用三个月。</p>
+<p>如果手头暂时没有索引卡也不要紧，可以使用普通 A4 纸裁成扑克般大小，或直接使用便签纸，总的原则是：不能大到让你产生写作畏惧，不能小到让你写不下 50 字。</p>
+<p><img src="http://openmindclub.qiniudn.com/omt/NabokovCards.jpg" alt="洛丽塔卡片"></p>
+<p>环境建议：在使用卡片创作期间，你需要准备一张没有电子设备的工作台，暂时将电子设备放到你视线无法触及的地方，将手机调成静音，排除外界的干扰。如果可以，工作台上尽可能只有卡片和笔。</p>
+<h2 id="一-列出大纲"><a href="#一-列出大纲" class="headerlink" title="一 列出大纲"></a>一 列出大纲</h2><p>《巴黎评论》：您能说一下您的写作习惯吗？您按事先准备好的大纲写呢？您是从一章到另一章跳着写，还是按顺序从开头写到结尾？</p>
+<p>纳博科夫：<strong>作品的构思先于作品本身。就像玩字谜游戏，我随意在空白处填写。我在卡片上写下这些段落，直到完成整部小说。</strong></p>
+<p>所以，卡片创作的第一步：尝试在一张卡片上写出文章的主题大纲。</p>
+<blockquote>
+<p>注：在以下创作过程中我会将卡片分成两种类型，一种是大纲卡，大纲卡只有一张，另一种是扩展卡，扩展卡可以有无数张，用于提升你的远距联想能力。两种卡片的关系如下图：</p>
+</blockquote>
+<p><img src="http://openmindclub.qiniudn.com/omt/CardABCDE.jpg" alt="手写卡"></p>
+<p>在写大纲卡时，你可以思考以下这三个问题：</p>
+<ul>
+<li>为什么要写?</li>
+<li>读者是谁？</li>
+<li>你的预期结果是什么？</li>
+</ul>
+<p>我写《像纳博科夫一样写作：卡片创作法》的思考点是：</p>
+<ul>
+<li>为什么要写？我想让读者学会使用卡片创作。</li>
+<li>读者是谁？对快速写作感兴趣的所有读者。</li>
+<li>我的预期结果：看完文章的同学可以按照步骤一步一步上手操作卡片创作法，体验创作的乐群。想要达成这个目标，我必须尽可能详细地描述我使用卡片创作的每一个步骤，尽可能让每个想上手的人都可以重复模仿。</li>
+</ul>
+<p><strong>想清楚这一点后，我会首先在 1）第一张卡片上快速勾勒出卡片创作四个步骤， 2）预想四个步骤至少会使用四张扩展卡片， 3）分别在四张卡片上写下四个步骤的小标题， 4）在这四张卡片分别重复思考以上的三个问题：为什么要写？读者是谁？我的预期是什么？</strong></p>
+<p>使用大纲卡创作尤其需要注意：使用卡片创作并不是在卡片上写文章。</p>
+<p>大纲卡的使用原则是简洁清晰，你只能在上面写关键词句，这些关键词句可以涵盖这篇文章 80% 的内容。例如我在构思这篇文章时，卡片上只写了七个要点（后来合并成了四个），我的大纲卡文字几乎不会超过 100 字（文末可以查看我创作此文章使用的部分卡片）。</p>
+<p><img src="http://openmindclub.qiniudn.com/omt/NabokovCards01.jpg" alt="大纲卡"></p>
+<p>使用大纲卡时注意：你不能将大纲卡当作是零散的 A4 纸，而是需要将卡片当作你快速思考创作的容器，大脑思考创作的速度远比你手下写字的速度快，往往是你将想到的文字写下来后，大脑的运作就已经停止，这时的你头脑往往一片空白，所以你才需要卡片，飞快地将创作的痕迹记录，并拼接起来。</p>
+<p><strong>卡片创作就像是在你头脑中编制一张写作之网，它不负责舀起一字一句，它只负责将思维之线编制成交接的点，打捞你在你脑海轻盈游过创作之鱼，让其在卡片活蹦乱跳。</strong></p>
+<h2 id="二-扩展要点"><a href="#二-扩展要点" class="headerlink" title="二 扩展要点"></a>二 扩展要点</h2><p>除了纳博科夫，许多创作者也喜欢使用索引卡进行创作。例如《回到未来》的编剧，他们在编剧的方式是：</p>
+<blockquote>
+<p>先做一大堆的索引卡，构思故事的各个要点，形成电影的初始大纲，然后把卡片贴在墙上，研究 A 到 B 如何发展，以此推理出戏份，最后在具体构筑场景填补对白。这样一来，不少的桥段其实都是倒推的结果。</p>
+</blockquote>
+<p>使用卡片，而不是使用大页面的纸张的最大好处是可以轻易变换前后顺序，这种顺序的变换极其容易产生远距联想能力。</p>
+<p><strong>如果一篇好文章是生猛跳动的海鲜，那么大纲卡就像是被强力压榨过被挂在市场出卖的干货，而扩展卡就是 <a href="http://t.cn/R5A0jUN" target="_blank" rel="external">故事/逻辑/情感/鲜活证据</a> 等堆积而成湿货。</strong></p>
+<p>想想，吃海鲜，你是喜欢干货还是湿货？</p>
+<p>使用扩展卡时，你需要特别注意使用湿货，这样你的文章才会更有趣易读，例如此文中纳博科夫的问答、我的创作故事、《回到未来》的编剧故事……这些故事在我勾勒大纲卡时是没有的，是后期为我特意加入的。</p>
+<p>如果没有故事串联，文章就是卡片的罗列，变成纯粹的清单文章，枯燥而无趣。</p>
+<p><strong>当写完所有扩展卡后，你需要将其拼接起来。纯拼接不难，拼接得好看就需要能力，这种拼接的能力就是远距联想能力。</strong></p>
+<p><img src="http://openmindclub.qiniudn.com/omt/KuboAndTheTwoStrings.jpg" alt="二弦琴图"></p>
+<p>远距联想能力由意象、联想、记忆等能力组成，它将认知空间与写作环境打通，它是创作能力的综合体现，拼接卡片能力越强，远距联想能力就越强。</p>
+<p><img src="http://openmindclub.qiniudn.com/omt/CardsInteraction.jpg" alt="卡片交互图"></p>
+<p>图中 A 卡片与 C 、D 、E 、F 卡片的链接就是远距联想（自己脑补 A-C 、A-F 的连线）。</p>
+<p>正如阳志平老师所说：「认知空间的局限主要在于它是有限理性，但写作的创作性常在于远距联想能力，好作家创作前所未有的阅读体验。所以大脑的模式处理能力与创意需要的远距联想能力，思维流畅性，构成了写作的基本矛盾。好作家理解写作是在操作自己大脑的认知空间，并理解它的局限。大脑里面的认知空间与外在写作环境的物理空间的交互，构成了好作家迷人的创作环境。」</p>
+<p>一个绝佳远距联想的例子：《哥德堡变奏曲》 BWV 988 原本是严肃、安静、庄重的音乐（卡片 A），但如果运用得当，它可以与血腥暴力的情节（卡片 E），例如在《沉默的羔羊》越狱情景中，这首交响乐就贯穿汉尼拔的猎杀狱警的过程中，行云流水，为观众呈现一种<a href="http://www.ximalaya.com/54783736/sound/19393788" target="_blank" rel="external">新鲜的暴力美学。</a></p>
+<h2 id="三-编辑成文"><a href="#三-编辑成文" class="headerlink" title="三 编辑成文"></a>三 编辑成文</h2><p>纳博科夫曾经详细分享过他的创作体验：</p>
+<p>在小说创作进展的最初阶段，我极渴望储存些草屑绒毛，吃些小卵石。没有人会发现一只鸟会多清楚地预见（假如它有预见的话）未来的巢和巢里的蛋。等我事后想起是什么促使我记下事物的正确名字或事物的点滴时，我所谓灵感已经开始工作了，它默不作声地指向这儿指向那儿，让我积累已知的材料为未知的结构服务。</p>
+<p>等突然意识到「这正是我所写的」之后，小说自身便开始成长了；<strong>这一过程是在脑中进行的，而不是在纸上。这个阶段在特定的时刻自然回来到，所以我不用对每个准确的词语有过强的自觉意识。</strong>我感到故事在脑中不慌不忙地进展着铺陈着，我知道细节己在那儿了，事实上如果近看就能看个真切；假如我把机器停下来，打开它的内部，也能看个真切。</p>
+<p>但是，我喜欢等，等到灵感为我完成这项任务。我内心会在某个时刻告诉我整个结构完成了。我现在所要做的只是用铅笔或钢笔一记下。既然脑中依稀出现的整个结构已跟画差不多，既然用不着逐渐地从左到右来规划它的适当模样，我便可在写下它的时候把闪光灯指向这个画面的任何部分。<strong>我着手写小说不是从头往下写的，……不是依序一页一页往下写的。我是这儿一点那儿一点地下手，直到纸上的空处都填完。</strong></p>
+<p><img src="http://openmindclub.qiniudn.com/omt/NabokovWriteCards.jpg" alt="睡着创作图"></p>
+<p><strong>当卡片被写下，它就是种子，当卡片被耕耘，它就开始生长。</strong></p>
+<p>写完扩展卡片，并非意味着创作的结束。远距联想完成 A  &gt; B &gt; C &gt; D  &gt;  E 卡片的链接，只是简单的一次创作，远距联想完成 A  &gt; E / B &gt; D / C &gt; A ……的链接，那才是卡片创作的乐趣。</p>
+<p>纳博科夫说：「一个有创意的作家必须仔细研究竞争对手的作品，包括至高无上的上帝的作品（大自然）。他不仅生来必须具备重新组合特定世界的能力，而且生来必须具备再创造这一世界的能力。」</p>
+<p>当你在正以为在干体力活将扩展卡形成文字时，你的大脑会像纳博科夫说的那样，创造力会悄悄迸发，故事/逻辑/情感/鲜活证据 会慢慢铺陈，慢慢会体验到有一种莫名的想法在脑中流淌，神经与神经之间的沟壑会渐渐连通，会突然想到白雪与沙漠之白，杜鹃与热火之红，天空与绸布之蓝……</p>
+<p>实践经验证明，<strong>大部分的神来之笔大多出自将卡片编辑成文的过程，因为其中蕴含着创造大量远距联想的机会。</strong></p>
+<p>记者问艾柯，你的写作进度是否有条不紊？</p>
+<p>艾柯说，完全不是，一个想法迅即唤起另一个。随便一本书令我想要读另一本书。读着一篇完全没用的文献，突然有了故事接下来怎么写的的正确灵感，或知道怎么在一系列大组合框里在插入一个小框框，这样的情况时有发生。</p>
+<p>你看，艾柯所说的小框框，不正是卡片么？那么，如何将艾柯的写作技巧践行？</p>
+<p>经验：编辑成文的过程是你最容易进入心流的时刻，如果你在编辑中忽然想起要查找例子、补充参考文献等，不妨也马上写下关键词扩展卡片，然后用「。。。」或「……」等符号占住文章空间，大脑会误以为你已经查找过了，然后闷着一口真气不散，把文章写完，再会过头来查找并补充资料。</p>
+<h2 id="四-检查修改"><a href="#四-检查修改" class="headerlink" title="四 检查修改"></a>四 检查修改</h2><p><strong>修改是写作的核心。</strong></p>
+<p>采用卡片写作法，你必须习惯快写慢改。写卡片很快，编辑成文也很快，但检查修改就必须慢。</p>
+<p>我写此文，快速勾勒大概卡片大概只用了 3 分钟，写扩展卡大概用了 5 分钟，编辑成文，补充湿货，检查修改却用了 5 天时间。</p>
+<p>以下是我的修改检查清单：</p>
+<ol>
+<li>大胆裁剪。一篇文章不好读，往往是它的层级和组块太多，尝试削减层级，合并同类组块，将其组合成你想要的样子。</li>
+<li>增加情感。文章大忌，只有观点，没有情感；只有纲要，没有故事。每个文章组块最好有一个故事，这个是故事可以是例子、诗句、论据……用补充这个组块的观点，吸引读者继续读下去。组块的结构：故事引子+清单+结论。</li>
+<li>注意文气。文气简单的来讲就是读者的注意力。需要检查这篇文章是否可以让读者心无旁骛一口气阅读完毕，中间事发没有任何令人分神的句子、图片、列表、引用等，所有与文章主题无关的东西一律砍掉，只留下最关键的语句。</li>
+<li>忠于自己。在任何平台中写作都要忠于自己，有自己的人格，保持一致性，站在自己的角度思考问题，自己没有实践及查证过的证据切莫使用。</li>
+</ol>
+<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>一旦你拧开了大脑水龙头，灵感飞溅而出，千万不要试图关上，也千万别想着下次还可以拧开，<strong>你需要做的，就是拿起卡片承载，接下多少是多少，那将是大脑最好的馈赠。</strong></p>
+<h2 id="附图"><a href="#附图" class="headerlink" title="附图"></a>附图</h2><p>写这篇文章的部分卡片：</p>
+<p><img src="http://openmindclub.qiniudn.com/omt/CardList.jpg" alt=""></p>
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ul>
+<li><a href="http://cdmd.cnki.com.cn/Article/CDMD-10422-2005133304.htm" target="_blank" rel="external">纳博科夫及其创作研究</a></li>
+<li><a href="https://book.douban.com/subject/6712407/" target="_blank" rel="external">巴黎评论·作家访谈</a></li>
+<li><a href="https://the-offline.com/issue/26/" target="_blank" rel="external">极客纳博科夫 – OFFLINE</a></li>
+<li><a href="https://book.douban.com/subject/26789480/" target="_blank" rel="external">读库1602 ·回来未来制作记</a></li>
+<li><a href="http://chuansong.me/n/1130776" target="_blank" rel="external">王烁：写作之难</a></li>
+<li><a href="http://www.yangzhiping.com/psy/bye2014-01.html" target="_blank" rel="external">再见，2014（上） - 阳志平的网志</a></li>
+<li><a href="http://t.cn/R5A0jUN" target="_blank" rel="external">工作谈002：好思想，坏思想之一</a></li>
+<li><a href="https://movie.douban.com/subject/26287884/" target="_blank" rel="external">久保与二弦琴 (豆瓣)</a></li>
+<li><a href="http://www.ximalaya.com/54783736/sound/19393788" target="_blank" rel="external">1.3 「巴赫」哥德堡变奏曲（上）：变态杀手和古怪钢琴师</a></li>
+<li><a href="http://nabokovsecrethistory.com/news/pale-fire-as-hypertext-nabokov-rowberry/#.V76JEpN97td" target="_blank" rel="external">Nabokov’s Pale Fire as hypertext</a></li>
+<li><a href="http://webdoc.gwdg.de/edoc/ia/eese/schreiber/Chapter2.html" target="_blank" rel="external">Chapter 2: Hypertext Theory</a></li>
+</ul>
+<h2 id="ChangeLog"><a href="#ChangeLog" class="headerlink" title="ChangeLog"></a>ChangeLog</h2><ul>
+<li>2016-11-20 完稿</li>
+<li>2016-11-14 起草</li>
+</ul>
+<h2 id="六经注我"><a href="#六经注我" class="headerlink" title="六经注我"></a>六经注我</h2><p>写这篇文章，我听得最多的歌就是 Bob Dylan 的《The Times They Are A-Changin’》。</p>
+<p>第一次听是在《守望者》电影，后来才发现，确实没有比这首更好的歌曲能完整诠释了时代的终结。</p>
+<p>最令我动容的歌词是这几句：</p>
+<p>If your time to you is worth savin’<br>Then you better start swimming<br>Or you’ll sink like a stone<br>For the times they are a changin</p>
+<p>如果年华值得珍重<br>最好此刻开始游动<br>不然你将如石头沉至水底<br>因为这是变革的时代</p>
+<p>P.S.1984 年 1 月 24 日，乔布斯用这首歌作为 Macintosh 的发布会开场音乐。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      写作是将网状的思想，通过树状的句法，组织为线状展开的文字。
+    
+    </summary>
+    
+      <category term="blog" scheme="http://yoursite.com/categories/blog/"/>
+    
+    
+      <category term="卡片" scheme="http://yoursite.com/tags/%E5%8D%A1%E7%89%87/"/>
+    
+      <category term="纳博科夫" scheme="http://yoursite.com/tags/%E7%BA%B3%E5%8D%9A%E7%A7%91%E5%A4%AB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>具身认知：身体不是大脑的外衣，而是大脑的肉体本身</title>
+    <link href="http://yoursite.com//post/Embodied-Cognition/"/>
+    <id>http://yoursite.com//post/Embodied-Cognition/</id>
+    <published>2016-07-30T16:00:00.000Z</published>
+    <updated>2017-05-15T14:44:07.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>心智大道，求索者众。衣带渐宽，人消憔悴，那时是殚尽力竭；筚路蓝缕，以启山林，那是身体力行；行至水穷，坐看云起，那是具身认知。</p>
+<h2 id="认识世界最佳方式"><a href="#认识世界最佳方式" class="headerlink" title="认识世界最佳方式"></a>认识世界最佳方式</h2><p>一种病毒，可扭曲思想的病毒，已不知不觉感染你的大脑，这种思想病毒让你以为：人的身体与精神是独立的，大脑是操作系统，身体是硬件。操作系统负责思考，身体硬件负责执行。</p>
+<p>虽然你已知道：大脑接收的信息都是来此不同感觉：视觉、听觉、嗅觉、味觉、触觉……这些感觉都可通过触控大脑神经元来实现，尤其是现在 VR 技术方兴未艾，各个技术公司都在鼓吹：你大脑感受到的，就是你身体感受到的。</p>
+<p>但，身体真只是大脑的傀儡吗？</p>
+<p>回想一下你小时候认知「皮球」这个词语的情景：妈妈拿着一个皮球对你说「皮球」，然后再拍一下皮球，你被动作吸引，眼球上下移动，产生好奇，妈妈再把皮球滚过来，你接过，摸摸、看看、再左拍拍、右拍拍……从而知道了皮球的形状和作用等。</p>
+<p>再回想一下你小时候在学校认知「大象」这个词语的情景，老师往往就是让你教你认字，甚至在使用图画教学的时候，更重视词语的发音，而不把「大象」与实体世界相联系，描绘词语的相关图景，于是，你对「大象」的概念朦朦胧胧。</p>
+<p>为什么会这样？因为大脑不但没没有单独负责阅读的脑区，而且负责阅读的脑区与负责感觉和动作的脑区紧密相连。所以<strong>认字学习并不是大脑学习的最佳学习方式，强调身体与环境交互的具身认知才是更好利用大脑，提高效率的学习方式。</strong></p>
+<h2 id="身体即大脑"><a href="#身体即大脑" class="headerlink" title="身体即大脑"></a>身体即大脑</h2><p>在解释具身认知之前，先解释什么是认知。</p>
+<blockquote>
+<p>简单地解释：认知就是事物在你大脑形成概念，并以能以此应用实践，解决问题的过程。</p>
+</blockquote>
+<p>用以上的认知「皮球」的例子解释，你先是看见了皮球，然后触摸，最后还拍起了皮球。人类认知的方式多种多样，最常用的便是利用身体和环境来认知世界，也就是具身认知（embodied cognition)。</p>
+<p>那么什么是具身认知呢？</p>
+<blockquote>
+<p>其实理解具身认知只需要记住一句话：你的身体就是你的大脑。</p>
+</blockquote>
+<p>如何理解呢？因为认知存在于大脑，大脑存在于身体，身体存在于环境，三者交互，去感知事物、形成概念、解决问题。</p>
+<p>你认识世界的最原始概念就是具身认知形成的。例如，上下、左右、前后、高矮、远近等是以你身体为中心的空间认知；冷、热、温、凉等是你身体感觉认知。以身体为基础,  你懂得用这些词汇来形容抽象概念，例如用热情、兴高采烈、精神高涨等词语描述积极情绪。用高升、提拔、上涨等词语形容积极情景，用下放疏远、边缘等词语形容消极情景。</p>
+<h2 id="具身认知的具体应用"><a href="#具身认知的具体应用" class="headerlink" title="具身认知的具体应用"></a>具身认知的具体应用</h2><p>既然如此，具身认知可以帮你做什么事情呢？嗯，泡妞。</p>
+<p>2010 年，耶鲁大学学者 Angier 把 41 个大学生随机分成两组。A 组学生双手捧着一杯热咖啡,  B 组学生捧着一杯冰咖啡。到实验室以后,  两组学生分别对同一个想象中的中性人物的人格特征进行评估。结果显示, A 组学生比 B 组学生更有可能把这位想象中的人物评估为热情、友好。所以，身体上感知到的温暖影响了学生认知上的判断。</p>
+<p>所以，如果<strong>你看见心仪的女生心情低落，不妨给她递上一杯热饮，她会觉得你是一个贴心温暖的人，增进感情。</strong></p>
+<p>进一步，如果你制造机会与女生进行身体近距离互动，也有利与感情的发展，例如看电影、密室逃脱、过山车等。</p>
+<p>具身认知还可以帮助你辅助理解复杂概念，例如数学。</p>
+<p>以研究数学学习著称的心理学家布莱恩·巴特沃斯（Brain butterworth）说，「如果不能使用手指显示数字，那么数字本身在大脑永远都不会有正常的表达。」<br>孩子在使用手指数数时，其移动的次序让他们明白每个序列的数字都有独一无二的直接后继，也有一个独一无二的直接前驱。孩子理解加法是把增加手指，理解减法是收起手指。</p>
+<ul>
+<li>思考题 1：为何人类会采用十进制的数学计算方式？</li>
+<li>思考题 2：为何学音乐的孩子数学成绩普遍比较好一点？</li>
+</ul>
+<p>具身认知除了可以辅助理解简单数学，还可以辅助理解复杂数学，例如「硬币的正反概率」。</p>
+<p>一位舞者与一位数学家就编了「数学之舞」来了解概率论。首先A，B两个学生一组，各自准备好一个动作，扔 10 次硬币。正面代表 A 同学做一次动作，背面代表 B 伙伴做一次动作。</p>
+<p>在开始扔硬币之前，其他学生预测 A B 同学会做几次动作，大部分学生都会假设他们所做的动作数量大致相等，但是他们很快就发现，事实并非如此，如果仅扔 10 次，正面和背面出现的概率并不是 50% ，但如果扔的次数越多，得到的概率就越接近 50% ，随后，他们才懂得概率概念的关键。</p>
+<p>也许「数学之舞」最让人惊讶的地方在于动作本身的重要性，相对于静止，在移动时能够更好地记住概念。</p>
+<h2 id="我如何践行具身认知？"><a href="#我如何践行具身认知？" class="headerlink" title="我如何践行具身认知？"></a>我如何践行具身认知？</h2><p>具身认知，学以致用。以下我的实践心得及相关小技巧</p>
+<h3 id="实践写作，替代阅读"><a href="#实践写作，替代阅读" class="headerlink" title="实践写作，替代阅读"></a>实践写作，替代阅读</h3><p><strong>用写作替代阅读，用行动替代理解，用实践替代掌握，动用身体加深对此知识的理解，身体力行，加深与改变认知。</strong></p>
+<p>同时，形成此观念后的最大变化是：一定不要毫无目的地阅读，主题阅读，主题写作，控制阅读输入的质量，选好书，读好文章，将时间花在可以提升心智及效率的事物上。</p>
+<p>我的践行：学习理解新概念之后，写一篇包含概念解读、科学依据、最佳实践和行动建议等组块的文章。现在的这篇文章就是以上方法论的实践。</p>
+<h3 id="学习大师，模仿行为"><a href="#学习大师，模仿行为" class="headerlink" title="学习大师，模仿行为"></a>学习大师，模仿行为</h3><p><strong>与优秀的人在一起，暂时没有学到优秀思维模式不要紧，可以通过模仿其优秀的行为来慢慢习得其思考的意图。</strong></p>
+<p>就像是这首禅诗讲的那样：</p>
+<blockquote>
+<p>修行之道：<br>关注大师的言行，<br>跟随大师的举动，<br>和大师一并修行，<br>领会大师的意境，<br>成为真正的大师。</p>
+</blockquote>
+<p>我如何模仿大师呢？截止至 2016 年 07 月 31 日，我已践行<a href="http://www.yangzhiping.com/psy/nabokov.html" target="_blank" rel="external">纳博科夫卡片写作法</a> 135 天，使用超过 300 张卡片。已完全使用卡片写作，例如此篇文章的就从原来的八张卡片扩展而成的。同时我也按照使用习惯将卡片分类，例如元卡、思考卡、素材卡……践行卡片写作让我更容易理解复杂的概念，例如远距联想、工作记忆、篇章结构等。</p>
+<h3 id="空间转换，跳出框架"><a href="#空间转换，跳出框架" class="headerlink" title="空间转换，跳出框架"></a>空间转换，跳出框架</h3><p>如果身体和思维都局促，不妨任意放一个出来。如身体局促，思维就要自由，懂得获得源头信息，通过阅读构建更大世界；如思想局促，身体就活动，暂时离开原有的工作环境，<strong>通过跳出物理框架来跳出思维框架，让思维活跃。</strong></p>
+<p>平日可如何践行「转换空间」呢？我的做法是：工作日花一个小时走路上下班，平时工作都在一栋大楼内，办公室的空间比较狭小，身体及思维空可扩展有限，早晚走路上下班几乎是我扩展行动区域的唯一方式，同时，我在走路时会选择听音频节目，获取工作之外的冷知识。另外，在办公室久坐后，起身倒水、伸展身体、自由走动等也可以活跃思维。</p>
+<h3 id="静止冥想，聚焦专注"><a href="#静止冥想，聚焦专注" class="headerlink" title="静止冥想，聚焦专注"></a>静止冥想，聚焦专注</h3><p>如果说空间转换是通过分离身体与思维的距离来获得启发，那么静止冥想就是通过拉近身体与思维的距离来获得专注。静止冥想是具身认知中高度的自觉练习，试图最终达到毫不费力的状态，让大脑进入自动驾驶状态，忘记身体。</p>
+<p>通过冥想训练身体，控制呼吸，可提高专注，逃脱焦虑，一旦形成了冥想的习惯后，控制好你的身体，控制你的呼吸，你就自然能控制好你的思维，自觉地抑制心神的涣散。</p>
+<p>同时，科学证明：冥想就像是充电池，只需时不时充一下即可使部分活跃脑区安静下来，让练习者聚焦当下，进入心流。<strong>每日持续冥想，更会带来持久的改变。</strong></p>
+<p>现在的我如何践行冥想呢？每日洗漱完毕后，调好五分钟的闹钟，直身靠在墙上冥想五分钟。具体的操作步骤：</p>
+<ul>
+<li>1）闭眼，深呼吸至肌肉放松，深呼吸最强时，专注于身体感受，此期间不想任何事情，如果发现注意力转移，马上拉回，集中在呼吸，继续感受身体与外界的交互；</li>
+<li>2）伴随呼吸慢慢抬高双手，与地面平行；</li>
+<li>3）每次深吸气，双手略提高，每次轻呼气，双手略放低，如此反复几次，直至在头顶正上双手合十；</li>
+<li>4）双手合十从头顶垂直，配合呼吸缓缓下移至胸前；</li>
+<li>5）气沉丹田，结束。</li>
+</ul>
+<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>众鸟高飞尽，孤云独去闲。相看两不厌，只有敬亭山。大脑不是计算机，身体也不是硬件，大脑扎根身体，身体牵动大脑，「身体不是大脑的外衣，而是大脑的肉体本身。」 </p>
+]]></content>
+    
+    <summary type="html">
+    
+      众鸟高飞尽，孤云独去闲。相看两不厌，只有敬亭山。大脑不是计算机，身体也不是硬件，大脑扎根身体，身体牵动大脑，「身体不是大脑的外衣，而是大脑的肉体本身。」
+    
+    </summary>
+    
+      <category term="blog" scheme="http://yoursite.com/categories/blog/"/>
+    
+    
+      <category term="具身认知" scheme="http://yoursite.com/tags/%E5%85%B7%E8%BA%AB%E8%AE%A4%E7%9F%A5/"/>
+    
+      <category term="身体" scheme="http://yoursite.com/tags/%E8%BA%AB%E4%BD%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>我的 iPhone App 桌面图标设置</title>
+    <link href="http://yoursite.com//post/MyiPhoneDestopSetting/"/>
+    <id>http://yoursite.com//post/MyiPhoneDestopSetting/</id>
+    <published>2016-06-24T16:00:00.000Z</published>
+    <updated>2017-05-15T14:44:07.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>~终极大法：按需安装，用完就删。<br>~需要：稳定的网络、足够的流量和极度洁癖</p>
+<p>终极大法并非人人用得来，你我都是平凡人，实实在在地好。</p>
+<ul>
+<li>设置原则：实用主义，疾速找到想要的 App</li>
+<li>核心关键：按使用场景分类</li>
+</ul>
+<h3 id="效果演示"><a href="#效果演示" class="headerlink" title="效果演示"></a>效果演示</h3><p><img src="http://openmindclub.qiniudn.com/omt/iPhoneScr03.jpg" alt=""></p>
+<h3 id="整体设置"><a href="#整体设置" class="headerlink" title="整体设置"></a>整体设置</h3><ul>
+<li>语言：设置成英语</li>
+</ul>
+<ul>
+<li>壁纸：简洁素雅，建议选深色，利于 App 查找<ul>
+<li>壁纸 App 推荐：Cuto Wallpaper</li>
+</ul>
+</li>
+<li>分页：最好是两页，绝对不超过三页</li>
+<li>通知：只留下电话、短信、微信和邮件的通知，仅可能降低小红点出现频率</li>
+</ul>
+<h3 id="整理步骤"><a href="#整理步骤" class="headerlink" title="整理步骤"></a>整理步骤</h3><p>第一页：极简 Home</p>
+<ul>
+<li>docker 放最常用的四个 App</li>
+<li>没有 folder</li>
+</ul>
+<p>第二页：分类 List</p>
+<ul>
+<li>都是 folder，每个 folder 只放 8 个 App<ul>
+<li>原因：8 个能显示 folder 所有 App，长按时 folder 时抖动时，App 也不会消失</li>
+</ul>
+</li>
+<li>将 Apple 自带且不常用的 App 全部放在名为 Apple 的文件夹，放置在第二页</li>
+</ul>
+<p>第三页：随意 InBox</p>
+<ul>
+<li>随意放就是随意放，没什么说的了</li>
+</ul>
+<p>-End-</p>
+<p>原文地址：<a href="https://github.com/cnfeat/GoodThingList" target="_blank" rel="external">https://github.com/cnfeat/GoodThingList</a></p>
+<h2 id="Changelog"><a href="#Changelog" class="headerlink" title="Changelog"></a>Changelog</h2><ul>
+<li>2016-06-25 补增 iPhone 桌面设置</li>
+<li>2016-07-18 小修改</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      效率至先。
+    
+    </summary>
+    
+      <category term="blog" scheme="http://yoursite.com/categories/blog/"/>
+    
+    
+      <category term="iPhone" scheme="http://yoursite.com/tags/iphone/"/>
+    
+      <category term="桌面" scheme="http://yoursite.com/tags/%E6%A1%8C%E9%9D%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>抵达智慧流淌之地</title>
+    <link href="http://yoursite.com//post/find-paper/"/>
+    <id>http://yoursite.com//post/find-paper/</id>
+    <published>2016-04-04T16:00:00.000Z</published>
+    <updated>2017-05-15T14:44:07.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>哪渠清如水，源头活水来。在我搬上去六楼与与阳老板一起工作的第 15 天，阳老板给我示范了如何寻找一手信息的方法。</p>
+<p>当然，阳老板所定义的一手信息，不是网页、不是博客、不是公众号、不是微博，而是论文。<a href="一手信息也包括书籍，某种程度上，书籍是论文的一种原型的变体，大部分的畅销书的理论依据都是来自论文。畅销书证明，大部分的人喜欢通俗的文字，而不是枯燥的论文。">^1</a></p>
+<p>看论文是个冷技能，阳老板开玩笑说，一般只有作者会认真看自己论文，他的老婆不会看，他的导师不会看，他的朋友不会看看，他的同事不会看，他的亲戚不会看，只有我会看，我就获取了信息差。</p>
+<p>阳老板在《读书与心智》也说过：未来除了隐藏在微信群、行业网络这类隐知识之外，绝大多数人的资讯来源会越来越依赖微信、微博这类。如果你像我一样藏书数万，就占据了一个独特信息源。所谓信息不对称与智力不对称。</p>
+<p>以上，「藏书」与「阅读论文」替换，结论也依然成立。</p>
+<h2 id="为啥是论文？"><a href="#为啥是论文？" class="headerlink" title="为啥是论文？"></a>为啥是论文？</h2><p>首先得看看<a href="https://www.wikiwand.com/zh/%E8%AE%BA%E6%96%87" target="_blank" rel="external">论文的定义</a>。论文是科学研究人员呈现研究成果的文章。论文一般分两类：（1）成果论文，展示原创研究结果；（2）文献综述，总结和评价前人研究的文件。</p>
+<p>国家对学术论文有更严格的标准：学术论文应提供新的科技信息，其内容应有所发现、有所发明、有所创造、有所前进，而不是重复、模仿、抄袭前人的工作。</p>
+<p>所以，好的论文只有以下三个特性：</p>
+<ul>
+<li>真实：依据可查证；</li>
+<li>严谨：过程可重现；</li>
+<li>创新：成果无抄袭。</li>
+</ul>
+<p>满足以上三个特性，就符合阳老板所说的一手信息了。</p>
+<h2 id="如何获取？"><a href="#如何获取？" class="headerlink" title="如何获取？"></a>如何获取？</h2><p>以下给大家示范如何搜索中文一手信息：</p>
+<ul>
+<li>搜索网站：</li>
+<li>搜索技巧</li>
+</ul>
+<h3 id="搜索网站有哪些？"><a href="#搜索网站有哪些？" class="headerlink" title="搜索网站有哪些？"></a>搜索网站有哪些？</h3><ul>
+<li><a href="http://xueshu.baidu.com/" target="_blank" rel="external">百度学术：保持学习的态度</a></li>
+<li><a href="https://scholar.google.com/schhp?hl=zh-CN&amp;as_sdt=0,5" target="_blank" rel="external">Google 学术：站在巨人的肩膀上</a></li>
+</ul>
+<p>这两个搜索引擎的 slogan 都挺有意思的，百度的是「保持学习的态度」，Google 的是「站在巨人的肩膀上」，两者相比，后者更具象，更凸显学术是时间源头的意义。</p>
+<p>学术网站<a href="http://www.cnki.net/" target="_blank" rel="external">知网</a>就好，文献量比较全。</p>
+<h3 id="有什么搜索技巧吗？"><a href="#有什么搜索技巧吗？" class="headerlink" title="有什么搜索技巧吗？"></a>有什么搜索技巧吗？</h3><p>即使是学术论文，质量也良莠不齐，这时就需要人工识别出哪些文章靠谱，这时就要调动高级搜索。</p>
+<p><img src="http://openmindclub.qiniudn.com/cnfeat/image/cnki-search.jpg" alt=""></p>
+<p>筛选的指标主要有：</p>
+<ul>
+<li>看学位：选择博士论文；</li>
+<li>看学校：选择出名的大学；</li>
+<li>看导师：选择靠谱的导师；</li>
+<li>看摘要：摘要符合你的需要。</li>
+</ul>
+<p>以上的技巧适合新手。</p>
+<p>事实证明，如果你适应上一阵子，连续翻看一周的论文，不依靠任何技巧，凭直觉看搜索结果，你就能一眼识别出哪些是好论文。</p>
+<h2 id="怎么开始？"><a href="#怎么开始？" class="headerlink" title="怎么开始？"></a>怎么开始？</h2><p>很简单，<strong>搜索你感兴趣的领域、议题和词语</strong>，马上开始。</p>
+<p>如果你还没有感兴趣的领域，可以尝试走一走我的路子。</p>
+<p>这是我在 2015 年 6 月读过的<a href="http://weibo.com/cnfeat/profile?is_search=1&amp;visible=0&amp;is_all=1&amp;key_word=%E9%A9%AC%E7%89%B9%E7%84%95%E6%96%B0&amp;is_tag=0&amp;profile_ftype=1&amp;page=2#feedtop" target="_blank" rel="external">几十篇论文</a>记录，论文都可以在<a href="http://www.nssd.org/" target="_blank" rel="external">国家哲学社会科学学术期刊数据库</a> 找到，这些论文在注册后即可免费获取。</p>
+<p>凉风扬歌，云光开月。知识之路漫漫长，愿你能在途中拨开雾云，翻山越岭，抵达流淌智慧之地。</p>
+<h3 id="参考链接："><a href="#参考链接：" class="headerlink" title="参考链接："></a>参考链接：</h3><ul>
+<li><a href="https://www.zhihu.com/question/24143504" target="_blank" rel="external">百度学术能否替代 Google 学术网站？有没有其他选择？ - 知乎</a></li>
+<li><a href="http://dir.cnki.net/" target="_blank" rel="external">学术网站大全</a></li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      哪渠清如水，源头活水来。
+    
+    </summary>
+    
+      <category term="blog" scheme="http://yoursite.com/categories/blog/"/>
+    
+    
+      <category term="源头" scheme="http://yoursite.com/tags/%E6%BA%90%E5%A4%B4/"/>
+    
+      <category term="论文" scheme="http://yoursite.com/tags/%E8%AE%BA%E6%96%87/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>我为什么要开通元认知学习通讯？</title>
+    <link href="http://yoursite.com//post/why-maillist/"/>
+    <id>http://yoursite.com//post/why-maillist/</id>
+    <published>2016-02-24T16:00:00.000Z</published>
+    <updated>2017-05-15T14:44:07.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>七天前，我默默地开通了一个邮件通讯，每天发送一篇邮件，现在已经第七天了。</p>
+<p>我为什么要开通这个邮件通讯呢？</p>
+<p>这得从我最近写博客/公众号的心态变化开始说起。</p>
+<p>不知为何，写博客/公众号渐渐地给我一种笨重的感觉，这种笨重的感觉是从我<a href="http://t.cn/RG9FHEv" target="_blank" rel="external">取消所有公众号</a>开始的，我已经喜欢上微信订阅号没有任何提示红点，我已经不会不停翻看订阅号只为无聊地消除那个无聊的红点，我还是喜欢作为交流工具的微信。</p>
+<p>订阅号的事情，就交给 RSS 去处理就好，取消订阅公众号的一个半月来，我似乎也没有错过什么重要的信息。</p>
+<p>我现在的博客/公众号的更新频率是每周一篇或两篇，外加领导在周六的连载，可能一周最多就三篇，更新的频率降低了，那么我平时的时间是用来干嘛呢？学习呗。学习什么呢？元认知。</p>
+<p>之前关注我的朋友可能会知道，我曾在每篇推送的文章附加一个签名，喏，就是下面这张图：</p>
+<p><img src="http://7d9mjz.com1.z0.glb.clouddn.com/20150913-220033.jpg" alt=""></p>
+<p>关注了好久的元认知，一篇关于元认知的文章也都还没有，心中也惭愧，得把自己挖下的坑给填上。</p>
+<p>于是，我就建了一个邮件通讯，名字叫 元认知学习通讯，专门用来记录我学习元认知学习的过程。为了这个邮件通讯，我还专门建了一个备份网站：mesule.com。</p>
+<p>由于元认知学习偏学术，我也不想这个通讯那么无聊，所以我便打算在通讯里面夹上无限多的湿货，推荐诸如写作、科技……以及我觉得好的东西。</p>
+<p><img src="http://openmindclub.qiniudn.com/cnfeat/image/MesuleSub2.jpg" alt=""></p>
+<blockquote>
+<p>推荐好东西这个事情，其实我也一直在偷偷在做了，我的 github 私藏着<a href="https://github.com/cnfeat/GoodThingList" target="_blank" rel="external">好物清单</a> 已经有 34 位读者加星了。</p>
+</blockquote>
+<p>可能有人会问，邮件通讯是个啥呢？简单地来讲，就是你留下个邮箱，我定期给你发送邮件，所以当你订阅之后，你会收到的是一封邮件。</p>
+<p>如果你的邮箱收到的都是广告邮件，不妨体验一下人肉手打写邮件的感觉；如果你已经厌倦碎片化信息输入，不妨试试统一信息入口的滋味；如果你不经常查看邮件，你可以尝试使用与微信一致的QQ邮箱订阅，体验一下的邮件生命力。</p>
+<p>那么邮件的内容和公众号的内容有啥不同呢？</p>
+<p>我在元认知学习通讯的第一封邮件是这样说的：</p>
+<ul>
+<li>博客/公众号写作<ul>
+<li>属于输出界面</li>
+<li>偏向于原创，风格偏严谨</li>
+<li>更新频率较低</li>
+<li>发布平台：cnfeat.com</li>
+</ul>
+</li>
+<li>邮件通讯<ul>
+<li>属于输入界面</li>
+<li>是文章推荐的集合，个人学习材料的汇总入口，风格偏轻松</li>
+<li>正如邮件通讯的介绍一样，它是推荐关于元认知与写作的一切，推荐的口味仅供参考</li>
+<li>更新频率较高</li>
+<li>像是与读者对话</li>
+<li>可以附加所有的外链</li>
+<li>备份平台：tinyletter 和 mesule.com</li>
+</ul>
+</li>
+</ul>
+<p>最后，如何订阅这份通讯呢? 你可以直接点击「<a href="tinyletter.com/cnfeat">阅读原文</a>」或者回复「通讯」获得订阅地址。</p>
+<hr>
+<h3 id="【六经皆我注脚】"><a href="#【六经皆我注脚】" class="headerlink" title="【六经皆我注脚】"></a><strong>【六经皆我注脚】</strong></h3><p>网上的青年经常说什么东西能「改变我的三观」，而学者们对此有个格调稍微高一点的说法，叫作「budge my priors」，直译差不多是「使我心目中对世界的的基本假设稍微移动了一下」。 </p>
+<p>——<a href="http://www.geekonomics10000.com/940" target="_blank" rel="external">《智识分子：做个复杂的现代人》 « 学而时嘻之</a></p>
+<p>愿这份通讯能让你「心目中对世界的的基本假设稍微移动了一下」</p>
+<hr>
+<ul>
+<li>陈素封</li>
+<li>公众号：cnfeat</li>
+<li>Blog：cnfeat.com</li>
+<li>元认知学习博客：mesule.com</li>
+<li>元认知学习订阅：tinyletter.com/cnfeat</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      愿这份通讯能让你心目中对世界的的基本假设稍微移动了一下
+    
+    </summary>
+    
+      <category term="blog" scheme="http://yoursite.com/categories/blog/"/>
+    
+    
+      <category term="元认知" scheme="http://yoursite.com/tags/%E5%85%83%E8%AE%A4%E7%9F%A5/"/>
+    
+      <category term="邮件" scheme="http://yoursite.com/tags/%E9%82%AE%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>RSS 的生命力：分享100个订阅源</title>
+    <link href="http://yoursite.com//post/100Subscription/"/>
+    <id>http://yoursite.com//post/100Subscription/</id>
+    <published>2016-01-28T16:00:00.000Z</published>
+    <updated>2017-05-15T14:44:07.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://openmindclub.qiniudn.com/cnfeat/image/GithubOctocat1.jpg?imageMogr2/thumbnail/600x" alt=""></p>
+<p>今日题图：Octocat</p>
+<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>上周，我写了一篇<a href="http://mp.weixin.qq.com/s?__biz=MzA4MTQ0NDQxNg==&amp;mid=402011079&amp;idx=1&amp;sn=e26a57a4a23145dab22b68bcf5ead0e6#rd" target="_blank" rel="external">《我为何将所有微信订阅号都取关了？》</a>，同事过来问我，既然都写了这样一篇文章了，是否可以将你的订阅源公布出来？一开始听到这个请求，我是拒绝的，因为我觉得使用 RSS 最快乐的事情不在于累积的订阅源，而是在于挖掘订阅源的过程。</p>
+<p>有意义的内容往往是人产生的，挖掘有意思的人的过程才是使用 RSS 最大的乐趣。从2008年至今，我不知道订阅了多少个站点，又不知道退订了多少个站点，如此反反复复，才能找到适合自己口味的信息，才逐步确认那些有意思的人。</p>
+<p>在这个过程中，我明白了</p>
+<ul>
+<li>信息其实不重要，知识才重要</li>
+<li>重要的信息始终会出现在我面前</li>
+<li>优秀的人往往能持续地输出</li>
+<li>当你发现一个优秀的人，你离发现一堆优秀的人就不远了</li>
+<li>你就想成为一个优秀的人</li>
+<li>……</li>
+</ul>
+<p>基于以上：我坚信 RSS 还有强悍的生命力，我愿意和大家一起分享美好的东西。</p>
+<h2 id="整理过程"><a href="#整理过程" class="headerlink" title="整理过程"></a>整理过程</h2><p>在上周日，也是连广州都下雪的那一天，我决定不出门，专门用一大段时间来整理我的订阅源。原本以为是一个下午可以搞掂的事情，没有想到工作量还是蛮大的，直到晚上，我才逐渐将清单整理完。</p>
+<p>我整理的过程如下：</p>
+<ol>
+<li>逐一鉴别哪些订阅源可用。<ul>
+<li>有些订阅源虽然已经久未更新，不能代表它就已经无用，例如刘未鹏。</li>
+</ul>
+</li>
+<li>整理好博客清单。<ul>
+<li>上一年，我曾整理过一个好博客清单，更新之，不喜欢 RSS 的人也可以将这些博客当做电子书来读。</li>
+</ul>
+</li>
+<li>重新审视订阅源的质量。<ul>
+<li>博客内容是图片日志、心情和吐槽类的，只能删去</li>
+</ul>
+</li>
+<li>删去部分不符合「社会主义核心价值观」订阅源<ul>
+<li>原因不解释。</li>
+</ul>
+</li>
+</ol>
+<p>如今，我已经将这些订阅源整理出来了，正好 100 个。</p>
+<h2 id="如何获取使用"><a href="#如何获取使用" class="headerlink" title="如何获取使用"></a>如何获取使用</h2><p>我已经将这个博客清单和订阅源都放在了 github 上，接下来，你只需要一个 github 帐号就随意取用了。</p>
+<p>取用地址：<a href="https://github.com/cnfeat/GoodThingList/blob/master/GoodBlogList.md" target="_blank" rel="external">GoodThingList/GoodBlogList.md at master · cnfeat/GoodThingList</a></p>
+<blockquote>
+<p>如果你打开的页面是 404，那就需要你注册或登录 github 帐号。</p>
+</blockquote>
+<p>订阅源分类如下</p>
+<ul>
+<li>好博客清单</li>
+<li>好知乎简书清单</li>
+<li>好公众号清单</li>
+</ul>
+<p>此清单仅代表个人喜好。</p>
+<blockquote>
+<p>为何是 github ？刚刚好我朋友 珊姗是个小太阳 写了这样的一个回答：<a href="https://www.zhihu.com/question/20070065" target="_blank" rel="external">怎样使用 GitHub？ - 知乎</a>。</p>
+</blockquote>
+<h2 id="one-more-thing"><a href="#one-more-thing" class="headerlink" title="one more thing"></a>one more thing</h2><p>如果细心一点，你会发现，我建立了不仅仅是一个博客清单</p>
+<p>现存的清单已经有</p>
+<ul>
+<li>博客清单</li>
+<li>字体清单</li>
+<li>颜色清单</li>
+</ul>
+<p>未来仍将继续更新，欢迎 Star 或者 Fork。</p>
+<hr>
+<h3 id="【六经皆我注脚】"><a href="#【六经皆我注脚】" class="headerlink" title="【六经皆我注脚】"></a><strong>【六经皆我注脚】</strong></h3><p>束缚你的是你的善良，解放你的是你的勇气。<br>The restricted goodness and the unchained courage.</p>
+<p>——狗熊有话说</p>
+<hr>
+<ul>
+<li>陈素封</li>
+<li>公众号：cnfeat</li>
+<li>Blog：cnfeat.com</li>
+</ul>
+<blockquote>
+<p>点击阅读原文或回复「github」获得 100个订阅源 清单链接</p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      我想坚信 RSS 还有强悍的生命力，我愿意和大家一起分享美好的东西。
+    
+    </summary>
+    
+      <category term="blog" scheme="http://yoursite.com/categories/blog/"/>
+    
+    
+      <category term="博客" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+      <category term="订阅源" scheme="http://yoursite.com/tags/%E8%AE%A2%E9%98%85%E6%BA%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>我为何将所有微信订阅号都取关了？</title>
+    <link href="http://yoursite.com//post/wechat-subscription/"/>
+    <id>http://yoursite.com//post/wechat-subscription/</id>
+    <published>2016-01-18T16:00:00.000Z</published>
+    <updated>2017-05-15T14:44:07.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/roadflower.jpg?imageMogr2/thumbnail/500x" alt=""></p>
+<p>今日题图：路边的小花 by cnfeat</p>
+<h2 id="七年前的习惯"><a href="#七年前的习惯" class="headerlink" title="七年前的习惯"></a>七年前的习惯</h2><p>我有一个持续了七年的习惯：使用 RSS 订阅博客。使用 RSS 的七年，是我不断接收互联网信息的时期，是我学会自我学习的阶段，更是激励我去写作的动力。我将我订阅的博客视作前行的目标。</p>
+<blockquote>
+<p>一年前，我列过一份清单 <a href="http://cnfeat.com/blog/2014/11/11/blog/" target="_blank" rel="external">那些仍在更新的好博客 - 读立写生</a></p>
+</blockquote>
+<p>所以，如果有人问我：你有那些鲜为人知的学习小技巧？我必定回答：用 RSS 阅读器来管理信息入口。</p>
+<h2 id="退订所有微信号"><a href="#退订所有微信号" class="headerlink" title="退订所有微信号"></a>退订所有微信号</h2><p>回到题目，是哪一瞬间让我产生将微信订阅号统统退订掉的想法？</p>
+<p>我想到了以下几个时刻：</p>
+<ul>
+<li>某天，开智内部读书会，Tony 和 Caos 教会我正念吃一颗葡萄干，一个小时的分享之后，我再吃一把葡萄干。突然地，我觉得我错过了什么……</li>
+<li>某天，当我正如往常一样打着 Uber 去往公司的路上，一上车，习惯地打开了微信的订阅号。突然地，我觉得我错过了什么……</li>
+<li>某天，当我正工作登录微信网页版，一条和菜头的信息跳进了我的视线，打开一看，是一张蓝天图片，蓝得格外通透。突然地，我觉得我错过了什么……</li>
+<li>……</li>
+</ul>
+<p>不管是理性使然还是感性驱动，总之，我就这样决定了。</p>
+<h2 id="统一信息入口"><a href="#统一信息入口" class="headerlink" title="统一信息入口"></a>统一信息入口</h2><p>综上，我的目的并不是将微信订阅号信息输入统统隔绝，而将其与其他信息入口统一，准确地来讲，是将所有微信订阅号都放在 RSS 阅读器之中。</p>
+<p>RSS 阅读器更新信息的速度当然不如微信公众号，可是仔细想想，其实我并不需要那么更新及时的信息，原因有三：</p>
+<ul>
+<li>接收及时的信息意味着你需要及时的反馈</li>
+<li>及时的反馈往往不是最重要的</li>
+<li>更重要的信息往往是沉淀下来的信息</li>
+</ul>
+<h2 id="科普-RSS-阅读器"><a href="#科普-RSS-阅读器" class="headerlink" title="科普 RSS 阅读器"></a>科普 RSS 阅读器</h2><p>在退订所有公众号之前，为大家科普一下 RSS 阅读器。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/inoreader-captrue.jpg" alt=""></p>
+<p>一句话：RSS 阅读器是个收集订阅信息的容器。譬如你订阅了一份报纸，RSS 阅读器就是你的信箱。你可以将长期在某个固定网址更新的信息都放在你的RSS 阅读器中来。</p>
+<p>所以，在我看来，</p>
+<ul>
+<li>微博本质 是 RSS 阅读器，你能在上面看到所有你关注的人的信息；</li>
+<li>微信订阅号平台 本质是 RSS 阅读器，你能在上面看到所有你关注的订阅号的信息；</li>
+<li>知乎专栏 本质上也是 RSS 阅读器，你能在上面看到所有你订阅的专栏信息……</li>
+</ul>
+<p>以上平台，他们都不会告诉你可以用 RSS 阅读器 订阅他们的信息。原因很简单，RSS 阅读器 不会给站点带来流量。</p>
+<p>怎么理解呢？以微博做例子，如果你把你想看的微博都抓取到阅读器了，微博的头条、插入广告、皮肤、推荐关注等就没有任何意义了，微博不能获取你的喜好，不能给你推荐商品，不增加广告曝光度……</p>
+<p>所以，RSS 阅读器变成了少数程度员和有博客情怀的人使用的产品。</p>
+<p>好，以上说了 RSS 阅读器的各种好处，接下为大家推荐我正在使用的 RSS 阅读器：</p>
+<ul>
+<li><a href="http://www.inoreader.com/" target="_blank" rel="external">inoreader</a>：一款与Google Reader（曾经最好用的 RSS 阅读器，已经关闭）十分相似、稳定靠谱、朴素好用的网页 RSS 阅读器。自从 GR 关闭，我试用了无数 RSS 阅读器，只推荐此款。<ul>
+<li>使用方法：<a href="http://www.jianshu.com/p/c08403a991c2" target="_blank" rel="external">那些仍在更新的好博客 - 简书</a></li>
+</ul>
+</li>
+<li><a href="http://reederapp.com" target="_blank" rel="external">Reeder</a>：RSS 阅读器客户端，可导入<a href="http://www.inoreader.com/" target="_blank" rel="external">inoreader</a>的订阅列表，仅支持 Mac 和 iOS，界面简洁，支持离线阅读。</li>
+</ul>
+<p>使用建议：</p>
+<ul>
+<li>电脑尽可能使用 <a href="http://www.inoreader.com/" target="_blank" rel="external">inoreader</a>网页端，不推荐使用客户端；</li>
+<li>iOS 手机推荐使用<a href="http://reederapp.com" target="_blank" rel="external">Reeder</a></li>
+<li>安卓端靠谱的 RSS 阅读器还没有发现。</li>
+</ul>
+<h2 id="将微信订阅号转化成订阅源"><a href="#将微信订阅号转化成订阅源" class="headerlink" title="将微信订阅号转化成订阅源"></a>将微信订阅号转化成订阅源</h2><p>如果你已经明白了 RSS 阅读器 是个啥东西，接下来就好办了。你只需要为公众号的找到/生成合适的订阅源就 OK 了。</p>
+<p>目前在网上找到比较靠谱的服务就是这个：<a href="http://rss.catcoder.com/" target="_blank" rel="external">微广场</a>，其特性如下</p>
+<ul>
+<li>为免费用户提供/生成十个订阅源</li>
+<li>VIP 分 30元/20个订阅源；50元/30个订阅源；100元/无限个订阅源</li>
+<li>订阅源无图片，因为微信公众号图片不支持外链</li>
+<li>支持知乎专栏、简书用户专栏、 简书专题、百度百家</li>
+</ul>
+<p>一般的大号都可以通过搜索获得。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/catcoder-lixiaolai.jpg" alt=""></p>
+<p>点击搜索结果右下角的订阅标志就会出现下图</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/rssfeed.jpg" alt=""></p>
+<p>复制到订阅源 <a href="http://www.inoreader.com/" target="_blank" rel="external">inoreader</a>订阅即可</p>
+<p>如果没有搜索到你想要的订阅号，你可以<a href="http://rss.catcoder.com/submp" target="_blank" rel="external">提交公众号</a>，提交方法：<a href="http://rss.catcoder.com/about" target="_blank" rel="external">微广场：提交抓取</a></p>
+<p>例如我就为<a href="http://t.cn/R4jYJXg" target="_blank" rel="external">小锄头</a>提交了一个生成订阅源的请求</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/catcoder-submp.jpg" alt=""></p>
+<p>提交后，该订阅号就生成了一个订阅源，但不要先急着订阅，等半个小时后，<a href="http://rss.catcoder.com/" target="_blank" rel="external">微广场</a>才会抓取到该订阅号的内容，此时再进行订阅。</p>
+<p>可能部分读者觉得免费用户十个订阅源远远不够，这里可以提供一个方法：订阅生成订阅源，复制到 RSS 阅读器，再取消订阅，这样十个订阅源就可以重复使用了。</p>
+<blockquote>
+<p>此方法可能随时失效</p>
+</blockquote>
+<p>不过，正如<a href="http://rss.catcoder.com/feedback" target="_blank" rel="external">阡陌所说</a></p>
+<blockquote>
+<p>我是一名重度RSS用户，非常感谢在这个艰难时期你们还提供如此优质的服务，建议当你们的服务稳定后，可以考虑推出VIP付费计划。<br>我愿意以每年30~60元RMB支持你们的服务，前提是你们能保障服务的稳定性和推送质量，相信与我有相同想法的用户是不少的。<br>狗耳朵（dogear.cn）已经挂了，我是他们的付费会员，现在已经打算弃用了，希望你们能把握好这个时机哦~他们的用户质量都挺不错的（愿意付费）~</p>
+</blockquote>
+<p>目前此站点是 <a href="http://www.catcoder.com/" target="_blank" rel="external">catcoder</a> 个人在维护</p>
+<ul>
+<li>他的初衷：<a href="http://www.catcoder.com/post/%E5%BE%AE%E4%BF%A1%E8%BE%93%E5%87%BARSS" target="_blank" rel="external">微信输出RSS - CatCoder</a></li>
+<li>他的梦想：<a href="http://www.catcoder.com/post/my2015" target="_blank" rel="external">我的2015 - CatCoder</a></li>
+</ul>
+<p>我也乐意为此提供支持。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/catcoder-vip2.jpg" alt=""></p>
+<p>如果你乐意，也可以提供<a href="http://rss.catcoder.com/buyvip" target="_blank" rel="external">支持</a></p>
+<h2 id="将微博转化成订阅源"><a href="#将微博转化成订阅源" class="headerlink" title="将微博转化成订阅源"></a>将微博转化成订阅源</h2><p>微博本质上也是一个博客，只不过字数做硬性限定而已。</p>
+<p>想比微广场，<a href="http://sinacn.weibodangan.com/" target="_blank" rel="external">微博档案</a>的特点如下</p>
+<ul>
+<li>完全免费</li>
+<li>网站首页比较混乱</li>
+<li>图片链接自微博</li>
+<li>微博如含有链接，会链接到自家网站，含有大量广告（可能是依靠此广告来维持服务器费用）</li>
+</ul>
+<p>如何将微博转化成订阅源呢？</p>
+<p>以 <a href="http://weibo.com/u/1134424202?topnav=1&amp;wvr=6&amp;topsug=1&amp;is_all=1" target="_blank" rel="external">纯银V</a>为例</p>
+<ul>
+<li>打开 <a href="http://weibo.com/u/1134424202?topnav=1&amp;wvr=6&amp;topsug=1&amp;is_all=1" target="_blank" rel="external">纯银V的微博</a> 主页</li>
+<li>看地址栏，复制 用户id<ul>
+<li>例如 <code>http://weibo.com/u/1134424202?topnav=1&amp;wvr=6&amp;topsug=1&amp;is_all=1</code></li>
+<li>用户id 就是 <code>http://weibo.com/u/</code> 之后的那一串数字<code>1134424202</code></li>
+</ul>
+</li>
+<li>打开 <a href="http://sinacn.weibodangan.com/" target="_blank" rel="external">微博档案</a></li>
+<li>粘贴 用户id 搜索</li>
+</ul>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/weibodangan-search2.jpg" alt=""></p>
+<ul>
+<li>在结果页面拉下，点击 订阅更新</li>
+</ul>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/weibodangan-feed3.jpg" alt=""></p>
+<ul>
+<li>看到 RSS 订阅源</li>
+</ul>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/weibodangan-feed4.jpg" alt=""></p>
+<ul>
+<li>done </li>
+</ul>
+<h2 id="好用的-RSS-客户端"><a href="#好用的-RSS-客户端" class="headerlink" title="好用的 RSS 客户端"></a>好用的 RSS 客户端</h2><p>如果你已经有了 inoreader，Reeder 客户端更像是 inoreader 华丽外衣。</p>
+<p>Mac 客户端界面</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/reeder-mac.jpg" alt=""></p>
+<p>iOS 客户端界面</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/reeder-ios.jpg" alt=""></p>
+<h2 id="选择适合自己的"><a href="#选择适合自己的" class="headerlink" title="选择适合自己的"></a>选择适合自己的</h2><p>好，到最后了，我必须坦白：事实上我并没有将所有公众号退订，最终还是保留三个，两个是工作用的，一个是自己的（cnfeat）。</p>
+<p>不过，我的初衷已经达成：将微信订阅号信息入口统一至 RSS 阅读器，从此，微信订阅号只有我熟悉的无须时时分心观看的内容，需要我去学习和浏览的内容统一放置在 RSS 阅读器。</p>
+<p>最后，估计有极大可能你是在微信公众号看到这篇文章，选择在你手上，适合自己就好。</p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="http://www.jianshu.com/p/718caca08c5a" target="_blank" rel="external">话题产品VOL1：豌豆荚一览 - 简书</a></p>
+<hr>
+<h3 id="【六经皆我注脚】"><a href="#【六经皆我注脚】" class="headerlink" title="【六经皆我注脚】"></a>【六经皆我注脚】</h3><p>又有人说，你在乎掉粉吗？</p>
+<p>原则上，不在乎，但做好事不应该受打击。</p>
+<p>——纯银V</p>
+<hr>
+<ul>
+<li>陈素封</li>
+<li>公众号：cnfeat</li>
+<li>Blog：cnfeat.com</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      如果有人问我：你有那些鲜为人知的学习小技巧？我必定回答：用 RSS 阅读器来管理信息入口。
+    
+    </summary>
+    
+      <category term="blog" scheme="http://yoursite.com/categories/blog/"/>
+    
+    
+      <category term="微信" scheme="http://yoursite.com/tags/%E5%BE%AE%E4%BF%A1/"/>
+    
+      <category term="订阅号" scheme="http://yoursite.com/tags/%E8%AE%A2%E9%98%85%E5%8F%B7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>七龙珠哪些画面让你永生难忘？</title>
+    <link href="http://yoursite.com//post/ToriyamaAkiraWife/"/>
+    <id>http://yoursite.com//post/ToriyamaAkiraWife/</id>
+    <published>2015-12-24T16:00:00.000Z</published>
+    <updated>2017-05-15T14:44:07.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>很多人说悟空不够爱琪琪，其实悟空心里的女人只有一个。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_37_1.jpg" alt=""></p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_48_4.jpg" alt=""></p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_52.jpg" alt=""></p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_51_2.jpg" alt=""></p>
+<p>原文链接：<a href="https://www.zhihu.com/question/38711996/answer/78252355" target="_blank" rel="external">七龙珠哪些画面让你永生难忘？ - 陈素封的回答 - 知乎</a></p>
+<hr>
+<h3 id="【六经皆我注脚】"><a href="#【六经皆我注脚】" class="headerlink" title="【六经皆我注脚】"></a><strong>【六经皆我注脚】</strong></h3><p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/ToriyamaAkiraWife.jpg" alt=""></p>
+<p>1982年5月2日鸟山明与加藤由美结婚</p>
+<p>当上鸟山太太的由美在85年从漫画界正式引退，安心当起了全职太太，一边管理家庭财政，一边相夫教子，是个名副其实的贤内助。</p>
+<p>1982年，鸟山明缴纳版税高达五亿三千九百四十二万日元，刷新了日本漫画家记录，巧合的是他的婚礼正好安排在漫画富豪榜发布的第二天，于是媒体就将其冠以“5亿元的鸟山明，超豪华的婚礼”之名）</p>
+<p>加藤由美是鸟山明相亲认识的，她是一名少女漫画家，安静的她总是带着甜甜的微笑，平日腼腆的鸟山明初见她就像变了一个人，不仅话特别多，还刻意用滑稽的表情和夸张的动作引得她总是捂嘴轻笑，性格出奇投契的两个人很快坠入爱河，某天下午两人正在煲电话粥，鸟山明啃着面包突然冷不丁开口道：“要不要结婚？”由美毫不犹豫回答道：“恩，好的。”</p>
+<p>——<a href="http://chuansong.me/n/1841600" target="_blank" rel="external">《难忘回忆之鸟山明与他的龙珠世界（二）》</a></p>
+<hr>
+<ul>
+<li>陈素封</li>
+<li>公众号：cnfeat</li>
+<li>Blog：cnfeat.com</li>
+</ul>
+<p>（题图：七龙珠）</p>
+]]></content>
+    
+    <summary type="html">
+    
+      你只需做一小部分有价值的事情就可以改变现状。
+    
+    </summary>
+    
+      <category term="blog" scheme="http://yoursite.com/categories/blog/"/>
+    
+    
+      <category term="七龙珠" scheme="http://yoursite.com/tags/%E4%B8%83%E9%BE%99%E7%8F%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>把时间当作朋友，七年后你会如何？</title>
+    <link href="http://yoursite.com//post/sevenyears-lixiaolai/"/>
+    <id>http://yoursite.com//post/sevenyears-lixiaolai/</id>
+    <published>2015-12-18T16:00:00.000Z</published>
+    <updated>2017-05-15T14:44:07.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>上周六参加了李笑来老师的《把时间当作朋友》七年读者见面会。是的，现场，国家会议中心，第一排，免费。</p>
+<p><img src="http://cnfeat.qiniudn.com/lixiaolai_title.jpg" alt=""></p>
+<p>说实话，如果我不到现场，实在没有那么多感触。</p>
+<p>七年前，当我把李笑来老师的博客文章一篇一篇复制成 txt 放在 128*64 像素的MP3观看的时候，断然不会想到我会有一天会坐在他跟前听讲七年前的故事。</p>
+<p>六年前，当我把《把时间当做朋友》的 pdf 用 A4 纸打印出来的时候，也想不到他的下一本书居然是在七年后。</p>
+<p>想想也觉得神奇，可这就是事实。</p>
+<p>好，说说感触最大的三点收获吧。</p>
+<h2 id="用写书的方式来写博客"><a href="#用写书的方式来写博客" class="headerlink" title="用写书的方式来写博客"></a>用写书的方式来写博客</h2><p>李笑来老师说，当七年前很多人在用写日志的方式来写博客的时候，他已经开始在用写书的方式来写博客了。</p>
+<p>如何用写博客的方式来写书，李笑来老师已经完美示范过一遍了，甚至我自己也亲身经历见证过了，接下来的就是践行。</p>
+<p>如何践行？将自己正在学习的领域用专题或者书稿的形式来迫使自己系统的梳理。 </p>
+<h2 id="任何事情都有方法论"><a href="#任何事情都有方法论" class="headerlink" title="任何事情都有方法论"></a>任何事情都有方法论</h2><p>把事情做好总有一条路径，就看是否细心总结，包括烤羊腿，包括陪女朋友/老婆逛街买衣服。</p>
+<p>李笑来老师分享陪女朋友/老婆逛街买衣服的经验是：</p>
+<ul>
+<li>第一次无论试什么衣服一律说不合身；</li>
+<li>第二次说颜色不对；</li>
+<li>第三次说显胖；</li>
+<li>第四次说要不再看看？</li>
+<li>第五次……</li>
+<li>第六次……</li>
+<li>第七次的时候，嗯，好！有眼光，不错。</li>
+</ul>
+<p>实际上，你做不好一件事情的原因往往是你不想把事情做好。</p>
+<h2 id="通识教育"><a href="#通识教育" class="headerlink" title="通识教育"></a>通识教育</h2><p>通识教育是啥呢？<a href="http://baike.baidu.com/view/628666.htm" target="_blank" rel="external">这里</a>或<a href="https://www.wikiwand.com/zh/%E9%80%9A%E8%AD%98%E6%95%99%E8%82%B2" target="_blank" rel="external">这里</a>会有答案。</p>
+<p>李笑来老师在分享时列出清单是：独立思考、数据分析和沟通。独立思考可获得新生，数据分析可以提高效率，良好沟通可以减少矛盾。</p>
+<p>通识教育在香港被列为必修课，而在我国应试教育却让大部分人缺失通识教育，丧失独立思考能力，导致进入社会后无法适应，时而迷茫，时而无助。笑来老师想做的，就是试图联合大家，协力补上这一门课。</p>
+<p>笑来老师说的 通识 和连岳说的 常识 很像：</p>
+<blockquote>
+<p>任何社会都是需要常识的的。当然进入现代文明社会，人开始脱离集合名词，以“我”的姿势出现后，常识就变得更加重要了，违背常识的目的，很多都在于让一个人交出他自己，奉献给他人，这是知识上的抢劫。</p>
+</blockquote>
+<h2 id="现场图和录音"><a href="#现场图和录音" class="headerlink" title="现场图和录音"></a>现场图和录音</h2><p><img src="http://cnfeat.qiniudn.com/lixiaolai_7years.jpg" alt=""></p>
+<p><img src="http://cnfeat.qiniudn.com/lixiaolai_next7years.jpg" alt=""></p>
+<p><img src="http://cnfeat.qiniudn.com/lixiaolai_sing.jpg" alt=""></p>
+<p>全程录音地址：<a href="http://pan.baidu.com/s/1gekckwV" target="_blank" rel="external">http://pan.baidu.com/s/1gekckwV</a></p>
+<p>亮点：李笑来老师自弹自唱，七年再开腔，不容错过。</p>
+<hr>
+<h3 id="【六经皆我注脚】"><a href="#【六经皆我注脚】" class="headerlink" title="【六经皆我注脚】"></a><strong>【六经皆我注脚】</strong></h3><p>如果你热衷于去参与那些只要有电脑或者手机就可以回复，而不需要任何技术经验的主题，你实际上就是在浪费宝贵生命。然后你浪费完今天接着浪费明天，你的人生的一个又一个本来可以充满希望的明天就在这样的毫无意义的灌水中，灰飞烟灭。然后等你老了，内心只是充满了对这个社会的“不公平”的恨，却不记得自己在年轻的时候做过任何有意义的事。</p>
+<p>————Livid <a href="https://www.v2ex.com/t/121936?from=timeline&amp;isappinstalled=0" target="_blank" rel="external">关于你的宝贵生命 - V2EX</a></p>
+<hr>
+<ul>
+<li>陈素封</li>
+<li>公众号：cnfeat</li>
+<li>Blog：cnfeat.com</li>
+</ul>
+<p>题图：《把时间当做朋友》七年读者见面会</p>
+]]></content>
+    
+    <summary type="html">
+    
+      任何事情都有方法论，包括烤羊腿。题图：《把时间当做朋友》七年读者见面会
+    
+    </summary>
+    
+      <category term="blog" scheme="http://yoursite.com/categories/blog/"/>
+    
+    
+      <category term="李笑来" scheme="http://yoursite.com/tags/%E6%9D%8E%E7%AC%91%E6%9D%A5/"/>
+    
+      <category term="七年" scheme="http://yoursite.com/tags/%E4%B8%83%E5%B9%B4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>做赛亚人妻子是什么一种体验？(终)</title>
+    <link href="http://yoursite.com//post/dragball-chichi_buu2/"/>
+    <id>http://yoursite.com//post/dragball-chichi_buu2/</id>
+    <published>2015-12-07T16:00:00.000Z</published>
+    <updated>2017-05-15T14:44:07.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>这一期是《做赛亚人妻子是什么一种体验？》的最后一期，这一期，琪琪为大儿子复仇，直接挑战魔人布欧，结果……</p>
+<p>容我细细说来。</p>
+<p>布欧在地面滥杀无辜，琪琪在天界避难期间，悟天和特兰克斯开始练习合体。</p>
+<p>琪琪开始为合体想名字，毕竟悟天的名字也是琪琪起的呀</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_74.jpg" alt=""></p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_75.jpg" alt=""></p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_76.jpg" alt=""></p>
+<p>被惊呆的合体，琪琪无法直视。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_77.jpg" alt=""></p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_78.jpg" alt=""></p>
+<p>在悟天克斯完成完美合体后，布欧终于来到了天界。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_79.jpg" alt=""></p>
+<p>琪琪看到了杀死悟饭的布欧，虽然事实上悟饭还没有死，而且打晕悟饭的是胖布欧，并不是这个足恶的布欧，可是，琪琪并不知道哇。</p>
+<p>不管是哪个布欧，杀死我儿子的就是万恶！</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_80.jpg" alt=""></p>
+<p>勇敢的妈妈一个人走向仇人布欧，重重地打了布欧一巴掌。</p>
+<p>还我悟饭！还我悟饭！还我悟饭！</p>
+<p>布欧将琪琪变成了一只蛋，踩碎。</p>
+<p>琪琪就酱莫名其妙地卒了。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_81.jpg" alt=""></p>
+<p>琪琪生平大事记：</p>
+<ul>
+<li>12岁遇见悟空</li>
+<li>19岁与悟空结婚</li>
+<li>20岁生下悟饭<ul>
+<li>同年悟空死了，一年后复活，消失三年</li>
+</ul>
+</li>
+<li>30岁生下悟天<ul>
+<li>同年悟空死了，死了十年</li>
+</ul>
+</li>
+<li>36岁被布欧变成蛋并踩碎，卒<ul>
+<li>同年，悟空回阳间一天</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p>琪琪死去了，悟空缺复活了。</p>
+<p>悟空丝毫不知道他的妻子琪琪已经死去……</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_81_1.jpg" alt=""></p>
+<p>悟空只知道，琪琪死不重要，反正我能将全地球的人都复活。</p>
+<p>在与布欧决战前，琪琪被龙珠复活，悟空向全地球的人类呼唤献出力量，可是鸟山明竟然忘记将在天界的琪琪画出来了，记大过一次。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_82.jpg" alt=""></p>
+<p>在悟空将布欧杀死之后回到天界，琪琪才出现了。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_83.jpg" alt=""></p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_84.jpg" alt=""></p>
+<p>邪恶的布欧被消灭后，世界平静了十年。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_85.jpg" alt=""></p>
+<p>十年，琪琪的发型发生了变化，毕竟46岁了。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_86.jpg" alt=""></p>
+<p>她和悟空还是住在偏远山区，几乎不与其他人联系，如果别人不找过来，还真难遇见了。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_87.jpg" alt=""></p>
+<p>十年后的天下第一武道会，她又出现了。看孙女的比赛</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_88.jpg" alt=""></p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_89.jpg" alt=""></p>
+<p>悟空遇见了转世的欧布，和琪琪打个招呼就毫无犹豫地就离开了，这一离开又不知是多久。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_91.jpg" alt=""></p>
+<p>结束了，就这样结束了。</p>
+<p>这就是琪琪在《龙珠》的一生。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_90.jpg" alt=""></p>
+<p>这就是做赛亚人妻子的体验。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/chichi1.jpg" alt=""></p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/chichi2.jpg" alt=""></p>
+<p>再见，我的龙珠。</p>
+<hr>
+<h3 id="【六经皆我注脚】"><a href="#【六经皆我注脚】" class="headerlink" title="【六经皆我注脚】"></a><strong>【六经皆我注脚】</strong></h3><p>连载这一系列琪琪的文章，公众号不断地掉粉，哈哈，掉到我自己都不能相信。</p>
+<p>那为什么我还写？嚓，我写文章跟掉粉没有丝毫关系。</p>
+<p>好了，终于完了。这是我唯一也最后一次写关于漫画的文章。</p>
+<p>我也无法再像看龙珠那样认真地看另一部漫画了。</p>
+<p>嗯，另一个连载即将开始。</p>
+<hr>
+<ul>
+<li>陈素封</li>
+<li>公众号：cnfeat</li>
+<li>Blog：cnfeat.com</li>
+</ul>
+<p>（题图：龙珠）</p>
+]]></content>
+    
+    <summary type="html">
+    
+      你们想看的《千金难抵万般疼爱》连载要等到周六才能看到咯。
+    
+    </summary>
+    
+      <category term="blog" scheme="http://yoursite.com/categories/blog/"/>
+    
+    
+      <category term="七龙珠" scheme="http://yoursite.com/tags/%E4%B8%83%E9%BE%99%E7%8F%A0/"/>
+    
+      <category term="琪琪" scheme="http://yoursite.com/tags/%E7%90%AA%E7%90%AA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>做赛亚人妻子是什么一种体验？(五)</title>
+    <link href="http://yoursite.com//post/dragball-chichi_Buu/"/>
+    <id>http://yoursite.com//post/dragball-chichi_Buu/</id>
+    <published>2015-12-06T16:00:00.000Z</published>
+    <updated>2017-05-15T14:44:07.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>十年后，琪琪一家仍住在偏远的地方。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_53.jpg" alt=""></p>
+<p>远到什么程度？从家里去市区有1000公里，差不多就是北京从上海的距离。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_54.jpg" alt=""></p>
+<p>十年间，琪琪生了一个儿子，名字叫悟天（我原来以为是的悟空的孙子），悟空不在了，悟天这个名字只能是琪琪起的了。</p>
+<p>十年间，多了悟天，琪琪应该不会那么寂寞吧。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_55.jpg" alt=""></p>
+<p>琪琪得知悟空将从阴间回来一天，高兴到不得了。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_56.jpg" alt=""></p>
+<p>很难想象，琪琪这十年间是如何熬过来的，怎么看悟饭都不像能挣钱的样子，很好奇琪琪养家的钱那里来的~</p>
+<p>为了一千万，琪琪答应两兄弟参加天下第一武道会。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_57.jpg" alt=""></p>
+<p>琪琪十分害怕儿子们学坏，叮嘱陌生人比迪丽不要教坏悟饭</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_58.jpg" alt=""></p>
+<p>当听说比迪丽家境十分富裕，马上变脸，想给悟饭找一个好的归宿，这也可能天下妈妈的心愿吧。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_59.jpg" alt=""></p>
+<p>话说天下第一武道会就到了，琪琪十分期待悟空的到来。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_60.jpg" alt=""></p>
+<p>悟空一出现，琪琪就马上飞扑了过去。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_61.jpg" alt=""></p>
+<p>大家可以留意一下悟天的表情，面对自己的爸爸还有点害怕。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_62.jpg" alt=""></p>
+<p>天下第一武道会，悟天上场前，琪琪叫悟天留手，那么久了，也习惯了赛亚人的日常。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_63.jpg" alt=""></p>
+<p>面对一旁吱吱喳喳相打架的肥婆，琪琪一拳将她打到了。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_64.jpg" alt=""></p>
+<p>之后，巴菲迪的两个怪人出场吸收走悟饭的能量，悟空等一大群参赛选手离场，琪琪有不祥的预感。</p>
+<p>果然女人的预感是准确的。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_65.jpg" alt=""></p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_66.jpg" alt=""></p>
+<p>比赛继续，琪琪终于发现悟天和特兰克斯假扮另一个选手参加了另比赛</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_67.jpg" alt=""></p>
+<p>之后，因为悟空贝吉塔等强力选手离开了比武大会，由18号对阵撒旦，琪琪羡慕克林一家拿到一千万的奖金。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_68.jpg" alt=""></p>
+<p>等到悟空回来，却告诉悟饭已经死了。</p>
+<p>琪琪只知道是一个布欧的人杀死了悟饭。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_69.jpg" alt=""></p>
+<p>陪伴了自己十多年的儿子就这样没了</p>
+<p>琪琪遭到暴击，晕倒。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_70.jpg" alt=""></p>
+<p>悟空，这样的安慰并没有用呐。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_71.jpg" alt=""></p>
+<p>毕竟就只能在阳间逗留一天，悟空将要离去，悟天依依不舍。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_72.jpg" alt=""></p>
+<p>琪琪又何尝不舍得悟空。</p>
+<p>悟空又再次消失了。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_73.jpg" alt=""></p>
+<p>悟空一回来，悟饭就被告知了死亡（其实是失踪了），琪琪接下时间只有悟天一个家人相伴，直至她死（第一次）也未能看到悟饭回来。</p>
+<p>十年，十年，人生有几多个十年。十年后，我得见你一面，失去了儿子，也失去了生命。</p>
+<hr>
+<h3 id="【六经皆我注脚】"><a href="#【六经皆我注脚】" class="headerlink" title="【六经皆我注脚】"></a><strong>【六经皆我注脚】</strong></h3><p>岁月声 声声慢 携手为伴<br>路长长 心贴着 就很暖<br>深深爱 怕什么 灯火阑珊<br>天上月 在眼里 倒影出一轮美满 </p>
+<p>——《一双人》</p>
+<hr>
+<ul>
+<li>陈素封</li>
+<li>公众号：cnfeat</li>
+<li>Blog：cnfeat.com</li>
+</ul>
+<p>（题图：七龙珠）</p>
+]]></content>
+    
+    <summary type="html">
+    
+      十年，十年，人生有几多个十年。十年后，我得见你一面，失去了儿子，也失去了生命。
+    
+    </summary>
+    
+      <category term="blog" scheme="http://yoursite.com/categories/blog/"/>
+    
+    
+      <category term="七龙珠" scheme="http://yoursite.com/tags/%E4%B8%83%E9%BE%99%E7%8F%A0/"/>
+    
+      <category term="琪琪" scheme="http://yoursite.com/tags/%E7%90%AA%E7%90%AA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>做赛亚人妻子是什么一种体验？(四)</title>
+    <link href="http://yoursite.com//post/dragball-chichi_Cell/"/>
+    <id>http://yoursite.com//post/dragball-chichi_Cell/</id>
+    <published>2015-12-05T16:00:00.000Z</published>
+    <updated>2017-05-15T14:44:07.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>两年后，悟空回来了，可为迎战三年后更强大的人造人，悟空提出要带悟饭去修炼。</p>
+<p>琪琪强烈反对，说悟空没有赚过一块钱给家用，而且还要打扰悟饭的学业。</p>
+<p>在琪琪的眼中，悟饭念书当然是比地球的未来更重要。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_40.jpg" alt=""></p>
+<p>不管如何争吵，琪琪知道自己说不动悟空，还是答应了悟空带悟饭去进行三年的修炼，可是三年里他们父子有没有回过家，漫画并没有提。</p>
+<p>其中，让我感动的一幕是：</p>
+<blockquote>
+<p>琪琪说：要我哭到什么时候，我可是女人呀。</p>
+</blockquote>
+<p>我读出来的版本：在你不在家里的这段日子，我可是像男人一样承担起了这个家庭，我哭了那么多次，你知道吗？有用吗？虽然我一直对悟空你那么凶，我也想做一个温柔可爱的女人呐，你以为我不想吗？都是被你逼的呀。你就这样把儿子带走了，你考虑过我的感受吗？以后我就剩一个人看着这个家了。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_41.jpg" alt=""></p>
+<p>三年后，悟空与人造人战斗时突然病发，被送回家里。</p>
+<p>仔细看琪琪的家里，各种各样的杂物一堆，多么像一个家！</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_42.jpg" alt=""></p>
+<p>可是，悟空吃下救命药昏睡后醒来第一件事就是穿上衣服，准备出去战斗。</p>
+<p>悟空再次请求琪琪带悟饭去修炼，约定战斗结束后不能妨碍悟饭的学业。</p>
+<p>琪琪答应了。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_44.jpg" alt=""></p>
+<p>就连以后要出去工作的事情，悟空也一口答应了。</p>
+<p>可惜，悟空从来就没有兑现过。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_45.jpg" alt=""></p>
+<p>然后，就突然地消失了。</p>
+<p>随后悟空就带着悟饭去精神时光小屋训练了</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_46.jpg" alt=""></p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_47.jpg" alt=""></p>
+<p>从小屋出来后，一家人出去野餐。</p>
+<p>这可能是《七龙珠》唯一的，悟空一家人在漫画正文出现的幸福日子，嗯，也就仅仅两页，已经足够了。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_48.jpg" alt=""></p>
+<p>可惜好景不长，悟空又突然消失了。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_49.jpg" alt=""></p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_50.jpg" alt=""></p>
+<p>悟空复活了神龙后，又准备出发，琪琪好像预感到什么，叫悟空不要死</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_48_1.jpg" alt=""></p>
+<p>也顺便问悟空，悟饭会不会参加战斗，悟空没回答。</p>
+<p>悟空已经不敢对琪琪多说一些什么了，生怕琪琪担心。</p>
+<p>这一次的告别，悟空对琪琪说的最后一句话是「那我走了」接着又消失了。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_48_2.jpg" alt=""></p>
+<p>琪琪可能万万没想到，悟空这么一消失就是十年。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_52.jpg" alt=""></p>
+<p>这一次，又是两父子出去，悟饭一个人回来。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_51_1.jpg" alt=""></p>
+<p>这是我见过的琪琪最惊恐无助的表情。</p>
+<p>悟饭呀，琪琪就麻烦你照顾了。</p>
+<hr>
+<h3 id="【六经皆我注脚】"><a href="#【六经皆我注脚】" class="headerlink" title="【六经皆我注脚】"></a><strong>【六经皆我注脚】</strong></h3><p>在后台看到留言说，为什么我要为琪琪写一篇？</p>
+<p>因为我知道，我知道我女票的性格也十分像琪琪。</p>
+<hr>
+<ul>
+<li>陈素封</li>
+<li>公众号：cnfeat</li>
+<li>Blog：cnfeat.com</li>
+</ul>
+<p>（题图：七龙珠）</p>
+]]></content>
+    
+    <summary type="html">
+    
+      久违了，各位，连载继续。
+    
+    </summary>
+    
+      <category term="blog" scheme="http://yoursite.com/categories/blog/"/>
+    
+    
+      <category term="七龙珠" scheme="http://yoursite.com/tags/%E4%B8%83%E9%BE%99%E7%8F%A0/"/>
+    
+      <category term="琪琪" scheme="http://yoursite.com/tags/%E7%90%AA%E7%90%AA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>做赛亚人妻子是什么一种体验？(二)</title>
+    <link href="http://yoursite.com//post/dragball-chichi_wedding/"/>
+    <id>http://yoursite.com//post/dragball-chichi_wedding/</id>
+    <published>2015-12-03T16:00:00.000Z</published>
+    <updated>2017-05-15T14:44:07.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>六年后，当悟空与琪琪在天下第一武道会第二次相遇，可是悟空已经忘记了琪琪。</p>
+<p>嗯，第一次相遇是在第一卷，下一次相遇是在第十二卷，可能鸟山明不记得，估计读者也忘记了。</p>
+<p>估计琪琪也只能在天下第一武道会能遇见悟空了。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_10.jpg" alt=""></p>
+<p>琪琪一直惦记了六年，没想到遇上了忘记婚约的悟空，少年女受到了深深的伤害，当然生气。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_11.jpg" alt=""></p>
+<p>其他人也好像忘记了，这六年间他们的首要目标都是想要变得更强，结婚的事情谁记得那么清楚，估计也只有琪琪了。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_12.jpg" alt=""></p>
+<p>连克林也只是有点印象而已。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_13.jpg" alt=""></p>
+<p>鸟山明给她们安排一场战斗。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_14.jpg" alt=""></p>
+<p>面对生气的琪琪，悟空一脸懵懂。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_15.jpg" alt=""></p>
+<p>在交手的过程中，琪琪终于说出了婚约的提示，可是悟空依然还是无法想起。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_16.jpg" alt=""></p>
+<p>琪琪说只有赢了她方可知道她的身份。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_17_0.jpg" alt=""></p>
+<p>这样悟空就不得不将琪琪打出场外了。留意到没，只有没有专心练武，且曾觊觎过琪琪的小猪还记得她，哈哈。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_17_3.jpg" alt=""></p>
+<p>仅仅是一击，琪琪便漂出了场外，这差距实在是太大了。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_17_4.jpg" alt=""></p>
+<p>琪琪终于报出了自己身份，悟空也立刻醒悟过来，立马开始求婚，嗯，如果这也算的话。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_18.jpg" alt=""></p>
+<p>随后她们就立马进入状态，在天下第一武道会结婚了。</p>
+<p>是的，什么仪式也没有，其他小伙伴都惊呆了。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_19.jpg" alt=""></p>
+<p>《七龙珠》这部战斗漫画确实不适宜出现太多结婚的场面，这估计就是《七龙珠》里面唯一一张婚纱照了。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_20.jpg" alt=""></p>
+<hr>
+<h3 id="【六经皆我注脚】"><a href="#【六经皆我注脚】" class="headerlink" title="【六经皆我注脚】"></a><strong>【六经皆我注脚】</strong></h3><p>对于我来说，琪琪的意义在于给这部漫画增加人间烟火气息。</p>
+<p>——<a href="https://www.zhihu.com/question/27776290" target="_blank" rel="external">龙珠里琪琪角色人物设定有什么好处。好像一直在反对悟空悟饭拯救世界? - 知乎</a></p>
+<hr>
+<ul>
+<li>陈素封</li>
+<li>公众号：cnfeat</li>
+<li>Blog：cnfeat.com</li>
+</ul>
+<p>（题图：龙珠）</p>
+]]></content>
+    
+    <summary type="html">
+    
+      能比武招亲的都是奇女子。题图：天下第一武道会悟空与琪琪第二次相遇。
+    
+    </summary>
+    
+      <category term="blog" scheme="http://yoursite.com/categories/blog/"/>
+    
+    
+      <category term="七龙珠" scheme="http://yoursite.com/tags/%E4%B8%83%E9%BE%99%E7%8F%A0/"/>
+    
+      <category term="琪琪" scheme="http://yoursite.com/tags/%E7%90%AA%E7%90%AA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>做赛亚人妻子是什么一种体验？(一)</title>
+    <link href="http://yoursite.com//post/dragball-chichi-1stmet/"/>
+    <id>http://yoursite.com//post/dragball-chichi-1stmet/</id>
+    <published>2015-12-02T16:00:00.000Z</published>
+    <updated>2017-05-15T14:44:07.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>琪琪第一次露面是在第一卷，她正在去龟仙人借芭蕉扇的路上，一开始，鸟山明用了颇大的篇幅在描述这个肉肉的小姑娘，一出场就干掉了一条霸王龙，这在第一卷可是了不起的战力，估计鸟山明是打算将琪琪塑造成像 阿拉蕾 那样天真却厉害的角色。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_8_2.jpg" alt=""></p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_0.jpg" alt=""></p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_1.jpg" alt=""></p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_2.jpg" alt=""></p>
+<p>从前三页可以看到，琪琪使用的几乎都是外部武器，如果按照《七龙珠的》初期的画风发展，琪琪到后期可能会成为像《火影忍者》中 天天 那样的角色吧。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_3.jpg" alt=""></p>
+<p>也不知道琪琪的武器是谁打造的，可能是牛魔王吧，明明是力量型的体格却戴着工匠的眼镜。可惜后期也没有看见牛魔王战斗场面，无法分析。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_4.jpg" alt=""></p>
+<p>雅木茶是琪琪幼时第一次遇见的男孩子，嗯，还真是第一个，牛魔王还真放心让自己的女儿跑那么远去找龟仙人呀。</p>
+<p>不谙世事，随随便便遇上男孩子示爱就全情投入进去了。如果乐平继续欺骗琪琪，估计琪琪会与乐平一起吧，哈哈。</p>
+<p>幸好，雅木茶没有恋童癖，而且他还有遇上女孩子就说不出话的毛病，甚至想要用龙珠去改变他的这个毛病。</p>
+<blockquote>
+<p>这个毛病其实无须龙珠去实现，你看《生活大爆炸》的Rajesh，喝一口酒就解决了。</p>
+</blockquote>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_5.jpg" alt=""></p>
+<p>接着，悟空乘着七色彩云来了，误打误撞遇上了他日后将相伴一生的女孩。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_6.jpg" alt=""></p>
+<p>悟空一定想不到，他这样的轻轻一脚，就让一个女孩定下要与之结婚的决定。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_7.jpg" alt=""></p>
+<p>去问龟仙人借芭蕉扇的这一段几乎是琪琪最多对白的一段，以后在《七龙珠》也无法看到了。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_8_0.jpg" alt=""></p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_8_1.jpg" alt=""></p>
+<p>将火焰山的火焰熄灭之后，琪琪提出结婚的事情，孙悟空以为琪琪以后有什么重要的东西给他，轻易地答应了！</p>
+<p>这桩私自定下娃娃亲这样成了。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_8_3.jpg" alt=""></p>
+<p>随后，悟空就继续去寻找龙珠去了。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_9.jpg" alt=""></p>
+<p>再之后，悟空他</p>
+<ul>
+<li>打败了炒饭大人</li>
+<li>第一次参加天下第一武道会</li>
+<li>打败红绸军</li>
+<li>遇上桃白白，受伤</li>
+<li>爬上加林塔，打败了猫仙人</li>
+<li>打败了桃白白</li>
+<li>遇见占星婆婆和爷爷</li>
+<li>再次打败了炒饭大人</li>
+<li>用龙珠复活了被桃白白杀死的鲁比爸爸</li>
+<li>第二次参加天下第一武道会</li>
+<li>与天津饭打成平手</li>
+<li>被比克大魔王差点打死</li>
+<li>喝下加林塔圣水</li>
+<li>打败已恢复青春的比克大魔王</li>
+<li>与天神修炼</li>
+</ul>
+<p>如此直到第三次参加天下第一武道会，她们再次相遇了，距离上一次见面，已经九年了。</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/dragonball_chihi_14.jpg" alt=""></p>
+]]></content>
+    
+    <summary type="html">
+    
+      《七龙珠》最苦命的女子：琪琪
+    
+    </summary>
+    
+      <category term="blog" scheme="http://yoursite.com/categories/blog/"/>
+    
+    
+      <category term="七龙珠" scheme="http://yoursite.com/tags/%E4%B8%83%E9%BE%99%E7%8F%A0/"/>
+    
+      <category term="琪琪" scheme="http://yoursite.com/tags/%E7%90%AA%E7%90%AA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>预告|做赛亚人妻子是什么一种体验？</title>
+    <link href="http://yoursite.com//post/dragball-chichi_preview/"/>
+    <id>http://yoursite.com//post/dragball-chichi_preview/</id>
+    <published>2015-12-01T16:00:00.000Z</published>
+    <updated>2017-05-15T14:44:07.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>前阵子重看《七龙珠》，嗯，算起来，已经是第三次了。</p>
+<p>第一次看的是情节；第二次看的是悟空；第三次，看的是琪琪。</p>
+<p>为什么？</p>
+<p>我也不知道，可能是对悟空的情节已太熟悉了，可能是突然发现这部漫画是没有女主角的，也有可能是是自己也有女朋友了吧，哈哈。</p>
+<p>一路看下来，发现琪琪作为悟空的老婆实在是太可怜，便将《七龙珠》里面大部分有琪琪的图片都截了下来，碎碎地拼成琪琪完整的一生。</p>
+<p>可能你已经自诩是龙珠粉，但如果由你来概括一下琪琪，估计你也说不清吧，因为琪琪在龙珠出现的版面实在太少了，不花一点时间实在拼凑不起琪琪的生平。</p>
+<p>那么，真可以简短概括琪琪的一生吗？</p>
+<p>还真可以，上图！</p>
+<p><img src="http://openmindclub.qiniudn.com/team/cnfeat/image/chichi3.jpg" alt=""></p>
+<p>如果你还想知道更多，留意续集，嗯。</p>
+<hr>
+<h3 id="【六经皆我注脚】"><a href="#【六经皆我注脚】" class="headerlink" title="【六经皆我注脚】"></a><strong>【六经皆我注脚】</strong></h3><p>因为性格内向，鸟山明从小就不擅长与女孩子相处，更不用说谈情说爱了。小学时日本很流行掀女孩子的裙子（哆啦a梦中的魔界大冒险你还记得吗），但鸟山明却是敢想不敢做。</p>
+<p>——<a href="http://chuansong.me/n/1841600" target="_blank" rel="external">《难忘回忆之鸟山明与他的龙珠世界（二）》</a></p>
+<hr>
+<ul>
+<li>陈素封</li>
+<li>公众号：cnfeat</li>
+<li>Blog：cnfeat.com</li>
+</ul>
+<p>（题图：七龙珠）</p>
+]]></content>
+    
+    <summary type="html">
+    
+      《七龙珠》最苦命的女子琪琪的一生。（题图：七龙珠）
+    
+    </summary>
+    
+      <category term="blog" scheme="http://yoursite.com/categories/blog/"/>
+    
+    
+      <category term="七龙珠" scheme="http://yoursite.com/tags/%E4%B8%83%E9%BE%99%E7%8F%A0/"/>
+    
+      <category term="琪琪" scheme="http://yoursite.com/tags/%E7%90%AA%E7%90%AA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何为七牛云生成索引目录？</title>
+    <link href="http://yoursite.com//post/index-qiniu/"/>
+    <id>http://yoursite.com//post/index-qiniu/</id>
+    <published>2015-11-29T16:00:00.000Z</published>
+    <updated>2017-05-15T14:44:07.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://assets.qiniu.com/qiniu-409x220.png" alt=""></p>
+<p>题图：七牛云存储</p>
+<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>前一篇的 <a href="http://cnfeat.com/blog/2015/11/24/qiniu/" target="_blank" rel="external">如何使用七牛云做为图床？ - 读立写生</a></p>
+<p>想必都已经能用 命令行 上传图片了。</p>
+<blockquote>
+<p>其实，如果你能上传图片，理论上也能上传其他格式文件了，例如：keynote、ppt、excel等。</p>
+</blockquote>
+<p>可文件一多，找起来就比较麻烦，这时你可能想在 七牛空间 建立子目录了，例如</p>
+<ul>
+<li>将 图片 放在 image 文件夹</li>
+<li>将 pdf 放在 pdf 文件夹</li>
+<li>将 录音 放在 tapes 文件夹</li>
+<li>……</li>
+</ul>
+<p>可是，七牛云 空间是没有目录概念的，或者说，它只有一个根目录。</p>
+<p>如果你在 <a href="https://portal.qiniu.com/" target="_blank" rel="external">七牛云网页空间</a>上传过图片，你就能深切地体会到了，所有的文件都放在一个目录，如果没有极好的命名习惯，那将是一场灾难。</p>
+<p>各位感受一下：</p>
+<p><img src="http://cnfeat.qiniudn.com/image/qiniu-portal.jpg" alt=""></p>
+<p>如上就是我还没为七牛建立目录的样子。</p>
+<p>那么，如何管理好 七牛云 空间？为其建立目录索引呢？</p>
+<h2 id="七牛云-特性须知"><a href="#七牛云-特性须知" class="headerlink" title="七牛云 特性须知"></a>七牛云 特性须知</h2><h3 id="单向数据同步服务"><a href="#单向数据同步服务" class="headerlink" title="单向数据同步服务"></a>单向数据同步服务</h3><p>在动手折腾目录之前，你必须知道 七牛云 的特性：</p>
+<ul>
+<li>一般的云盘是 <code>双向数据同步空间服务</code>，如何解释呢？举个例子<ul>
+<li>百度云、微云、360网盘、dropbox 等就是使用<code>双向数据同步空间服务</code><ul>
+<li>你在本地增加一个 cnfeat.txt 文件</li>
+<li>同步之后，云盘多了一个 cnfeat.txt 文件</li>
+<li>你在本地删除一个 cnfeat.txt 文件</li>
+<li>同步之后，云盘少了一个 cnfeat.txt 文件</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>七牛云 不同于以上的 云盘，它是 <code>单向数据同步服务</code><ul>
+<li>何为 <code>单向数据同步服务</code>？ 简单地来说，你可以想像 七牛云空间 就像是你私人邮箱，你将本地文件发送到你的邮箱，七牛云有了副本，就算本地的文件删除了，七牛云上的文件依然存在，除非你去邮箱删除。<ul>
+<li>你在本地增加一个 cnfeat.txt 文件</li>
+<li>同步之后，七牛云多了一个 cnfeat.txt 文件</li>
+<li>你在本地删除一个 cnfeat.txt 文件</li>
+<li>同步之后，七牛云的 cnfeat.txt 文件依然还在！</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>那么，如何删除 七牛云 的数据？</p>
+<p>暂时发现的方法</p>
+<ul>
+<li>（1）登录网页版，搜索文件删除；</li>
+<li>（2）利用<a href="http://developer.qiniu.com/demo/index.html" target="_blank" rel="external">Demo 集锦- 七牛云存储</a>的 <a href="https://chrome.google.com/webstore/detail/qiniu-upload-files/emmfkgdgapbjphdolealbojmcmnphdcc" target="_blank" rel="external">qiniu upload files</a> 插件 删除</li>
+</ul>
+<h3 id="目录理解"><a href="#目录理解" class="headerlink" title="目录理解"></a>目录理解</h3><ul>
+<li>既然前面说了 七牛云 是没有目录的，那如何理解 七牛云 的目录？<ul>
+<li>比如：<code>http://cnfeat.qiniudn.com/image/cnfeat-img.jpg</code></li>
+<li>你会以为<code>cnfeat-img.jpg</code>是存在<code>image</code>文件夹下，而实际上，七牛云是没有 <code>image</code> 文件夹的</li>
+<li>所以 <code>image/cnfeat-img.jpg</code> 它就一个完整的文件名</li>
+<li>看下图：</li>
+</ul>
+</li>
+</ul>
+<p><img src="http://cnfeat.qiniudn.com/image/Cap-cnfeat-img.jpg" alt=""></p>
+<p>但这并不意味着你需要为每个文件起个类似 <code>image/cnfeat-img.jpg</code> 的文件名，你只需要在 七牛云 建立目录即可。</p>
+<h2 id="如何为-七牛云-建立目录"><a href="#如何为-七牛云-建立目录" class="headerlink" title="如何为 七牛云 建立目录?"></a>如何为 七牛云 建立目录?</h2><h3 id="准备工具"><a href="#准备工具" class="headerlink" title="准备工具"></a>准备工具</h3><ul>
+<li>footer-7niu.html</li>
+<li>gen4idx.py</li>
+</ul>
+<p>链接: <a href="http://pan.baidu.com/s/1i49VE9R" target="_blank" rel="external">http://pan.baidu.com/s/1i49VE9R</a> 密码: w4gx</p>
+<h3 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h3><p>以上的工具是 大妈 自行制作的索引页面生成脚本。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line"></div><div class="line">python gen4idx.py /path/2/gen /path/2/foot.html[模板] excludePath</div><div class="line">                     |               |                   +- 排除的目录</div><div class="line">                     |               +- 就是footer-7niu.html</div><div class="line">                     +- 扫描的起始目录</div></pre></td></tr></table></figure>
+<p>如果文件目录不复杂，直接用以下的命令即可</p>
+<p><code>python gen4idx.py ./ footer-7niu.html NULL</code></p>
+<p>每次运行，都会在本地生成一个 <code>index.html</code> 的文件索引文件，上传至 七牛云 中，就可以在指定的地址中直观地查看文件。</p>
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>将以上的 <code>footer-7niu.html</code><br>和 <code>gen4idx.py</code> 文件 放入你的需同步的本地目录中</p>
+<ul>
+<li>例如我的本地目录是 <code>/Users/cnfeat/Documents/qrsync/blog</code></li>
+</ul>
+<p>放置后的目录如下：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line"></div><div class="line">/Users/cnfeat/Documents/qrsync/blog/</div><div class="line">    +- footer-7niu.html</div><div class="line">    +- gen4idx.py</div><div class="line">    +- image</div><div class="line">	|   +- cnfeat-img.jpg</div><div class="line">	|   +- ...</div><div class="line">    +- pdf</div><div class="line">    |   +- WOOP-Toolkit-for-Educators-中文.pdf</div><div class="line">    |   +- ...</div><div class="line">    +- ...</div></pre></td></tr></table></figure>
+<p><img src="http://cnfeat.qiniudn.com/image/7niu-local-set.jpg" alt=""></p>
+<p>多出了的 <code>index.html</code>如何生成呢？</p>
+<h3 id="建立目录索引"><a href="#建立目录索引" class="headerlink" title="建立目录索引"></a>建立目录索引</h3><ul>
+<li>用 终端 进入本地同步目录<ul>
+<li>打开 终端 输入 <code>cd /Users/cnfeat/Documents/qrsync/blog</code></li>
+</ul>
+</li>
+<li>运行脚本，生成 <code>index.html</code> <ul>
+<li>终端 输入 <code>python gen4idx.py ./ footer-7niu.html NULL</code></li>
+</ul>
+</li>
+<li>运行 七牛同步命令行 将 <code>index.html</code> 上传至 七牛云<ul>
+<li>终端 输入 <code>qrsync /Users/cnfeat/7niu/cnfeat.json</code></li>
+<li><a href="http://cnfeat.com/blog/2015/11/24/qiniu/" target="_blank" rel="external">如何使用七牛云做为图床？ - 读立写生</a></li>
+</ul>
+</li>
+<li>验证<ul>
+<li>打开 <code>http://cnfeat.qiniudn.com/</code> 发现页面如下，证明<code>index.html</code>生成并渲染成功</li>
+</ul>
+</li>
+</ul>
+<p><img src="http://cnfeat.qiniudn.com/image/7niu-index.jpg" alt=""></p>
+<h3 id="补充说明"><a href="#补充说明" class="headerlink" title="补充说明"></a>补充说明</h3><ul>
+<li>因为 七牛云 是 <code>单向数据同步服务</code></li>
+<li>所以，索引目录几乎只能是个人本地实时的目录<ul>
+<li>注定了 主干目录 只能由少数人生成，其他人在 支干目录 协作</li>
+</ul>
+</li>
+<li>如果你在 本地空间 将 已同步的 文件删除</li>
+<li>随后再生成的目录将 不再索引出 该文件</li>
+<li>你可以用 七牛云网页版 通过 关键词 查找出来</li>
+</ul>
+<p><img src="http://cnfeat.qiniudn.com/image/index-image-list.jpg" alt=""></p>
+<p>或尝试用<a href="http://developer.qiniu.com/demo/index.html" target="_blank" rel="external">Demo 集锦- 七牛云存储</a>的 <a href="https://chrome.google.com/webstore/detail/qiniu-upload-files/emmfkgdgapbjphdolealbojmcmnphdcc" target="_blank" rel="external">qiniu upload files</a> 插件 来查找你的文件。</p>
+<h2 id="短化-命令行"><a href="#短化-命令行" class="headerlink" title="短化 命令行"></a>短化 命令行</h2><p>以上的 命令行 不外乎四条，继续用 <a href="http://www.jianshu.com/p/a15a6cb0f08d" target="_blank" rel="external">atext</a> 短化：</p>
+<ul>
+<li><code>;cg</code>&gt;&gt;<code>cd /Users/cnfeat/Documents/qrsync/blog</code></li>
+<li><code>;pf</code>&gt;&gt;<code>python gen4idx.py ./ footer-7niu.html NULL</code></li>
+<li><code>;qr</code>&gt;&gt;<code>qrsync /Users/cnfeat/7niu/cnfeat.json</code></li>
+<li><code>;pi</code>&gt;&gt;<code>![](http://cnfeat.qiniudn.com/image/)</code></li>
+</ul>
+<p>搞掂！</p>
+<h2 id="迭代"><a href="#迭代" class="headerlink" title="迭代"></a>迭代</h2><ul>
+<li>2015-11-29 21:00:53</li>
+</ul>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><ul>
+<li><a href="http://blog.zhgdg.org/2013-08/usage7niu/" target="_blank" rel="external">我们是如何使用7牛云储存的 </a></li>
+<li><a href="http://pychina.org/imho/cooperate-guider.html" target="_blank" rel="external">PyCon2014China 志愿者协同手册 PyChina.org</a></li>
+<li><a href="https://gitcafe.com/lins05/MkDoc4PyCon/blob/master/README.md" target="_blank" rel="external">cn.pycon.org/2014 官方网站内部维护仓库</a></li>
+</ul>
+<hr>
+<h3 id="【六经皆我注脚】"><a href="#【六经皆我注脚】" class="headerlink" title="【六经皆我注脚】"></a><strong>【六经皆我注脚】</strong></h3><p>《阿甘正传》，当Jenny问Forrest「你为什么对我这么好」</p>
+<p>Forrest 回答：「You are my girl.」</p>
+<p>你觉得以上这句话如何翻译好？</p>
+<hr>
+<ul>
+<li>陈素封</li>
+<li>公众号：cnfeat</li>
+<li>Blog：cnfeat.com</li>
+</ul>
+<p>（题图：七牛云存储）</p>
+]]></content>
+    
+    <summary type="html">
+    
+      继续折腾，七牛云。
+    
+    </summary>
+    
+      <category term="blog" scheme="http://yoursite.com/categories/blog/"/>
+    
+    
+      <category term="七牛" scheme="http://yoursite.com/tags/%E4%B8%83%E7%89%9B/"/>
+    
+      <category term="图床" scheme="http://yoursite.com/tags/%E5%9B%BE%E5%BA%8A/"/>
+    
+  </entry>
+  
+</feed>
