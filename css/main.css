@@ -1695,7 +1695,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #59b6ff;
+  background: #0146da;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2894,5 +2894,8 @@ body {
   }
   .main {
     padding-bottom: 130px;
+  }
+  .busuanzi-count {
+    display: none;
   }
 }
