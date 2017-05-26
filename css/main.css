@@ -1695,7 +1695,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #d46a3d;
+  background: #e30d78;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2863,7 +2863,16 @@ body {
   margin: 0 auto;
   margin-top: 120px;
   text-align: center;
-  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .pagination {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .pagination {
+    margin-bottom: 40px;
+  }
 }
 .footer-inner {
   text-align: center;
