@@ -1695,7 +1695,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #0146da;
+  background: #38378b;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2888,14 +2888,23 @@ body {
     margin-left: 80px;
   }
 }
-@media (max-width: 768px) {
-  .pagination {
-    margin-top: 80px;
-  }
-  .main {
-    padding-bottom: 130px;
-  }
+@media (max-width: 767px) {
   .busuanzi-count {
     display: none;
   }
+}
+@media (max-width: 767px) {
+  .posts-collapse .post-meta {
+    top: 3px;
+    font-size: 9px;
+  }
+}
+#comments {
+  display: none;
+}
+.main {
+  padding-bottom: 110px;
+}
+.main-inner {
+  margin-top: 60px;
 }

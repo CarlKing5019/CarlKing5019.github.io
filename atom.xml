@@ -1524,132 +1524,51 @@
   </entry>
   
   <entry>
-    <title>如何为七牛云生成索引目录？</title>
-    <link href="http://yoursite.com//post/index-qiniu/"/>
-    <id>http://yoursite.com//post/index-qiniu/</id>
+    <title>如何协作使用七牛云空间？</title>
+    <link href="http://yoursite.com//post/team-qiniu/"/>
+    <id>http://yoursite.com//post/team-qiniu/</id>
     <published>2015-11-29T16:00:00.000Z</published>
     <updated>2017-05-15T14:44:07.000Z</updated>
     
     <content type="html"><![CDATA[<p><img src="http://assets.qiniu.com/qiniu-409x220.png" alt=""></p>
 <p>题图：七牛云存储</p>
-<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>前一篇的 <a href="http://cnfeat.com/blog/2015/11/24/qiniu/" target="_blank" rel="external">如何使用七牛云做为图床？ - 读立写生</a></p>
-<p>想必都已经能用 命令行 上传图片了。</p>
-<blockquote>
-<p>其实，如果你能上传图片，理论上也能上传其他格式文件了，例如：keynote、ppt、excel等。</p>
-</blockquote>
-<p>可文件一多，找起来就比较麻烦，这时你可能想在 七牛空间 建立子目录了，例如</p>
+<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p><a href="http://cnfeat.com/blog/2015/11/30/cli-qiniu/" target="_blank" rel="external">如何使用七牛云做为图床？ - 读立写生</a></p>
+<p><a href="http://cnfeat.com/blog/2015/12/02/index-qiniu/" target="_blank" rel="external">如何为七牛云生成索引目录？ - 读立写生</a></p>
+<p>如上，已经搞掂</p>
 <ul>
-<li>将 图片 放在 image 文件夹</li>
-<li>将 pdf 放在 pdf 文件夹</li>
-<li>将 录音 放在 tapes 文件夹</li>
-<li>……</li>
+<li>命令行上传图片&gt;&gt;&gt;方便自己上传图片</li>
+<li>生成索引目录&gt;&gt;&gt;方便自己/别人查看</li>
 </ul>
-<p>可是，七牛云 空间是没有目录概念的，或者说，它只有一个根目录。</p>
-<p>如果你在 <a href="https://portal.qiniu.com/" target="_blank" rel="external">七牛云网页空间</a>上传过图片，你就能深切地体会到了，所有的文件都放在一个目录，如果没有极好的命名习惯，那将是一场灾难。</p>
-<p>各位感受一下：</p>
-<p><img src="http://cnfeat.qiniudn.com/image/qiniu-portal.jpg" alt=""></p>
-<p>如上就是我还没为七牛建立目录的样子。</p>
-<p>那么，如何管理好 七牛云 空间？为其建立目录索引呢？</p>
-<h2 id="七牛云-特性须知"><a href="#七牛云-特性须知" class="headerlink" title="七牛云 特性须知"></a>七牛云 特性须知</h2><h3 id="单向数据同步服务"><a href="#单向数据同步服务" class="headerlink" title="单向数据同步服务"></a>单向数据同步服务</h3><p>在动手折腾目录之前，你必须知道 七牛云 的特性：</p>
+<p>那么，问题又来了，如果我要和别人共享一个 七牛云 空间，应如何操作？</p>
+<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>考虑到共享空间必须能分辨出每人的上传的文件，所以，共享空间就</p>
 <ul>
-<li>一般的云盘是 <code>双向数据同步空间服务</code>，如何解释呢？举个例子<ul>
-<li>百度云、微云、360网盘、dropbox 等就是使用<code>双向数据同步空间服务</code><ul>
-<li>你在本地增加一个 cnfeat.txt 文件</li>
-<li>同步之后，云盘多了一个 cnfeat.txt 文件</li>
-<li>你在本地删除一个 cnfeat.txt 文件</li>
-<li>同步之后，云盘少了一个 cnfeat.txt 文件</li>
+<li>不能共用一个目录 </li>
+<li>有独立的子目录</li>
 </ul>
-</li>
-</ul>
-</li>
-<li>七牛云 不同于以上的 云盘，它是 <code>单向数据同步服务</code><ul>
-<li>何为 <code>单向数据同步服务</code>？ 简单地来说，你可以想像 七牛云空间 就像是你私人邮箱，你将本地文件发送到你的邮箱，七牛云有了副本，就算本地的文件删除了，七牛云上的文件依然存在，除非你去邮箱删除。<ul>
-<li>你在本地增加一个 cnfeat.txt 文件</li>
-<li>同步之后，七牛云多了一个 cnfeat.txt 文件</li>
-<li>你在本地删除一个 cnfeat.txt 文件</li>
-<li>同步之后，七牛云的 cnfeat.txt 文件依然还在！</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<p>那么，如何删除 七牛云 的数据？</p>
-<p>暂时发现的方法</p>
+<p>譬如，我建立了一个七牛空间「omcomc」(实际无此空间)</p>
+<p>那么，总体的 七牛空间 的共享目录应该是这样的：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line"></div><div class="line">http://omcomc.qiniudn.com/</div><div class="line">    +- share/ #共享的目录</div><div class="line">    +- team/  #团队人员目录</div><div class="line">    |   +- cnfeat1/ #团队人员之一</div><div class="line">    |   +- cnfeat2/ #团队人员之二</div><div class="line">    |   +- cnfeat3/ #团队人员之三</div><div class="line">    |   +- cnfeat4/ #团队人员之四</div><div class="line">    +- ...</div></pre></td></tr></table></figure>
+<p>而实际上，七牛云 是 <code>单向数据同步服务</code>的，所以，协助者的目录就简单了</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line"></div><div class="line">http://omcomc.qiniudn.com/</div><div class="line">    +- share/ #共享文件的目录</div><div class="line">    +- team/  #团队人员目录</div><div class="line">    |   +- cnfeat1/ #团队人员之一</div><div class="line">    +- ...</div></pre></td></tr></table></figure>
+<h2 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h2><p>明白原理，操作就简单了。</p>
+<p>举个例子，我就将本地协作的目录按如下安排了</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line"></div><div class="line">Users/cnfeat/Documents/qrsync/</div><div class="line">    +- share/ </div><div class="line">	+- team/  </div><div class="line">    |   +- cnfeat/ </div><div class="line">    +- ...</div></pre></td></tr></table></figure>
+<h2 id="短化命令行"><a href="#短化命令行" class="headerlink" title="短化命令行"></a>短化命令行</h2><p>继续用 <a href="http://www.jianshu.com/p/a15a6cb0f08d" target="_blank" rel="external">atext</a> 个性短化：</p>
 <ul>
-<li>（1）登录网页版，搜索文件删除；</li>
-<li>（2）利用<a href="http://developer.qiniu.com/demo/index.html" target="_blank" rel="external">Demo 集锦- 七牛云存储</a>的 <a href="https://chrome.google.com/webstore/detail/qiniu-upload-files/emmfkgdgapbjphdolealbojmcmnphdcc" target="_blank" rel="external">qiniu upload files</a> 插件 删除</li>
-</ul>
-<h3 id="目录理解"><a href="#目录理解" class="headerlink" title="目录理解"></a>目录理解</h3><ul>
-<li>既然前面说了 七牛云 是没有目录的，那如何理解 七牛云 的目录？<ul>
-<li>比如：<code>http://cnfeat.qiniudn.com/image/cnfeat-img.jpg</code></li>
-<li>你会以为<code>cnfeat-img.jpg</code>是存在<code>image</code>文件夹下，而实际上，七牛云是没有 <code>image</code> 文件夹的</li>
-<li>所以 <code>image/cnfeat-img.jpg</code> 它就一个完整的文件名</li>
-<li>看下图：</li>
-</ul>
-</li>
-</ul>
-<p><img src="http://cnfeat.qiniudn.com/image/Cap-cnfeat-img.jpg" alt=""></p>
-<p>但这并不意味着你需要为每个文件起个类似 <code>image/cnfeat-img.jpg</code> 的文件名，你只需要在 七牛云 建立目录即可。</p>
-<h2 id="如何为-七牛云-建立目录"><a href="#如何为-七牛云-建立目录" class="headerlink" title="如何为 七牛云 建立目录?"></a>如何为 七牛云 建立目录?</h2><h3 id="准备工具"><a href="#准备工具" class="headerlink" title="准备工具"></a>准备工具</h3><ul>
-<li>footer-7niu.html</li>
-<li>gen4idx.py</li>
-</ul>
-<p>链接: <a href="http://pan.baidu.com/s/1i49VE9R" target="_blank" rel="external">http://pan.baidu.com/s/1i49VE9R</a> 密码: w4gx</p>
-<h3 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h3><p>以上的工具是 大妈 自行制作的索引页面生成脚本。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line"></div><div class="line">python gen4idx.py /path/2/gen /path/2/foot.html[模板] excludePath</div><div class="line">                     |               |                   +- 排除的目录</div><div class="line">                     |               +- 就是footer-7niu.html</div><div class="line">                     +- 扫描的起始目录</div></pre></td></tr></table></figure>
-<p>如果文件目录不复杂，直接用以下的命令即可</p>
-<p><code>python gen4idx.py ./ footer-7niu.html NULL</code></p>
-<p>每次运行，都会在本地生成一个 <code>index.html</code> 的文件索引文件，上传至 七牛云 中，就可以在指定的地址中直观地查看文件。</p>
-<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>将以上的 <code>footer-7niu.html</code><br>和 <code>gen4idx.py</code> 文件 放入你的需同步的本地目录中</p>
-<ul>
-<li>例如我的本地目录是 <code>/Users/cnfeat/Documents/qrsync/blog</code></li>
-</ul>
-<p>放置后的目录如下：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line"></div><div class="line">/Users/cnfeat/Documents/qrsync/blog/</div><div class="line">    +- footer-7niu.html</div><div class="line">    +- gen4idx.py</div><div class="line">    +- image</div><div class="line">	|   +- cnfeat-img.jpg</div><div class="line">	|   +- ...</div><div class="line">    +- pdf</div><div class="line">    |   +- WOOP-Toolkit-for-Educators-中文.pdf</div><div class="line">    |   +- ...</div><div class="line">    +- ...</div></pre></td></tr></table></figure>
-<p><img src="http://cnfeat.qiniudn.com/image/7niu-local-set.jpg" alt=""></p>
-<p>多出了的 <code>index.html</code>如何生成呢？</p>
-<h3 id="建立目录索引"><a href="#建立目录索引" class="headerlink" title="建立目录索引"></a>建立目录索引</h3><ul>
-<li>用 终端 进入本地同步目录<ul>
-<li>打开 终端 输入 <code>cd /Users/cnfeat/Documents/qrsync/blog</code></li>
-</ul>
-</li>
-<li>运行脚本，生成 <code>index.html</code> <ul>
-<li>终端 输入 <code>python gen4idx.py ./ footer-7niu.html NULL</code></li>
-</ul>
-</li>
-<li>运行 七牛同步命令行 将 <code>index.html</code> 上传至 七牛云<ul>
-<li>终端 输入 <code>qrsync /Users/cnfeat/7niu/cnfeat.json</code></li>
-<li><a href="http://cnfeat.com/blog/2015/11/24/qiniu/" target="_blank" rel="external">如何使用七牛云做为图床？ - 读立写生</a></li>
-</ul>
-</li>
-<li>验证<ul>
-<li>打开 <code>http://cnfeat.qiniudn.com/</code> 发现页面如下，证明<code>index.html</code>生成并渲染成功</li>
-</ul>
-</li>
-</ul>
-<p><img src="http://cnfeat.qiniudn.com/image/7niu-index.jpg" alt=""></p>
-<h3 id="补充说明"><a href="#补充说明" class="headerlink" title="补充说明"></a>补充说明</h3><ul>
-<li>因为 七牛云 是 <code>单向数据同步服务</code></li>
-<li>所以，索引目录几乎只能是个人本地实时的目录<ul>
-<li>注定了 主干目录 只能由少数人生成，其他人在 支干目录 协作</li>
-</ul>
-</li>
-<li>如果你在 本地空间 将 已同步的 文件删除</li>
-<li>随后再生成的目录将 不再索引出 该文件</li>
-<li>你可以用 七牛云网页版 通过 关键词 查找出来</li>
-</ul>
-<p><img src="http://cnfeat.qiniudn.com/image/index-image-list.jpg" alt=""></p>
-<p>或尝试用<a href="http://developer.qiniu.com/demo/index.html" target="_blank" rel="external">Demo 集锦- 七牛云存储</a>的 <a href="https://chrome.google.com/webstore/detail/qiniu-upload-files/emmfkgdgapbjphdolealbojmcmnphdcc" target="_blank" rel="external">qiniu upload files</a> 插件 来查找你的文件。</p>
-<h2 id="短化-命令行"><a href="#短化-命令行" class="headerlink" title="短化 命令行"></a>短化 命令行</h2><p>以上的 命令行 不外乎四条，继续用 <a href="http://www.jianshu.com/p/a15a6cb0f08d" target="_blank" rel="external">atext</a> 短化：</p>
-<ul>
-<li><code>;cg</code>&gt;&gt;<code>cd /Users/cnfeat/Documents/qrsync/blog</code></li>
+<li><code>;cm</code>&gt;&gt;<code>cd /Users/cnfeat/Documents/qrsync/omc/team</code></li>
 <li><code>;pf</code>&gt;&gt;<code>python gen4idx.py ./ footer-7niu.html NULL</code></li>
-<li><code>;qr</code>&gt;&gt;<code>qrsync /Users/cnfeat/7niu/cnfeat.json</code></li>
-<li><code>;pi</code>&gt;&gt;<code>![](http://cnfeat.qiniudn.com/image/)</code></li>
+<li><code>;qo</code>&gt;&gt;<code>qrsync /Users/cnfeat/7niu/omcomc.json</code><ul>
+<li>为共享空间设定专用的 <code>conf.json</code>文件</li>
+<li>以此类推，不同的空间设定不同的<code>conf.json</code>文件</li>
+<li>你就可以往不同的空间上传文件了</li>
 </ul>
-<p>搞掂！</p>
+</li>
+<li><code>;po</code>&gt;&gt;<code>![](http://omcomc.qiniudn.com/team/cnfeat/)</code></li>
+</ul>
+<p>收工！</p>
 <h2 id="迭代"><a href="#迭代" class="headerlink" title="迭代"></a>迭代</h2><ul>
-<li>2015-11-29 21:00:53</li>
+<li>2015-12-07 17:01:15 共享目录十分容易覆盖</li>
+<li>2015-11-30 23:51:33</li>
 </ul>
 <h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><ul>
 <li><a href="http://blog.zhgdg.org/2013-08/usage7niu/" target="_blank" rel="external">我们是如何使用7牛云储存的 </a></li>
@@ -1657,16 +1576,14 @@
 <li><a href="https://gitcafe.com/lins05/MkDoc4PyCon/blob/master/README.md" target="_blank" rel="external">cn.pycon.org/2014 官方网站内部维护仓库</a></li>
 </ul>
 <hr>
-<h3 id="【六经皆我注脚】"><a href="#【六经皆我注脚】" class="headerlink" title="【六经皆我注脚】"></a><strong>【六经皆我注脚】</strong></h3><p>《阿甘正传》，当Jenny问Forrest「你为什么对我这么好」</p>
-<p>Forrest 回答：「You are my girl.」</p>
-<p>你觉得以上这句话如何翻译好？</p>
+<h3 id="【六经皆我注脚】"><a href="#【六经皆我注脚】" class="headerlink" title="【六经皆我注脚】"></a><strong>【六经皆我注脚】</strong></h3><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line"></div><div class="line">修行之道：</div><div class="line">关注大师的言行，</div><div class="line">跟随大师的举动，</div><div class="line">和大师一并修行，</div><div class="line">领会大师的意境，</div><div class="line">成为真正的大师。</div></pre></td></tr></table></figure>
+<p>——<a href="http://translations.readthedocs.org/en/latest/hacker_howto.html" target="_blank" rel="external">如何成为一名黑客 </a></p>
 <hr>
 <ul>
 <li>陈素封</li>
 <li>公众号：cnfeat</li>
 <li>Blog：cnfeat.com</li>
 </ul>
-<p>（题图：七牛云存储）</p>
 ]]></content>
     
     <summary type="html">
