@@ -1695,7 +1695,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #393dd9;
+  background: #13ffff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2942,4 +2942,15 @@ body {
 }
 .page-post-detail .sidebar-toggle-line {
   background: #fff;
+}
+@media (min-width: 768px) {
+  .menu-item.menu-item-categories,
+  .menu-item.menu-item-tags {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .menu .menu-item {
+    margin-bottom: 5px;
+  }
 }
