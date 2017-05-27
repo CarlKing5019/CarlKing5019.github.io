@@ -1695,7 +1695,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #c3c7d0;
+  background: #9374d2;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2850,14 +2850,25 @@ body {
   margin-right: 10px;
   font-size: 13px;
 }
+.post-tags.in-page {
+  display: flex;
+  float: right;
+}
 @media (max-width: 767px) {
   .post-tags.in-page a {
     font-size: 11px;
   }
 }
-.post-tags.in-page {
-  display: flex;
-  float: right;
+@media (max-width: 540px) {
+  .post-tags.in-page {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .posts-collapse .post-meta {
+    top: 3px;
+    font-size: 9px;
+  }
 }
 .pagination {
   margin: 0 auto;
@@ -2903,12 +2914,6 @@ body {
     display: none;
   }
 }
-@media (max-width: 767px) {
-  .posts-collapse .post-meta {
-    top: 3px;
-    font-size: 9px;
-  }
-}
 #comments {
   display: none;
 }
@@ -2918,11 +2923,6 @@ body {
 .main-inner {
   margin-top: 60px;
 }
-@media (max-width: 767px) {
-  a.page-number {
-    display: none;
-  }
-}
 @media (max-width: 540px) {
   .page-number-basic,
   .pagination .prev,
@@ -2931,4 +2931,15 @@ body {
   .pagination .space {
     margin: 0 2px;
   }
+}
+.back-to-top.back-to-top-on {
+  bottom: 19px;
+  right: 50px;
+}
+.sidebar-toggle {
+  bottom: 45px;
+  right: 50px;
+}
+.page-post-detail .sidebar-toggle-line {
+  background: #fff;
 }
