@@ -1527,9 +1527,9 @@
       <category term="blog" scheme="http://localhost:4000/categories/blog/"/>
     
     
-      <category term="知识管理" scheme="http://localhost:4000/tags/%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86/"/>
-    
       <category term="学习者" scheme="http://localhost:4000/tags/%E5%AD%A6%E4%B9%A0%E8%80%85/"/>
+    
+      <category term="知识管理" scheme="http://localhost:4000/tags/%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86/"/>
     
   </entry>
   
@@ -1672,9 +1672,9 @@
       <category term="blog" scheme="http://localhost:4000/categories/blog/"/>
     
     
-      <category term="博客" scheme="http://localhost:4000/tags/%E5%8D%9A%E5%AE%A2/"/>
-    
       <category term="知识管理" scheme="http://localhost:4000/tags/%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86/"/>
+    
+      <category term="博客" scheme="http://localhost:4000/tags/%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
