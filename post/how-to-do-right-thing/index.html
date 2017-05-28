@@ -72,7 +72,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="笔记,暗时间," />
+  <meta name="keywords" content="暗时间,笔记," />
 
 
 
@@ -89,10 +89,10 @@
 
 
 <meta name="description" content="注：本文大量参考《暗时间》和《把时间当作朋友》，可视作是集合两本书的思考读书笔记。">
-<meta name="keywords" content="笔记,暗时间">
+<meta name="keywords" content="暗时间,笔记">
 <meta property="og:type" content="article">
 <meta property="og:title" content="如何让自己做正确的事情？">
-<meta property="og:url" content="http://yoursite.com/post/how-to-do-right-thing/index.html">
+<meta property="og:url" content="http://localhost:4000/post/how-to-do-right-thing/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="注：本文大量参考《暗时间》和《把时间当作朋友》，可视作是集合两本书的思考读书笔记。">
 <meta property="og:updated_time" content="2017-05-15T14:44:07.000Z">
@@ -126,7 +126,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/post/how-to-do-right-thing/"/>
+  <link rel="canonical" href="http://localhost:4000/post/how-to-do-right-thing/"/>
 
 
 
@@ -302,7 +302,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/post/how-to-do-right-thing/">
+    <link itemprop="mainEntityOfPage" href="http://localhost:4000/post/how-to-do-right-thing/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="John Doe">
@@ -451,9 +451,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/笔记/" rel="tag"># 笔记</a>
-          
             <a href="/tags/暗时间/" rel="tag"># 暗时间</a>
+          
+            <a href="/tags/笔记/" rel="tag"># 笔记</a>
           
         </div>
       
@@ -466,8 +466,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/post/key-compititiveness/" rel="prev" title="反正遇上了春分">
-                <i class="fa fa-chevron-left"></i> 你的不可替代性和核心竞争力是什么？
+              <a href="/post/darktime/" rel="prev" title="野味蕨菜炼成记">
+                <i class="fa fa-chevron-left"></i> 为什么应该好好读一读关于时间和思维的书——《暗时间》
               </a>
             
           </div>
@@ -476,8 +476,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/post/chunfen/" rel="next" title="反正遇上了春分">
-                反正遇上了春分 <i class="fa fa-chevron-right"></i>
+              <a href="/post/juecai/" rel="next" title="野味蕨菜炼成记">
+                野味蕨菜炼成记 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -550,7 +550,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">403</span>
+                <span class="site-state-item-count">41</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>
@@ -572,7 +572,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">310</span>
+                <span class="site-state-item-count">63</span>
                 <span class="site-state-item-name">tags</span>
               </a>
             </div>
@@ -809,7 +809,7 @@
     var isfetched = false;
     var isXml = true;
     // Search DB path;
-    var search_path = "search.xml";
+    var search_path = "content.json";
     if (search_path.length === 0) {
       search_path = "search.xml";
     } else if (search_path.endsWith("json")) {
