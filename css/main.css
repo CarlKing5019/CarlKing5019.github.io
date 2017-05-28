@@ -1695,7 +1695,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffb4d4;
+  background: #df6fff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2909,11 +2909,6 @@ body {
     margin-left: 80px;
   }
 }
-@media (max-width: 767px) {
-  .busuanzi-count {
-    display: none;
-  }
-}
 #comments {
   display: none;
 }
@@ -2952,5 +2947,9 @@ body {
 @media (max-width: 767px) {
   .menu .menu-item {
     margin-bottom: 5px;
+  }
+  .menu-item.menu-item-categories,
+  .menu-item.menu-item-home {
+    display: none;
   }
 }
