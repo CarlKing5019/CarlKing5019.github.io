@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
-  <subtitle>A funny, exciting blog.</subtitle>
+  <title>Higgs</title>
+  <subtitle>A funny, exciting blog</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://localhost:4000/"/>
@@ -9,7 +9,7 @@
   <id>http://localhost:4000/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>Carl King</name>
     
   </author>
   
@@ -1527,9 +1527,9 @@
       <category term="blog" scheme="http://localhost:4000/categories/blog/"/>
     
     
-      <category term="学习者" scheme="http://localhost:4000/tags/%E5%AD%A6%E4%B9%A0%E8%80%85/"/>
-    
       <category term="知识管理" scheme="http://localhost:4000/tags/%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86/"/>
+    
+      <category term="学习者" scheme="http://localhost:4000/tags/%E5%AD%A6%E4%B9%A0%E8%80%85/"/>
     
   </entry>
   
@@ -1672,9 +1672,9 @@
       <category term="blog" scheme="http://localhost:4000/categories/blog/"/>
     
     
-      <category term="知识管理" scheme="http://localhost:4000/tags/%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86/"/>
-    
       <category term="博客" scheme="http://localhost:4000/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+      <category term="知识管理" scheme="http://localhost:4000/tags/%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86/"/>
     
   </entry>
   
