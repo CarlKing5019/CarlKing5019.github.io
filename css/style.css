@@ -829,29 +829,6 @@ pre .deletion {
     font-size: 15px;
   }
 }
-body {
-  counter-reset: h2counter;
-}
-article .entry h1 {
-  counter-reset: h2counter;
-}
-article .entry h2:before {
-  content: counter(h2counter) ".\0000a0\0000a0";
-  counter-increment: h2counter;
-  counter-reset: h3counter;
-}
-article .entry h2.nocount:before {
-  content: none;
-  counter-increment: none;
-}
-article .entry h3:before {
-  content: counter(h2counter) "." counter(h3counter) ".\0000a0\0000a0";
-  counter-increment: h3counter;
-}
-article .entry h3.nocount:before {
-  content: none;
-  counter-increment: none;
-}
 @media screen {
   .tags.container,
   .categories.container {
