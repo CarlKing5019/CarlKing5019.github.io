@@ -866,3 +866,8 @@ pre .deletion {
     border: 0;
   }
 }
+@media screen {
+  article header .icon {
+    display: none;
+  }
+}
