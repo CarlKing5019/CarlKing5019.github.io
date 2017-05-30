@@ -888,3 +888,54 @@ pre .deletion {
     display: none;
   }
 }
+.powered-by,
+.theme-info {
+  display: inline-block;
+}
+.powered-by {
+  margin-right: 10px;
+}
+.powered-by::after {
+  content: "|";
+  padding-left: 10px;
+}
+@media (min-width: 768px) {
+  .copyright {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .copyright::after {
+    content: "|";
+    padding-left: 10px;
+  }
+  .busuanzi-count {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .theme-copyright {
+    text-align: center;
+  }
+  .copyright {
+    display: block;
+    margin: 0 auto;
+  }
+  .copyright::after {
+    display: none;
+  }
+  .busuanzi-count {
+    display: block;
+    margin: 0 auto;
+  }
+  .busuanzi-count .site-uv {
+    margin-right: 10px;
+  }
+  .busuanzi-count .site-uv::after {
+    content: "|";
+    padding-left: 10px;
+  }
+  .busuanzi-value {
+    color: #fff;
+    font-style: italic;
+  }
+}
