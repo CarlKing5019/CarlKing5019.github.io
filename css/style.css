@@ -953,3 +953,14 @@ pre .deletion {
 #sidebar .category small:after {
   content: ')';
 }
+@media screen {
+  #header .title {
+    float: left;
+    width: 200px;
+  }
+}
+@media screen {
+  #header .title p {
+    width: 200px;
+  }
+}
