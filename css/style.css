@@ -785,28 +785,17 @@ pre .deletion {
   }
 }
 @media screen {
-  .tag-in-archive .tags {
-    float: right;
-  }
-}
-@media (max-width: 767px) {
-  #sidebar,
-  .tag-in-archive .tags {
-    display: none;
-  }
-}
-@media screen {
   article header .title {
     font-size: 24px;
   }
   article .entry h2 {
-    font-size: 18px;
+    font-size: 19px;
   }
   article .entry h3 {
-    font-size: 15px;
+    font-size: 16px;
   }
   article .entry h4 {
-    font-size: 13px;
+    font-size: 14px;
   }
   article {
     font-size: 13px;
@@ -823,7 +812,7 @@ pre .deletion {
     font-size: 17px;
   }
   article .entry h4 {
-    font-size: 15px;
+    font-size: 16px;
   }
   article {
     font-size: 15px;
@@ -938,4 +927,29 @@ pre .deletion {
     color: #fff;
     font-style: italic;
   }
+}
+@media screen {
+  .tag-in-archive .tags {
+    float: right;
+  }
+  .tag-in-archive .categories {
+    float: right;
+    margin-left: 9px;
+  }
+}
+@media (max-width: 767px) {
+  #sidebar,
+  .tag-in-archive {
+    display: none;
+  }
+}
+#sidebar .category small {
+  margin-left: 15px;
+  color: #ccc;
+}
+#sidebar .category small:before {
+  content: '(';
+}
+#sidebar .category small:after {
+  content: ')';
 }
