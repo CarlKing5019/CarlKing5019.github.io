@@ -1,5 +1,5 @@
 
-## My blog powered by Hexo.
+## My blog powered by Hexo
 
 <https://carlking5019.github.io>
 
