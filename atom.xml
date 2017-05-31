@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Hogwarts</title>
   <subtitle>A funny, exciting blog</subtitle>
-  <link href="/atom.xml" rel="self"/>
+  <link href="/~caowf/blog/atom.xml" rel="self"/>
   
-  <link href="http://localhost:4000/"/>
+  <link href="http://home.ustc.edu.cn/~caowf/blog/"/>
   <updated>2017-05-26T02:59:05.000Z</updated>
-  <id>http://localhost:4000/</id>
+  <id>http://home.ustc.edu.cn/~caowf/blog/</id>
   
   <author>
     <name>Carl King</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>Notes on Shell Scripting</title>
-    <link href="http://localhost:4000/post/Notes-on-Shell-Scripting/"/>
-    <id>http://localhost:4000/post/Notes-on-Shell-Scripting/</id>
+    <link href="http://home.ustc.edu.cn/~caowf/blog/post/Notes-on-Shell-Scripting/"/>
+    <id>http://home.ustc.edu.cn/~caowf/blog/post/Notes-on-Shell-Scripting/</id>
     <published>2017-05-23T16:00:00.000Z</published>
     <updated>2017-05-26T02:59:05.000Z</updated>
     
@@ -47,25 +47,25 @@
     
     </summary>
     
-      <category term="Coding" scheme="http://localhost:4000/categories/coding/"/>
+      <category term="Coding" scheme="http://home.ustc.edu.cn/~caowf/blog/categories/coding/"/>
     
     
-      <category term="Linux" scheme="http://localhost:4000/tags/linux/"/>
+      <category term="Linux" scheme="http://home.ustc.edu.cn/~caowf/blog/tags/linux/"/>
     
-      <category term="macOS" scheme="http://localhost:4000/tags/macos/"/>
+      <category term="macOS" scheme="http://home.ustc.edu.cn/~caowf/blog/tags/macos/"/>
     
-      <category term="Shell" scheme="http://localhost:4000/tags/shell/"/>
+      <category term="Shell" scheme="http://home.ustc.edu.cn/~caowf/blog/tags/shell/"/>
     
-      <category term="CLI" scheme="http://localhost:4000/tags/cli/"/>
+      <category term="CLI" scheme="http://home.ustc.edu.cn/~caowf/blog/tags/cli/"/>
     
-      <category term="Notes" scheme="http://localhost:4000/tags/notes/"/>
+      <category term="Notes" scheme="http://home.ustc.edu.cn/~caowf/blog/tags/notes/"/>
     
   </entry>
   
   <entry>
     <title>如何卡片创作之西蒙篇</title>
-    <link href="http://localhost:4000/post/CardWriteSimon/"/>
-    <id>http://localhost:4000/post/CardWriteSimon/</id>
+    <link href="http://home.ustc.edu.cn/~caowf/blog/post/CardWriteSimon/"/>
+    <id>http://home.ustc.edu.cn/~caowf/blog/post/CardWriteSimon/</id>
     <published>2016-12-20T16:00:00.000Z</published>
     <updated>2017-05-15T14:44:07.000Z</updated>
     
@@ -100,19 +100,19 @@
     
     </summary>
     
-      <category term="blog" scheme="http://localhost:4000/categories/blog/"/>
+      <category term="blog" scheme="http://home.ustc.edu.cn/~caowf/blog/categories/blog/"/>
     
     
-      <category term="西蒙" scheme="http://localhost:4000/tags/%E8%A5%BF%E8%92%99/"/>
+      <category term="西蒙" scheme="http://home.ustc.edu.cn/~caowf/blog/tags/%E8%A5%BF%E8%92%99/"/>
     
-      <category term="卡片创作" scheme="http://localhost:4000/tags/%E5%8D%A1%E7%89%87%E5%88%9B%E4%BD%9C/"/>
+      <category term="卡片创作" scheme="http://home.ustc.edu.cn/~caowf/blog/tags/%E5%8D%A1%E7%89%87%E5%88%9B%E4%BD%9C/"/>
     
   </entry>
   
   <entry>
     <title>西蒙一生研究学习的秘密武器</title>
-    <link href="http://localhost:4000/post/BestVSGood/"/>
-    <id>http://localhost:4000/post/BestVSGood/</id>
+    <link href="http://home.ustc.edu.cn/~caowf/blog/post/BestVSGood/"/>
+    <id>http://home.ustc.edu.cn/~caowf/blog/post/BestVSGood/</id>
     <published>2016-12-12T16:00:00.000Z</published>
     <updated>2017-05-15T14:44:07.000Z</updated>
     
@@ -167,19 +167,19 @@
     
     </summary>
     
-      <category term="blog" scheme="http://localhost:4000/categories/blog/"/>
+      <category term="blog" scheme="http://home.ustc.edu.cn/~caowf/blog/categories/blog/"/>
     
     
-      <category term="西蒙" scheme="http://localhost:4000/tags/%E8%A5%BF%E8%92%99/"/>
+      <category term="西蒙" scheme="http://home.ustc.edu.cn/~caowf/blog/tags/%E8%A5%BF%E8%92%99/"/>
     
-      <category term="有限理性" scheme="http://localhost:4000/tags/%E6%9C%89%E9%99%90%E7%90%86%E6%80%A7/"/>
+      <category term="有限理性" scheme="http://home.ustc.edu.cn/~caowf/blog/tags/%E6%9C%89%E9%99%90%E7%90%86%E6%80%A7/"/>
     
   </entry>
   
   <entry>
     <title>靠谱的人生指南：万花筒策略</title>
-    <link href="http://localhost:4000/post/KaleidoscopeStrategy/"/>
-    <id>http://localhost:4000/post/KaleidoscopeStrategy/</id>
+    <link href="http://home.ustc.edu.cn/~caowf/blog/post/KaleidoscopeStrategy/"/>
+    <id>http://home.ustc.edu.cn/~caowf/blog/post/KaleidoscopeStrategy/</id>
     <published>2016-11-30T16:00:00.000Z</published>
     <updated>2017-05-15T14:44:07.000Z</updated>
     
@@ -266,19 +266,19 @@
     
     </summary>
     
-      <category term="blog" scheme="http://localhost:4000/categories/blog/"/>
+      <category term="blog" scheme="http://home.ustc.edu.cn/~caowf/blog/categories/blog/"/>
     
     
-      <category term="西蒙" scheme="http://localhost:4000/tags/%E8%A5%BF%E8%92%99/"/>
+      <category term="西蒙" scheme="http://home.ustc.edu.cn/~caowf/blog/tags/%E8%A5%BF%E8%92%99/"/>
     
-      <category term="万花筒策略" scheme="http://localhost:4000/tags/%E4%B8%87%E8%8A%B1%E7%AD%92%E7%AD%96%E7%95%A5/"/>
+      <category term="万花筒策略" scheme="http://home.ustc.edu.cn/~caowf/blog/tags/%E4%B8%87%E8%8A%B1%E7%AD%92%E7%AD%96%E7%95%A5/"/>
     
   </entry>
   
   <entry>
     <title>像纳博科夫一样写作：卡片创作法</title>
-    <link href="http://localhost:4000/post/NabokovWriteStyle/"/>
-    <id>http://localhost:4000/post/NabokovWriteStyle/</id>
+    <link href="http://home.ustc.edu.cn/~caowf/blog/post/NabokovWriteStyle/"/>
+    <id>http://home.ustc.edu.cn/~caowf/blog/post/NabokovWriteStyle/</id>
     <published>2016-11-19T16:00:00.000Z</published>
     <updated>2017-05-15T14:44:07.000Z</updated>
     
@@ -424,19 +424,19 @@
     
     </summary>
     
-      <category term="blog" scheme="http://localhost:4000/categories/blog/"/>
+      <category term="blog" scheme="http://home.ustc.edu.cn/~caowf/blog/categories/blog/"/>
     
     
-      <category term="纳博科夫" scheme="http://localhost:4000/tags/%E7%BA%B3%E5%8D%9A%E7%A7%91%E5%A4%AB/"/>
+      <category term="纳博科夫" scheme="http://home.ustc.edu.cn/~caowf/blog/tags/%E7%BA%B3%E5%8D%9A%E7%A7%91%E5%A4%AB/"/>
     
-      <category term="卡片" scheme="http://localhost:4000/tags/%E5%8D%A1%E7%89%87/"/>
+      <category term="卡片" scheme="http://home.ustc.edu.cn/~caowf/blog/tags/%E5%8D%A1%E7%89%87/"/>
     
   </entry>
   
   <entry>
     <title>具身认知：身体不是大脑的外衣，而是大脑的肉体本身</title>
-    <link href="http://localhost:4000/post/Embodied-Cognition/"/>
-    <id>http://localhost:4000/post/Embodied-Cognition/</id>
+    <link href="http://home.ustc.edu.cn/~caowf/blog/post/Embodied-Cognition/"/>
+    <id>http://home.ustc.edu.cn/~caowf/blog/post/Embodied-Cognition/</id>
     <published>2016-07-30T16:00:00.000Z</published>
     <updated>2017-05-15T14:44:07.000Z</updated>
     
@@ -504,19 +504,19 @@
     
     </summary>
     
-      <category term="blog" scheme="http://localhost:4000/categories/blog/"/>
+      <category term="blog" scheme="http://home.ustc.edu.cn/~caowf/blog/categories/blog/"/>
     
     
-      <category term="具身认知" scheme="http://localhost:4000/tags/%E5%85%B7%E8%BA%AB%E8%AE%A4%E7%9F%A5/"/>
+      <category term="具身认知" scheme="http://home.ustc.edu.cn/~caowf/blog/tags/%E5%85%B7%E8%BA%AB%E8%AE%A4%E7%9F%A5/"/>
     
-      <category term="身体" scheme="http://localhost:4000/tags/%E8%BA%AB%E4%BD%93/"/>
+      <category term="身体" scheme="http://home.ustc.edu.cn/~caowf/blog/tags/%E8%BA%AB%E4%BD%93/"/>
     
   </entry>
   
   <entry>
     <title>我的 iPhone App 桌面图标设置</title>
-    <link href="http://localhost:4000/post/MyiPhoneDestopSetting/"/>
-    <id>http://localhost:4000/post/MyiPhoneDestopSetting/</id>
+    <link href="http://home.ustc.edu.cn/~caowf/blog/post/MyiPhoneDestopSetting/"/>
+    <id>http://home.ustc.edu.cn/~caowf/blog/post/MyiPhoneDestopSetting/</id>
     <published>2016-06-24T16:00:00.000Z</published>
     <updated>2017-05-15T14:44:07.000Z</updated>
     
@@ -569,19 +569,19 @@
     
     </summary>
     
-      <category term="blog" scheme="http://localhost:4000/categories/blog/"/>
+      <category term="blog" scheme="http://home.ustc.edu.cn/~caowf/blog/categories/blog/"/>
     
     
-      <category term="iPhone" scheme="http://localhost:4000/tags/iphone/"/>
+      <category term="iPhone" scheme="http://home.ustc.edu.cn/~caowf/blog/tags/iphone/"/>
     
-      <category term="桌面" scheme="http://localhost:4000/tags/%E6%A1%8C%E9%9D%A2/"/>
+      <category term="桌面" scheme="http://home.ustc.edu.cn/~caowf/blog/tags/%E6%A1%8C%E9%9D%A2/"/>
     
   </entry>
   
   <entry>
     <title>抵达智慧流淌之地</title>
-    <link href="http://localhost:4000/post/find-paper/"/>
-    <id>http://localhost:4000/post/find-paper/</id>
+    <link href="http://home.ustc.edu.cn/~caowf/blog/post/find-paper/"/>
+    <id>http://home.ustc.edu.cn/~caowf/blog/post/find-paper/</id>
     <published>2016-04-04T16:00:00.000Z</published>
     <updated>2017-05-15T14:44:07.000Z</updated>
     
@@ -637,19 +637,19 @@
     
     </summary>
     
-      <category term="blog" scheme="http://localhost:4000/categories/blog/"/>
+      <category term="blog" scheme="http://home.ustc.edu.cn/~caowf/blog/categories/blog/"/>
     
     
-      <category term="论文" scheme="http://localhost:4000/tags/%E8%AE%BA%E6%96%87/"/>
+      <category term="论文" scheme="http://home.ustc.edu.cn/~caowf/blog/tags/%E8%AE%BA%E6%96%87/"/>
     
-      <category term="源头" scheme="http://localhost:4000/tags/%E6%BA%90%E5%A4%B4/"/>
+      <category term="源头" scheme="http://home.ustc.edu.cn/~caowf/blog/tags/%E6%BA%90%E5%A4%B4/"/>
     
   </entry>
   
   <entry>
     <title>我为什么要开通元认知学习通讯？</title>
-    <link href="http://localhost:4000/post/why-maillist/"/>
-    <id>http://localhost:4000/post/why-maillist/</id>
+    <link href="http://home.ustc.edu.cn/~caowf/blog/post/why-maillist/"/>
+    <id>http://home.ustc.edu.cn/~caowf/blog/post/why-maillist/</id>
     <published>2016-02-24T16:00:00.000Z</published>
     <updated>2017-05-15T14:44:07.000Z</updated>
     
@@ -712,19 +712,19 @@
     
     </summary>
     
-      <category term="blog" scheme="http://localhost:4000/categories/blog/"/>
+      <category term="blog" scheme="http://home.ustc.edu.cn/~caowf/blog/categories/blog/"/>
     
     
-      <category term="元认知" scheme="http://localhost:4000/tags/%E5%85%83%E8%AE%A4%E7%9F%A5/"/>
+      <category term="元认知" scheme="http://home.ustc.edu.cn/~caowf/blog/tags/%E5%85%83%E8%AE%A4%E7%9F%A5/"/>
     
-      <category term="邮件" scheme="http://localhost:4000/tags/%E9%82%AE%E4%BB%B6/"/>
+      <category term="邮件" scheme="http://home.ustc.edu.cn/~caowf/blog/tags/%E9%82%AE%E4%BB%B6/"/>
     
   </entry>
   
   <entry>
     <title>RSS 的生命力：分享100个订阅源</title>
-    <link href="http://localhost:4000/post/100Subscription/"/>
-    <id>http://localhost:4000/post/100Subscription/</id>
+    <link href="http://home.ustc.edu.cn/~caowf/blog/post/100Subscription/"/>
+    <id>http://home.ustc.edu.cn/~caowf/blog/post/100Subscription/</id>
     <published>2016-01-28T16:00:00.000Z</published>
     <updated>2017-05-15T14:44:07.000Z</updated>
     
@@ -806,19 +806,19 @@
     
     </summary>
     
-      <category term="blog" scheme="http://localhost:4000/categories/blog/"/>
+      <category term="blog" scheme="http://home.ustc.edu.cn/~caowf/blog/categories/blog/"/>
     
     
-      <category term="博客" scheme="http://localhost:4000/tags/%E5%8D%9A%E5%AE%A2/"/>
+      <category term="博客" scheme="http://home.ustc.edu.cn/~caowf/blog/tags/%E5%8D%9A%E5%AE%A2/"/>
     
-      <category term="订阅源" scheme="http://localhost:4000/tags/%E8%AE%A2%E9%98%85%E6%BA%90/"/>
+      <category term="订阅源" scheme="http://home.ustc.edu.cn/~caowf/blog/tags/%E8%AE%A2%E9%98%85%E6%BA%90/"/>
     
   </entry>
   
   <entry>
     <title>我为何将所有微信订阅号都取关了？</title>
-    <link href="http://localhost:4000/post/wechat-subscription/"/>
-    <id>http://localhost:4000/post/wechat-subscription/</id>
+    <link href="http://home.ustc.edu.cn/~caowf/blog/post/wechat-subscription/"/>
+    <id>http://home.ustc.edu.cn/~caowf/blog/post/wechat-subscription/</id>
     <published>2016-01-18T16:00:00.000Z</published>
     <updated>2017-05-15T14:44:07.000Z</updated>
     
@@ -963,19 +963,19 @@
     
     </summary>
     
-      <category term="blog" scheme="http://localhost:4000/categories/blog/"/>
+      <category term="blog" scheme="http://home.ustc.edu.cn/~caowf/blog/categories/blog/"/>
     
     
-      <category term="微信" scheme="http://localhost:4000/tags/%E5%BE%AE%E4%BF%A1/"/>
+      <category term="微信" scheme="http://home.ustc.edu.cn/~caowf/blog/tags/%E5%BE%AE%E4%BF%A1/"/>
     
-      <category term="订阅号" scheme="http://localhost:4000/tags/%E8%AE%A2%E9%98%85%E5%8F%B7/"/>
+      <category term="订阅号" scheme="http://home.ustc.edu.cn/~caowf/blog/tags/%E8%AE%A2%E9%98%85%E5%8F%B7/"/>
     
   </entry>
   
   <entry>
     <title>七龙珠哪些画面让你永生难忘？</title>
-    <link href="http://localhost:4000/post/ToriyamaAkiraWife/"/>
-    <id>http://localhost:4000/post/ToriyamaAkiraWife/</id>
+    <link href="http://home.ustc.edu.cn/~caowf/blog/post/ToriyamaAkiraWife/"/>
+    <id>http://home.ustc.edu.cn/~caowf/blog/post/ToriyamaAkiraWife/</id>
     <published>2015-12-24T16:00:00.000Z</published>
     <updated>2017-05-15T14:44:07.000Z</updated>
     
@@ -1007,17 +1007,17 @@
     
     </summary>
     
-      <category term="blog" scheme="http://localhost:4000/categories/blog/"/>
+      <category term="blog" scheme="http://home.ustc.edu.cn/~caowf/blog/categories/blog/"/>
     
     
-      <category term="七龙珠" scheme="http://localhost:4000/tags/%E4%B8%83%E9%BE%99%E7%8F%A0/"/>
+      <category term="七龙珠" scheme="http://home.ustc.edu.cn/~caowf/blog/tags/%E4%B8%83%E9%BE%99%E7%8F%A0/"/>
     
   </entry>
   
   <entry>
     <title>把时间当作朋友，七年后你会如何？</title>
-    <link href="http://localhost:4000/post/sevenyears-lixiaolai/"/>
-    <id>http://localhost:4000/post/sevenyears-lixiaolai/</id>
+    <link href="http://home.ustc.edu.cn/~caowf/blog/post/sevenyears-lixiaolai/"/>
+    <id>http://home.ustc.edu.cn/~caowf/blog/post/sevenyears-lixiaolai/</id>
     <published>2015-12-18T16:00:00.000Z</published>
     <updated>2017-05-15T14:44:07.000Z</updated>
     
@@ -1073,19 +1073,19 @@
     
     </summary>
     
-      <category term="blog" scheme="http://localhost:4000/categories/blog/"/>
+      <category term="blog" scheme="http://home.ustc.edu.cn/~caowf/blog/categories/blog/"/>
     
     
-      <category term="李笑来" scheme="http://localhost:4000/tags/%E6%9D%8E%E7%AC%91%E6%9D%A5/"/>
+      <category term="李笑来" scheme="http://home.ustc.edu.cn/~caowf/blog/tags/%E6%9D%8E%E7%AC%91%E6%9D%A5/"/>
     
-      <category term="七年" scheme="http://localhost:4000/tags/%E4%B8%83%E5%B9%B4/"/>
+      <category term="七年" scheme="http://home.ustc.edu.cn/~caowf/blog/tags/%E4%B8%83%E5%B9%B4/"/>
     
   </entry>
   
   <entry>
     <title>做赛亚人妻子是什么一种体验？(终)</title>
-    <link href="http://localhost:4000/post/dragball-chichi_buu2/"/>
-    <id>http://localhost:4000/post/dragball-chichi_buu2/</id>
+    <link href="http://home.ustc.edu.cn/~caowf/blog/post/dragball-chichi_buu2/"/>
+    <id>http://home.ustc.edu.cn/~caowf/blog/post/dragball-chichi_buu2/</id>
     <published>2015-12-07T16:00:00.000Z</published>
     <updated>2017-05-15T14:44:07.000Z</updated>
     
@@ -1175,19 +1175,19 @@
     
     </summary>
     
-      <category term="blog" scheme="http://localhost:4000/categories/blog/"/>
+      <category term="blog" scheme="http://home.ustc.edu.cn/~caowf/blog/categories/blog/"/>
     
     
-      <category term="七龙珠" scheme="http://localhost:4000/tags/%E4%B8%83%E9%BE%99%E7%8F%A0/"/>
+      <category term="七龙珠" scheme="http://home.ustc.edu.cn/~caowf/blog/tags/%E4%B8%83%E9%BE%99%E7%8F%A0/"/>
     
-      <category term="琪琪" scheme="http://localhost:4000/tags/%E7%90%AA%E7%90%AA/"/>
+      <category term="琪琪" scheme="http://home.ustc.edu.cn/~caowf/blog/tags/%E7%90%AA%E7%90%AA/"/>
     
   </entry>
   
   <entry>
     <title>做赛亚人妻子是什么一种体验？(五)</title>
-    <link href="http://localhost:4000/post/dragball-chichi_Buu/"/>
-    <id>http://localhost:4000/post/dragball-chichi_Buu/</id>
+    <link href="http://home.ustc.edu.cn/~caowf/blog/post/dragball-chichi_Buu/"/>
+    <id>http://home.ustc.edu.cn/~caowf/blog/post/dragball-chichi_Buu/</id>
     <published>2015-12-06T16:00:00.000Z</published>
     <updated>2017-05-15T14:44:07.000Z</updated>
     
@@ -1258,19 +1258,19 @@
     
     </summary>
     
-      <category term="blog" scheme="http://localhost:4000/categories/blog/"/>
+      <category term="blog" scheme="http://home.ustc.edu.cn/~caowf/blog/categories/blog/"/>
     
     
-      <category term="七龙珠" scheme="http://localhost:4000/tags/%E4%B8%83%E9%BE%99%E7%8F%A0/"/>
+      <category term="七龙珠" scheme="http://home.ustc.edu.cn/~caowf/blog/tags/%E4%B8%83%E9%BE%99%E7%8F%A0/"/>
     
-      <category term="琪琪" scheme="http://localhost:4000/tags/%E7%90%AA%E7%90%AA/"/>
+      <category term="琪琪" scheme="http://home.ustc.edu.cn/~caowf/blog/tags/%E7%90%AA%E7%90%AA/"/>
     
   </entry>
   
   <entry>
     <title>做赛亚人妻子是什么一种体验？(四)</title>
-    <link href="http://localhost:4000/post/dragball-chichi_Cell/"/>
-    <id>http://localhost:4000/post/dragball-chichi_Cell/</id>
+    <link href="http://home.ustc.edu.cn/~caowf/blog/post/dragball-chichi_Cell/"/>
+    <id>http://home.ustc.edu.cn/~caowf/blog/post/dragball-chichi_Cell/</id>
     <published>2015-12-05T16:00:00.000Z</published>
     <updated>2017-05-15T14:44:07.000Z</updated>
     
@@ -1335,346 +1335,12 @@
     
     </summary>
     
-      <category term="blog" scheme="http://localhost:4000/categories/blog/"/>
+      <category term="blog" scheme="http://home.ustc.edu.cn/~caowf/blog/categories/blog/"/>
     
     
-      <category term="七龙珠" scheme="http://localhost:4000/tags/%E4%B8%83%E9%BE%99%E7%8F%A0/"/>
+      <category term="七龙珠" scheme="http://home.ustc.edu.cn/~caowf/blog/tags/%E4%B8%83%E9%BE%99%E7%8F%A0/"/>
     
-      <category term="琪琪" scheme="http://localhost:4000/tags/%E7%90%AA%E7%90%AA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>加油站的产品观</title>
-    <link href="http://localhost:4000/post/gas-station/"/>
-    <id>http://localhost:4000/post/gas-station/</id>
-    <published>2014-05-08T16:00:00.000Z</published>
-    <updated>2017-05-15T14:44:07.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>##一</p>
-<p>正在去汽车站的路上，突然爸的车传来一阵急促声，爸弯下身去调了一下，说：「不够油了，等一下要加个油才行。」</p>
-<p>过了不久，我看见一个加油站，我提醒说：「爸，前面有个加油站。」</p>
-<p>爸说：「不去这个加油站。」</p>
-<p>「为什么？」我问，估计是油的质量不好吧，之前他提过有些加油站往油里掺水。</p>
-<p>爸说：「这个加油站特别串（自大傲气），加油要加油卡，我去过那么多加油站就只有这个加油站这么搞。」</p>
-<p>我说：「搞个卡会不会便宜点？打个折什么的？」</p>
-<p>爸说：「便宜个屁，都一样，其他加油站可以用卡又可以用现金，等下去别的加油站。」</p>
-<p>我说：「办个卡要工本费，还不打折，谁还去加油？」</p>
-<p>爸说：「没有什么人过去加油的。」</p>
-<p>我回想了下刚才加油站那情景，的确是门可罗雀，不过我心中还是有个疑问。这样的政策推行应该也有初衷，虽然这样的推理很不符合逻辑，老板怕员工收现金挪用公款，统一办卡避免出现现金漏洞也可以理解。</p>
-<p>「可能是老板怕员工们自己偷偷把加油的钱给挪用了吧？」我问。</p>
-<p>爸说：「现在加油站的员工都配有一张卡，每个卡对应一个工号，员工加油加油就要插卡收钱，到时候一结算，那张卡加了多少油就要上交多少钱。」</p>
-<p>我恍然大悟，哎呀，怎么刚才的思维进了一个圈？</p>
-<p>过了不久，到了个加油站，爸开车进站加油，我观察了一下加油的流程，果然和爸说的一模一样：问加多少，插卡，输入信息，加油，收钱，找钱。一个员工基本负责了整个加油流程，无需办卡，无需到到财务处交钱拿票加油，快捷方便。</p>
-<p>这才是符合大众需要的服务。</p>
-<p>##二</p>
-<p>又想起刚才那家要油卡加油的加油站，作为一个家商业公司，这个政策不仅增加了客户的消费成本、使用麻烦和厌恶感，而且还自断财路，自毁前程。它如此执拗地执行这个政策的真正原因是什么呢？这个原因是值得探究一下。</p>
-<p>后来我搜集了一些资料。</p>
-<p>加油站使用油卡加油的初衷是这样的：</p>
-<ul>
-<li>1、使用便捷，自助加油；</li>
-<li>2、交易安全，避免假钞；</li>
-<li>3、加油钱包，反复充值；</li>
-<li>4、易于管理，方便查询；</li>
-<li>5、一卡在手，各地加油；</li>
-<li>6、积分增值，回馈理赔。</li>
-</ul>
-<p>而实际上，这些所谓的好处完全没有满足大部分客户的基本需求，谁要你的自助加油？谁要你的油卡管理？谁要你的积分回馈？我就想付费加油，加油站连这个最基本的服务做不好还加什么油？</p>
-<p>在我看来，加油站的核心价值就是要满足人们加油的需求。</p>
-<p>##三</p>
-<p>我不否认这个政策可能给一部分人带来了便利，但是自助加油在一部分地区的确存在风险隐患，如果因顾客操作失误带来损失，这个责任应该谁来负责？</p>
-<p>同时，消费者对自助加油站或者只支持油卡加油站的印象是这样的：</p>
-<ul>
-<li>1、不要跟我说自助加油是什么趋势，我购买你们的油，也顺便买了你们的服务，加油站赠送加油服务是理所当然的。</li>
-<li>2、你们加油站的服务不够好，为什么别的油站可以，你的不可以？原因只有一个，就是你做得不够好。</li>
-<li>3、店大欺客，加油站随便一抓一大堆，别以为就只有你一家，老子去别的加。</li>
-<li>4、瞎搞没前途，这么做，一点人情味都没有，迟早关门。</li>
-</ul>
-<p>暂时就这么几条吧，就凭这么几条已经可以将他们的产品经理给炒了，如果他们真有产品经理的话。</p>
-<p>（题图：It’s Time to Go ! by Mardy Suong Photography）</p>
-<p><img src="http://pic.yupoo.com/vankos_v/DISOfpbg/14RuuS.png" alt=""></p>
-<p>点击「阅读原文」看一看阿里巴巴高大上的招股书。</p>
-<p><img src="http://pic.yupoo.com/vankos_v/DISOeR5b/3PJ3R.png" alt=""><br><strong>【一期一会】</strong></p>
-<p>据有关人士透露，马云曾秘密前往瑞士银行进行洽谈，双方交换了意见，并达成了合作意向。</p>
-<p><a href="http://www.sec.gov/Archives/edgar/data/1577552/000119312514184994/d709111df1.htm" target="_blank" rel="external">http://www.sec.gov/Archives/edgar/data/1577552/000119312514184994/d709111df1.htm</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      就凭这么几条已经可以将他们的产品经理给炒了，如果他们真有产品经理的话。
-    
-    </summary>
-    
-      <category term="blog" scheme="http://localhost:4000/categories/blog/"/>
-    
-    
-      <category term="知识管理" scheme="http://localhost:4000/tags/%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86/"/>
-    
-      <category term="加油" scheme="http://localhost:4000/tags/%E5%8A%A0%E6%B2%B9/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>日记摘抄——2004年至2005年</title>
-    <link href="http://localhost:4000/post/daily/"/>
-    <id>http://localhost:4000/post/daily/</id>
-    <published>2014-05-06T16:00:00.000Z</published>
-    <updated>2017-05-15T14:44:07.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>回望过去，那是一个很有趣的事情，尤其是当你的柜子还藏有十五本日记。</p>
-<p>###2004年6月18日</p>
-<p>多日不动的脑子在一阵摇晃之中昏然醒来，我猛然想起要写下点什么。</p>
-<p>###2004年7月15日</p>
-<p>一个人站在楼顶上看灿烂星河，星星一闪一闪亮晶晶，但没有人唱着可爱的歌，我希望地上的灯光如同天上的星光，我害怕没有声音的太寂静的夜，没有声音的夜，我总是睡不着。</p>
-<p>###2004年8月23日</p>
-<p>回到家中了，连续补了五周的课，忽然有了四天多的假期，很轻松，很怀念在房间拧开那台半导体收音机让声音充斥每个角落的感觉，我把沉重的书包抛在床上，然后抽出一大叠书，很放肆地让它们凌乱地摊在床上，把空空的书包挂在墙钩上，舒了一个口气，躺在床上，席子冰透凉快，如沐冰水。</p>
-<p>###2004年10月1日</p>
-<p>喜欢含着一颗糖/来看这个世界/这样看起来/生活会更加甜蜜一点</p>
-<p>###2004年11月5日</p>
-<p>丢失花朵的傍晚</p>
-<p>我提起湿润的手，远离那朵掉在泥水的鸢尾，扬起衣袖，挥起耀眼的绿光，将天空变得深沉。</p>
-<p>###2004年12月18日</p>
-<p>我在朦胧中看见菩萨在迷云雾中笑。</p>
-<p>###2005年1月10日</p>
-<p>风从我手指间飞穿过，我打着手电筒，寻找黑暗。</p>
-<p>###2005年2月9日</p>
-<p>这一天也不知道如何过了，早上呆在家里，中午吃粥，小睡一会，下去看《功夫》，《生化战士》。晚上喝啤酒，真没用，仅喝一点就差不多要倒下了，吃完饭，洗澡上楼，刚听见韦涛的声音。</p>
-<p>###2005年3月12日</p>
-<p>在大新路口，我看爸不知道我要什么，我只说我要买一双鞋，他搭着我来到大甩卖的摊档前，我下去挑了一会，不幸那里没有我尺寸，后来爸来到了超市，那里只有皮鞋。最后爸竟来到了一间专卖店前，我没进去就出来了，说，这里很贵的。爸说，当然了。我说，回去吧，刚才那摊有些便宜点的鞋。</p>
-<p>###2005年4月6日</p>
-<p>晚上8点45分，班会主题：生活，要有追求永支撑；人生，要有激情常相伴。</p>
-<p>英语（的平均成绩）96.5，比八班低3.1分；数学97.1，低4.4分；综合95.4，低1.3分；X科98.5，低1.2分。</p>
-<p>除了语文，我们全部都低（我的X科居然比平均分低了7.8分，最为惭愧），没有（达到）100分的话，根本不算什么，就算上了，也不算什么，一定要上！尤其要重视X科，政治要拿700分不难，突出重点，弃车保帅。</p>
-<p>好像说的就是我，我知道我该怎么办了，实际上我许多科目还是不稳定的，个别科目大起大落，控制住了，自己也就胜利了。</p>
-<p>###2005年5月</p>
-<p>空缺。</p>
-<p>###2005年6月9日  高考最后一日</p>
-<p>地点：课室（休息室）中，人物：过半数的同学 我</p>
-<p>事情：我听着FIR的《我们的爱》，想记下现在的一切</p>
-<p>什么都没有了</p>
-<p>同学们都在整理着自己的书本，忙忙碌碌……很快我们要在一个地方痛快地相聚，然后很快地离开。</p>
-<p>我不想很矫情地整理思绪，习惯许多天斗志昂扬的日子，面对明天，一片彷徨。</p>
-<p>曾经（后面空白一大片）</p>
-]]></content>
-    
-    <summary type="html">
-    
-      一、当天应该得七岁，我想喝妈妈的汽水，把它抢在掌心里，大人们无法逼我睡。二、一闪一闪小星星，开开心心的唱诗，但为何一毕业才知，一世我也要考试。——杨千嬅《小星星》
-    
-    </summary>
-    
-      <category term="blog" scheme="http://localhost:4000/categories/blog/"/>
-    
-    
-      <category term="写作" scheme="http://localhost:4000/tags/%E5%86%99%E4%BD%9C/"/>
-    
-      <category term="日记" scheme="http://localhost:4000/tags/%E6%97%A5%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>什么是知识的结构与解码？——《怎样成为高段位的学习者？》的求知索引</title>
-    <link href="http://localhost:4000/post/analysis-knowledge/"/>
-    <id>http://localhost:4000/post/analysis-knowledge/</id>
-    <published>2014-05-04T16:00:00.000Z</published>
-    <updated>2017-05-15T14:44:07.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>##知识的结构</p>
-<p>对于知识的结构，李笑来在<a href="http://xiaolai.github.io/alpha/on-learning/#section-34" target="_blank" rel="external">《学习学习再学习》</a>中提到：</p>
-<blockquote>
-<p>任何知识，都有其自身的结构，了解这些结构，是学习能力养成的基础。</p>
-</blockquote>
-<p>随后他列举了三个知识结构，并对此做出了解释：</p>
-<ul>
-<li>1、线性结构</li>
-<li>2、分支结构</li>
-<li>3、交叉结构</li>
-<li>4、递归结构</li>
-</ul>
-<p>在学习中对知识的结构进行分析，做好相应的功课，像搭房屋一样将知识搭建起来，知识就会有组织地储存起来。</p>
-<p>线性结构的知识是最基础的结构，就像是房屋中的梁柱，而分支结构就像是搭在梁柱的支架，负责将房屋的基本样子搭建出来，随后的分叉机构就像是砖头和瓦片，填充完善，这三者的有机结合可以就建出一间有模有样的房屋，而递归结构就是说你再去扩大这间房子，或者重建这座房子，你就有能力和经验去将这座房子建得更好。</p>
-<p>知识的构建过程就是不断构建、整合、完善到一定程度无法再满足需要再重建的过程。</p>
-<p>##关于解码</p>
-<p>解码是计算机词汇，原意是用特定方法将信息从已经编码的形式恢复到编码前原状的过程。通常见于90年代末的流行的VCD和DVD的宣传语：本机拥有超强解码能力，读碟快，无卡碟，高清播放，流程无比……</p>
-<p>原本我以为采铜老师用这个词有点故弄玄虚之感，但是仔细一想，还是有些深意：</p>
-<blockquote>
-<p>解码不等同于我们一般所说的理解。理解通常只涉及对字面意义的解读，通常是自动化进行的，也无需做太深入地思考，且理解的结果理应遵循信息材料本身的意义，不可擅自演化；而解码则是一个更为主动和主观的过程，不同的解读这对同一材料的解码可能是完全不一样的，就像看同一部电影，不同的人能读出不同的意味。特别是正如我在上一篇文章里说的，你心中有什么样的问题，其实也决定了你观察的视角，从而就可能做出不同的解码。但是解码虽无一定之规，却还是有高下深浅之分。</p>
-</blockquote>
-<p>如果你要探究一篇文章一幅画一部电影，你就要站在作者的立场上去重构当初作者创造时候的情景，带着疑问：作者为什么要这样画？为什么要出现这个镜头？他想要营造一种什么样氛围？他是如何将这些画面，事物，情景组合起来？自己探求完这一系列的问题之后，再重新试图还原这个作品。</p>
-<p>所以说，解码是一个过程：阅读-分析-理解-解读-剖析-深究-重构。</p>
-<p>再举一个例子：你有一个变形金刚，你觉得很帅很酷，你想知道它还能变成什么形状，能变多少种，哪种姿势是最帅的，折腾完一翻之后，你又不满足了，你想知道它为什么可以变那么多造型，于是你拿起螺丝刀将变形金刚给拆了，看看里面的构造，观摩每一个部件的形状，想想这个部件为什么是设计成这样？如果换成那样又会怎样呢？接着你在某些你未曾见过的部位做上标记，接着你又将变形金刚重组了回去，重新组装完，你又继续变形，你才能理解原来变形金刚的设计有这样的用意，你才能体会到变形金刚设计者的用心和精妙。</p>
-<p>从这个角度，你就不难理解为什么很多成年人仍旧很喜欢收藏变形金刚（乐高）。</p>
-<p>知识的结构比变形金刚复杂一点，因为知识的零部件并不如变形金刚般的简单直观可见，它需要学习者投入一定的时间和精力才能理解。</p>
-<p>同时，因为学习者要投入相当的时间和精力，所以在选择知识零部件的时候要慎之又慎，选好的作品去投入时间和精力，否则你就会误入歧途，浪费光阴。</p>
-<blockquote>
-<p>解码的首要原则，就是尽量去寻那些最好、最经典的作品，然后努力参习。</p>
-</blockquote>
-<p>所谓庖丁解牛，也得找一头好牛。</p>
-<p>（题图：The tube by Piotr J）</p>
-<p><img src="http://pic.yupoo.com/vankos_v/DISOfpbg/14RuuS.png" alt=""></p>
-<p>点击「阅读原文」关注本公众号。</p>
-<p><img src="http://pic.yupoo.com/vankos_v/DISOeR5b/3PJ3R.png" alt=""><br><strong>【一期一会】</strong></p>
-<p>「采大师，我心中有码，何解？」</p>
-<p>「苍大师，有人找你。」</p>
-]]></content>
-    
-    <summary type="html">
-    
-      在学习中对知识的结构进行分析，做好相应的功课，像搭房屋一样将知识搭建起来，知识就会有组织地储存起来。
-    
-    </summary>
-    
-      <category term="blog" scheme="http://localhost:4000/categories/blog/"/>
-    
-    
-      <category term="知识管理" scheme="http://localhost:4000/tags/%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86/"/>
-    
-      <category term="学习者" scheme="http://localhost:4000/tags/%E5%AD%A6%E4%B9%A0%E8%80%85/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>为什么你要写博客？</title>
-    <link href="http://localhost:4000/post/why-blog/"/>
-    <id>http://localhost:4000/post/why-blog/</id>
-    <published>2014-05-02T16:00:00.000Z</published>
-    <updated>2017-05-15T14:44:07.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>为什么你要写博客？</p>
-<p>##一个选择</p>
-<p>我知道现在可能说这话有点不合时宜，毕竟博客时代都已经过去了，再号召大家用过就好像时的东西是不是有点逆流而上？</p>
-<p>我曾经也问过自己这个问题，但是我觉得，博客时代过去跟我们要开博客是没有多大关系的，就好像你的读书时代已经过去你就不再读书一样。</p>
-<p>判断一件事情值不值得去做有一个方法：在一张白纸的左边写不值得做的原因，然后在右边写值得做的原因，写完一比较，一权衡，自然能够得出结果。</p>
-<p>大家都成年人了，你会觉得这样思考分析总结的过程才是正确的思考的方法吧？</p>
-<p>所以，我在这里列出要写（独立）博客的原因，供大家去选择，然后填在你白纸的右边。</p>
-<p>注意，我不是给你一个建议，而是提供一个选择，这个选择蕴藏着我也不知道的可能。</p>
-<p>##博客的内容</p>
-<p>写博客不难，你可以当作是生活的记录，但是这样的记录没有任何的意义。写要对得住写本身，写出来的东西应该是思考的结果。我认为，如果你要开一个博客，博客的内容应该是这样的：</p>
-<ul>
-<li><ol>
-<li>不是生活杂记、不是流水账、不是牢骚、不是抱怨、不是心情琐记……；</li>
-</ol>
-</li>
-<li><ol>
-<li>有目的地写，要务实，追求质量；</li>
-</ol>
-</li>
-<li><ol>
-<li>承认真实的自己，不要吹嘘，不要装逼，无需讨好读者；</li>
-</ol>
-</li>
-<li><ol>
-<li>记录自己学习、思考、总结的过程；</li>
-</ol>
-</li>
-<li><ol>
-<li>分享你的故事、所得、感想、经验；</li>
-</ol>
-</li>
-</ul>
-<p>##值得写的原因</p>
-<p>以下是一个清单，可以根据自己的情况匹配，然后选择。</p>
-<p>###重新认识自己</p>
-<p>是不是很久没有跟自己对话了？</p>
-<p>你可以尝试从回答一些问题开始，将你过去要回避的问题写下来，例如就可以从这个九个问题开始：</p>
-<ul>
-<li><p>1、请你介绍一下你自己，你是个什么样的人？</p>
-</li>
-<li><p>2、你有什么理想吗？这个理想是怎么形成的？</p>
-</li>
-<li><p>3、你理想的伴侣关系是什么样的？你自己在这个伴侣关系中扮演什么样的角色？要承担什么样的责任？</p>
-</li>
-<li><p>4、你理想的事业是什么，你正在做的工作符合你的事业理想吗？这份工作对你的意义是什么？</p>
-</li>
-<li><p>5、你对亲子关系怎么看？对你来说，什么是一个理想的父亲（母亲），你期望自己成为这样一个理想父亲（母亲）吗？</p>
-</li>
-<li><p>6、你对钱怎么看，你认为赚到多少钱是足够的？如果你明天一早醒来，已经有足够的钱，你将会如何继续安排自己的生活？</p>
-</li>
-<li><p>7、对你来说，什么是理想的性生活？什么是理想的性道德，在你的性道德观中，什么样的性生活是禁忌的，需要避免的，什么样的性生活是美好的，需要得到鼓励和发展的？</p>
-</li>
-<li><p>8、你的择友标准是什么？什么样的人你会愿意交往，什么样的人你会拒绝和他交往？</p>
-</li>
-<li><p>9、你对死亡怎么看？你希望自己活到多少岁，你准备怎么度过从现在到死亡的这段时间？如果你要立遗嘱，这份遗嘱会怎么写？</p>
-</li>
-</ul>
-<p>以上的这九个问题摘自《很少人能顺畅回答这9个问题——心理治疗刚开始医生常常会先问你的 》by 李孟潮。</p>
-<p>这些问题的答案你可以选择不发，但是我强烈地建议写下来，只有在写的时候你才可以慎重地思考这些问题，而不会回避跳过或者留下空白，这是接受自己的第一步。</p>
-<p>###提供持续学习的动力</p>
-<p>例如，我为自己设限每天写一千字，信息的不断输出给我带来恐惧，我害怕有一天我写无可写，于是我不停地阅读，通过个人的知识管理促使自己不断学习，提高核心竞争力。</p>
-<p>详细的知识管理可以看我的这篇文章：《个人知识管理的方法》，回复「知识」可见</p>
-<p>###积累更多的知识</p>
-<p>写并不是单纯的写。</p>
-<p>例如你写着写着，你突然忘记了一个概念，于是上网找，找回来这个概念的时候，你重温这个概念，可能还会顺便看了一下这个概念的其他东西。</p>
-<p>例如你需要获取第一手的资料，寻找信息来源本身就是一个知识积累的过程，同时，你慢慢就学会了鉴别知识：什么是没有用的心灵鸡汤，什么是不值得关注的吐槽名人，还有，在这个过程中，你还养成你的心智。</p>
-<p>###提高将事情讲清楚的能力</p>
-<p>很多东西你以为懂了，但当你在写下来的时候，你就觉得无从下手了。</p>
-<blockquote>
-<p>如果一件事情你不能讲清楚，十有八九你还没有完全理解。</p>
-</blockquote>
-<p>将事情写下来，慢慢就可以提高你的逻辑思维能力，分析能力，写会迫使你在你脑中搭建一个有条理的框架。例如我写这篇文章一样，我就将值得写博客的原因一点一点地罗列出来，事情就更加清晰，你也可以更好的思考问题。</p>
-<p>###分享带来的连锁反应</p>
-<blockquote>
-<p>“通过分享，你获得了直接而快速的回报，你最终或许会发现你已将版权和“保留所有权利”抛诸脑后。新的经济学准则是：参与你作品的人越多，回报越高。在分享主义里，如果你愿意你可以保留所有权，但是我乐于分享。” by 毛向辉 《分享主义：一场思维革命》</p>
-</blockquote>
-<p>互联网精神其中最重要的就是分享主义，基于分享主义，你可以享受到社会化及互联网给你带来的种种便利和好处，你分享了一个知识，你就成为了互联网中的一个点，这个点的大小由你自己来决定，互联网的大潮会将你的这个点推送到它所能触及的每个角落，让需要的人得到，同时，你的这个点也会继续扩大，连接到整个网络，这个点有可能连接成一张网，而你就是这张网的中心。</p>
-<p>###帮你找到志同道合的人</p>
-<p>在微博，在朋友圈，你可能找不到跟你志同道合的人，而在博客，你可以通过看他的几篇文章就迅速地理解认同这个人，即使你没有见过这个人，但你也可以通过这种关联来相互学习。</p>
-<p>如果你在一个领域有相当的了解，你将这些内容发在网络上，网络上跟你志趣相投的人也会被你吸引过来，根据吸引力法则，你是怎样的人你就被怎么样的人吸引，这就是博客所能赋予你的魅力。</p>
-<blockquote>
-<p>即使博客没有被他人关注，我们依然可以找到同好，你可以自己将博文转载到其他站点，人们会通过搜索引擎找到你，有邮件、微博等工具，我们不乏与他人交流的途径。by Gabriel Weinberg《Why I blog》</p>
-</blockquote>
-<p>###记录成长</p>
-<p>隔一段时间，你再回头看你写的博客，你会发现自己正在通过这样的方式在不断的成长，这种成长在自己眼里是一种财富，在别人眼里是一张地图，你得到了收获，不断修正自己的错误，别人得到了指引，避免走弯路。</p>
-<p>更多的情况是当你回望自己的时候你会发现自己是一个傻逼，so what，that is what I am！</p>
-<p>###培养持续做一件事情的能力</p>
-<p>开始是坚持，后来是习惯，接着喜欢。以后当有人对你说，「你写那么多有用的东西，你真的很厉害啊！」你可以笑而不语，也可以大声说道：「你妹，你不知道我开始的时候多么痛苦！」</p>
-<p>让你长久地去跑步，你可能做不到；让你每个月看一本书，你也可能做不到；但让你持续地写一个博客，你可以做得到。</p>
-<p>你不相信？你不试试你怎么知道？</p>
-<p>默默地持续做一件事是一种难得的能力，也是一种难得的品质。</p>
-<p>###讨论反思</p>
-<p>每人都会有思维的盲点，就好像这篇文章一样，可能你觉得我可能说得不对，你可以反驳我，我欢迎这种讨论，因为讨论的过程中会产生各种的思维的碰撞，这种碰撞会让你反思，也会激发出你新的灵感，这种讨论反思给自己的带来巨大的受益。</p>
-<p>互联网给你的反馈就是让你承受更多，接受更多，成为一个更好的人。</p>
-<p>###搜寻到你意想不到东西</p>
-<p>世界不止是你的家，你的公司，你的朋友圈，你应该去发现一个更大的世界，通过写博客，你会知道世界上还有很多人像你一样在写博客，这些人和知识正在世界的某个角落在等着你。</p>
-<p>例如，在写这篇文章的过程中，我才知道了Gabriel Weinberg，我才要将阳志平的博客重读一遍。写的过程会让你有很多新的发现，这些新的发现都值得你去再写下来，总结分享出去。</p>
-<p>###一个人在做一件属于自己的事</p>
-<p>很多你认为自己很牛逼的事情都是自己一个人做出来。</p>
-<p>别人在刷微博，你在看书，别人在看穿越剧，你在学英文，别人在去唱K，你在写个人总结。吃饭也要找同伴，出游要找同伴，看电影要找同伴，你上一次一个人在做一件属于自己的事是在什么时候？</p>
-<blockquote>
-<p>如果你想要清晰地思考，就必须远离人群。但是走得越远，你的处境就会越困难，收到的阻力也会越大。因为你没有迎合社会习俗，而是一步步地与它背道而驰。如果自己就是潮水的一部分 ，怎么能看见潮流的方向呢？你只能永远保持质疑，问自己，什么话是我不能说的？为什么？——Paul Graham《不能说的话》</p>
-</blockquote>
-<p>###互联网的身份识别：</p>
-<blockquote>
-<p>一个长期的价值博客是一份很好的简历。这里的“简历”并非是狭义上的求职简历，毕竟现在还没有到价值博客的时代，很多人写博客都是到处转载或者干脆碎碎念，正因此面试官未必拿个人博客当成了解一个人的更可靠窗口。</p>
-<p>这里的“简历”是指一个让别人了解自己的窗口，虽然我们未必做得到像罗永浩、Keso这样的博客，个人的影响力已经足以支撑出一份事业（牛博和5gme），但至少你会因此而结识更多的人，你的博客价值越高，你结识的人就越牛，跟牛人交流又会让你的眼界得到极大的开阔，打开一扇又一扇你原本不知道的门，于是你就变得更牛… 这是一个良性循环。by 刘未鹏</p>
-</blockquote>
-<p>###最后</p>
-<p>你可能想不到在白纸的左边（不值得写博客的原因）写什么了，想不到写个「博客时代已经过去」或者「我没有时间」也可以，但与此同时，你也可以用那些时间去思考一下「怎么做到长期写一个价值博客」。</p>
-<p>如果你不想思考，也可以回复「价值」看看别人的建议。</p>
-<p>推荐写作平台：</p>
-<ul>
-<li>简书（推荐）</li>
-<li>自己搭建一个独立博客</li>
-<li>新浪博客</li>
-</ul>
-<p><img src="http://pic.yupoo.com/vankos_v/DISOfpbg/14RuuS.png" alt=""></p>
-<p>点击「阅读原文」关注本公众号。</p>
-<p><img src="http://pic.yupoo.com/vankos_v/DISOeR5b/3PJ3R.png" alt=""><br><strong>【一期一会】</strong></p>
-<p><img src="http://cnfeat.qiniudn.com/91697b1b63f66d4c4357959180570d92.jpg" alt=""></p>
-]]></content>
-    
-    <summary type="html">
-    
-      判断一件事情值不值得去做有一个方法：在一张白纸的左边写不值得做的原因，然后在右边写值得做的原因，写完一比较，一权衡，自然能够得出结果。
-    
-    </summary>
-    
-      <category term="blog" scheme="http://localhost:4000/categories/blog/"/>
-    
-    
-      <category term="博客" scheme="http://localhost:4000/tags/%E5%8D%9A%E5%AE%A2/"/>
-    
-      <category term="知识管理" scheme="http://localhost:4000/tags/%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86/"/>
+      <category term="琪琪" scheme="http://home.ustc.edu.cn/~caowf/blog/tags/%E7%90%AA%E7%90%AA/"/>
     
   </entry>
   
