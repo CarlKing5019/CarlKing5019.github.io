@@ -1,8 +1,6 @@
 
 ## My blog powered by Hexo.
 
-My homepage powered by Hexo & NexT.
-
 <https://carlking5019.github.io>
 
 ```yml
