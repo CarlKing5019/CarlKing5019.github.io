@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2017-07-05T22:53:16.000Z</updated>
+  <updated>2017-07-05T23:06:00.000Z</updated>
   <id>/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="/post/Notes-on-Python-Learning/"/>
     <id>/post/Notes-on-Python-Learning/</id>
     <published>2017-07-05T16:00:00.000Z</published>
-    <updated>2017-07-05T22:53:16.000Z</updated>
+    <updated>2017-07-05T23:06:00.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="Python-初探"><a href="#Python-初探" class="headerlink" title="Python 初探"></a>Python 初探</h2><h3 id="The-Zen-of-Python"><a href="#The-Zen-of-Python" class="headerlink" title="The Zen of Python"></a>The Zen of Python</h3><figure class="highlight"><table><tr><td class="code"><pre><div class="line">&gt;&gt;&gt; import this</div><div class="line">The Zen of Python, by Tim Peters</div><div class="line"></div><div class="line">Beautiful is better than ugly.</div><div class="line">Explicit is better than implicit.</div><div class="line">Simple is better than complex.</div><div class="line">Complex is better than complicated.</div><div class="line">Flat is better than nested.</div><div class="line">Sparse is better than dense.</div><div class="line">Readability counts.</div><div class="line">Special cases aren't special enough to break the rules.</div><div class="line">Although practicality beats purity.</div><div class="line">Errors should never pass silently.</div><div class="line">Unless explicitly silenced.</div><div class="line">In the face of ambiguity, refuse the temptation to guess.</div><div class="line">There should be one-- and preferably only one --obvious way to do it.</div><div class="line">Although that way may not be obvious at first unless you're Dutch.</div><div class="line">Now is better than never.</div><div class="line">Although never is often better than *right* now.</div><div class="line">If the implementation is hard to explain, it's a bad idea.</div><div class="line">If the implementation is easy to explain, it may be a good idea.</div><div class="line">Namespaces are one honking great idea -- let's do more of those!</div></pre></td></tr></table></figure>
 <h2 id="Python-基本元素"><a href="#Python-基本元素" class="headerlink" title="Python 基本元素"></a>Python 基本元素</h2><h3 id="Python-基本类型"><a href="#Python-基本类型" class="headerlink" title="Python 基本类型"></a>Python 基本类型</h3><p>布尔型: <code>class &#39;bool&#39;</code>, 仅包含 True, False 两个值<br>整型:  <code>&lt;class &#39;int&#39;&gt;</code><br>浮点型: <code>&lt;class &#39;float&#39;&gt;</code><br>字符串型: <code>&lt;class &#39;str&#39;&gt;</code></p>
@@ -65,7 +65,7 @@
 <figure class="highlight python"><table><tr><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>letters = <span class="string">'abcdefghijklmnopqrstuvwxyz'</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>letters[<span class="number">0</span>]</div><div class="line"><span class="string">'a'</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>letters[<span class="number">1</span>]</div><div class="line"><span class="string">'b'</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>letters[<span class="number">-1</span>]</div><div class="line"><span class="string">'z'</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>letters[<span class="number">-2</span>]</div><div class="line"><span class="string">'y'</span></div></pre></td></tr></table></figure>
 <p>Tips: 位置索引在其他序列类型, 如列表和元组中的用法也是这样.</p>
 <p>Warning: 字符串是不可变的, 无法通过给 <code>string[index]</code> 赋值的方式改变字符串的值.</p>
-<p>@update-date=Jul 6, 2017</p>
+<p>update-date: Jul 6, 2017</p>
 ]]></content>
     
     <summary type="html">
@@ -85,6 +85,8 @@
     
       <category term="Study" scheme="/tags/study/"/>
     
+      <category term="Summary" scheme="/tags/summary/"/>
+    
   </entry>
   
   <entry>
@@ -92,7 +94,7 @@
     <link href="/post/Notes-on-Shell-Scripting/"/>
     <id>/post/Notes-on-Shell-Scripting/</id>
     <published>2017-05-23T16:00:00.000Z</published>
-    <updated>2017-05-26T02:59:05.000Z</updated>
+    <updated>2017-07-05T23:05:44.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="Shell-相关命令"><a href="#Shell-相关命令" class="headerlink" title="Shell 相关命令"></a>Shell 相关命令</h2><h3 id="Shell-文件管理命令"><a href="#Shell-文件管理命令" class="headerlink" title="Shell 文件管理命令"></a>Shell 文件管理命令</h3><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line"><span class="built_in">cd</span>              <span class="comment"># 切换目录</span></div><div class="line">ls              <span class="comment"># 列出文件(夹)</span></div><div class="line">cp              <span class="comment"># 复制文件(夹)</span></div><div class="line">mv              <span class="comment"># 移动/重命名文件(夹)</span></div><div class="line">rm              <span class="comment"># 删除文件(夹)</span></div><div class="line"><span class="built_in">pwd</span>             <span class="comment"># 显示当前目录</span></div><div class="line">mkdir           <span class="comment"># 创建目录</span></div><div class="line">open            <span class="comment"># 打开文件</span></div><div class="line">sudo            <span class="comment"># 以 root 账号执行命令</span></div><div class="line"><span class="built_in">echo</span>            <span class="comment"># 打印输出</span></div><div class="line"><span class="built_in">printf</span>          <span class="comment"># 格式化打印输出</span></div></pre></td></tr></table></figure>
 <h3 id="帮助相关命令"><a href="#帮助相关命令" class="headerlink" title="帮助相关命令"></a>帮助相关命令</h3><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">-h              <span class="comment"># 打开命令自带帮助</span></div><div class="line">--help          <span class="comment"># 打开命令自带帮助</span></div><div class="line">man             <span class="comment"># 打开 man 文档</span></div><div class="line">info            <span class="comment"># 打开 info 文档</span></div><div class="line"><span class="built_in">help</span>            <span class="comment"># 等同于 --help</span></div><div class="line"><span class="built_in">which</span>           <span class="comment"># 显示脚本位置或函数定义或别名定义</span></div><div class="line">mandoc          <span class="comment"># 以 pdf 格式查看 man 帮助文档</span></div></pre></td></tr></table></figure>
@@ -131,6 +133,10 @@
       <category term="CLI" scheme="/tags/cli/"/>
     
       <category term="Notes" scheme="/tags/notes/"/>
+    
+      <category term="Coding" scheme="/tags/coding/"/>
+    
+      <category term="Summary" scheme="/tags/summary/"/>
     
   </entry>
   
