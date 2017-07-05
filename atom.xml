@@ -77,15 +77,15 @@
       <category term="Coding" scheme="/categories/coding/"/>
     
     
+      <category term="Python" scheme="/tags/python/"/>
+    
       <category term="Coding" scheme="/tags/coding/"/>
     
       <category term="Notes" scheme="/tags/notes/"/>
     
-      <category term="Summary" scheme="/tags/summary/"/>
-    
-      <category term="Python" scheme="/tags/python/"/>
-    
       <category term="Studying" scheme="/tags/studying/"/>
+    
+      <category term="Summary" scheme="/tags/summary/"/>
     
   </entry>
   
@@ -124,15 +124,15 @@
       <category term="Coding" scheme="/categories/coding/"/>
     
     
-      <category term="Shell" scheme="/tags/shell/"/>
-    
       <category term="Coding" scheme="/tags/coding/"/>
-    
-      <category term="Linux" scheme="/tags/linux/"/>
     
       <category term="Notes" scheme="/tags/notes/"/>
     
       <category term="Summary" scheme="/tags/summary/"/>
+    
+      <category term="Shell" scheme="/tags/shell/"/>
+    
+      <category term="Linux" scheme="/tags/linux/"/>
     
   </entry>
   

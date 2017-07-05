@@ -1695,7 +1695,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #d4ffff;
+  background: #dff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2916,8 +2916,8 @@ hr {
   background: #fff;
 }
 @media (min-width: 768px) {
-  .menu-item.menu-item-categories,
-  .menu-item.menu-item-tags {
+  .menu-item.menu-item-home,
+  .menu-item.menu-item-categories {
     display: none;
   }
 }
@@ -2945,23 +2945,23 @@ h4 {
 h5 {
   counter-reset: h6;
 }
-h2:before {
+.page-post-detail article h2:before {
   counter-increment: h2;
   content: counter(h2) ". ";
 }
-h3:before {
+.page-post-detail article h3:before {
   counter-increment: h3;
   content: counter(h2) "." counter(h3) ". ";
 }
-h4:before {
+.page-post-detail article h4:before {
   counter-increment: h4;
   content: counter(h2) "." counter(h3) "." counter(h4) ". ";
 }
-h5:before {
+.page-post-detail article h5:before {
   counter-increment: h5;
   content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) ". ";
 }
-h6:before {
+.page-post-detail article h6:before {
   counter-increment: h6;
   content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6) ". ";
 }
