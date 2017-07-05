@@ -77,11 +77,11 @@
       <category term="Coding" scheme="/categories/coding/"/>
     
     
+      <category term="Notes" scheme="/tags/notes/"/>
+    
       <category term="Coding" scheme="/tags/coding/"/>
     
       <category term="Python" scheme="/tags/python/"/>
-    
-      <category term="Notes" scheme="/tags/notes/"/>
     
       <category term="Study" scheme="/tags/study/"/>
     
@@ -122,8 +122,6 @@
       <category term="Coding" scheme="/categories/coding/"/>
     
     
-      <category term="Notes" scheme="/tags/notes/"/>
-    
       <category term="Linux" scheme="/tags/linux/"/>
     
       <category term="macOS" scheme="/tags/macos/"/>
@@ -131,6 +129,8 @@
       <category term="Shell" scheme="/tags/shell/"/>
     
       <category term="CLI" scheme="/tags/cli/"/>
+    
+      <category term="Notes" scheme="/tags/notes/"/>
     
   </entry>
   
