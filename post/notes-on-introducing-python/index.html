@@ -72,7 +72,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Coding,Notes,Summary,Python,Studying," />
+  <meta name="keywords" content="Python,Coding,Notes,Studying," />
 
 
 
@@ -89,13 +89,13 @@
 
 
 <meta name="description" content="A note on Python learning.">
-<meta name="keywords" content="Coding,Notes,Summary,Python,Studying">
+<meta name="keywords" content="Python,Coding,Notes,Studying">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python 学习笔记">
-<meta property="og:url" content="/post/Notes-on-Python-Learning/index.html">
+<meta property="og:url" content="/post/notes-on-introducing-python/index.html">
 <meta property="og:site_name" content="Hogwarts">
 <meta property="og:description" content="A note on Python learning.">
-<meta property="og:updated_time" content="2017-07-06T10:40:48.000Z">
+<meta property="og:updated_time" content="2017-07-07T11:49:19.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python 学习笔记">
 <meta name="twitter:description" content="A note on Python learning.">
@@ -126,7 +126,7 @@
 
 
 
-  <link rel="canonical" href="/post/Notes-on-Python-Learning/"/>
+  <link rel="canonical" href="/post/notes-on-introducing-python/"/>
 
 
 
@@ -302,7 +302,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="/post/Notes-on-Python-Learning/">
+    <link itemprop="mainEntityOfPage" href="/post/notes-on-introducing-python/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Carl King">
@@ -440,7 +440,7 @@
 <figure class="highlight python"><table><tr><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>letters = <span class="string">'abcdefghijklmnopqrstuvwxyz'</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>letters[<span class="number">0</span>]</div><div class="line"><span class="string">'a'</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>letters[<span class="number">1</span>]</div><div class="line"><span class="string">'b'</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>letters[<span class="number">-1</span>]</div><div class="line"><span class="string">'z'</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>letters[<span class="number">-2</span>]</div><div class="line"><span class="string">'y'</span></div></pre></td></tr></table></figure>
 <p><strong>Tips</strong>: 位置索引在其他序列类型, 如列表和元组中的用法也是这样.</p>
 <p><strong>Warning</strong>: 字符串是不可变的, 无法通过给 <code>string[index]</code> 赋值的方式改变字符串的值.</p>
-<h3 id="使用切片-start-end-step-提取字符串"><a href="#使用切片-start-end-step-提取字符串" class="headerlink" title="使用切片 [start:end:step] 提取字符串"></a>使用切片 <code>[start:end:step]</code> 提取字符串</h3><p>切片操作 (slice) 可以从一个字符串中提取子字符串. <code>[start:end:step]</code> 称为一个切片, 切片得到的子串包含从 <code>start</code> 到 <code>end</code> 之前的间隔为 <code>step</code> 的全部字符. 三个参数的值都是可以省略的, 如果省略 <code>start</code> 默认从开头提取; 省略 <code>end</code> 默认提取到结尾; 省略 <code>step</code> 默认步长为 1.<br>常用的切片操作及其含义如下:</p>
+<h4 id="使用切片-start-end-step-提取字符串"><a href="#使用切片-start-end-step-提取字符串" class="headerlink" title="使用切片 [start:end:step] 提取字符串"></a>使用切片 <code>[start:end:step]</code> 提取字符串</h4><p>切片操作 (slice) 可以从一个字符串中提取子字符串. <code>[start:end:step]</code> 称为一个切片, 切片得到的子串包含从 <code>start</code> 到 <code>end</code> 之前的间隔为 <code>step</code> 的全部字符. 三个参数的值都是可以省略的, 如果省略 <code>start</code> 默认从开头提取; 省略 <code>end</code> 默认提取到结尾; 省略 <code>step</code> 默认步长为 1.<br>常用的切片操作及其含义如下:</p>
 <ul>
 <li><code>[:]</code> 提取从开头到结尾的整个字符串.</li>
 <li><code>[start:]</code> 提取从 <code>start</code> 到结尾的字符串.</li>
@@ -452,10 +452,13 @@
 <figure class="highlight python"><table><tr><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>letters = <span class="string">'abcdefghijklmnopqrstuvwxyz'</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>letters[:]</div><div class="line"><span class="string">'abcdefghijklmnopqrstuvwxyz'</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>letters[<span class="number">7</span>:]</div><div class="line"><span class="string">'hijklmnopqrstuvwxyz'</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>letters[:<span class="number">-3</span>]</div><div class="line"><span class="string">'abcdefghijklmnopqrstuvw'</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>letters[<span class="number">7</span>:<span class="number">-3</span>]</div><div class="line"><span class="string">'hijklmnopqrstuvw'</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>letters[::<span class="number">2</span>]</div><div class="line"><span class="string">'acegikmoqsuwy'</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>letters[<span class="number">7</span>:<span class="number">-3</span>:<span class="number">2</span>]</div><div class="line"><span class="string">'hjlnprtv'</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>letters[<span class="number">7</span>::<span class="number">2</span>]</div><div class="line"><span class="string">'hjlnprtvxz'</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>letters[:<span class="number">20</span>:<span class="number">2</span>]</div><div class="line"><span class="string">'acegikmoqs'</span></div></pre></td></tr></table></figure>
 <p><strong>Tips</strong>: 如果步长为负数, 则从右到左反向进行提取操作.</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>letters[<span class="number">-1</span>::<span class="number">-1</span>]</div><div class="line"><span class="string">'zyxwvutsrqponmlkjihgfedcba'</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>letters[::<span class="number">-1</span>]</div><div class="line"><span class="string">'zyxwvutsrqponmlkjihgfedcba'</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>letters[<span class="number">0</span>::<span class="number">-1</span>]</div><div class="line"><span class="string">'a'</span></div></pre></td></tr></table></figure>
-<p><strong>Tips</strong>: 切片操作对于无效偏移量的容忍程度远大于单字符串提取. ~在切片中, 小于起始位置的偏移量会被当做起始位置, 大于终止位置的偏移量会被当做终止位置.~ 如果在切片对应的索引位置不存在字符, 也不会报错, 而是返回空字符串. </p>
+<p><strong>Tips</strong>: 切片操作对于无效偏移量的容忍程度远大于单字符串提取. <del>在切片中, 小于起始位置的偏移量会被当做起始位置, 大于终止位置的偏移量会被当做终止位置.</del> 如果在切片对应的索引位置不存在字符, 也不会报错, 而是返回空字符. </p>
 <figure class="highlight python"><table><tr><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>letters[<span class="number">-50</span>:]</div><div class="line"><span class="string">'abcdefghijklmnopqrstuvwxyz'</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>letters[<span class="number">-50</span>:<span class="number">-40</span>]</div><div class="line"><span class="string">''</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>letters[:<span class="number">70</span>]</div><div class="line"><span class="string">'abcdefghijklmnopqrstuvwxyz'</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>letters[<span class="number">60</span>:<span class="number">70</span>]</div><div class="line"><span class="string">''</span></div></pre></td></tr></table></figure>
+<h4 id="使用-len-获取长度"><a href="#使用-len-获取长度" class="headerlink" title="使用 len() 获取长度"></a>使用 <code>len()</code> 获取长度</h4><figure class="highlight python"><table><tr><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>len(letters)</div><div class="line"><span class="number">26</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>len(<span class="string">''</span>)</div><div class="line"><span class="number">0</span></div></pre></td></tr></table></figure>
+<p><strong>Tips</strong>: 也可以对其他的序列类型使用 <code>len()</code></p>
+<p><strong>Warning</strong>: <code>len()</code> 是函数, 而不是</p>
 <hr>
-<p>update-date: Jul 6, 2017</p>
+<p>Last update: Jul 6, 2017</p>
 
       
     </div>
@@ -485,13 +488,11 @@
       
         <div class="post-tags">
           
+            <a href="/tags/python/" rel="tag"># Python</a>
+          
             <a href="/tags/coding/" rel="tag"># Coding</a>
           
             <a href="/tags/notes/" rel="tag"># Notes</a>
-          
-            <a href="/tags/summary/" rel="tag"># Summary</a>
-          
-            <a href="/tags/python/" rel="tag"># Python</a>
           
             <a href="/tags/studying/" rel="tag"># Studying</a>
           
@@ -506,13 +507,17 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/post/notes-on-python-cookbook/" rel="prev" title="Notes on Shell Scripting">
+                <i class="fa fa-chevron-left"></i> Notes on Python Cookbook
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/post/Notes-on-Shell-Scripting/" rel="next" title="Notes on Shell Scripting">
+              <a href="/post/notes-on-shell-scripting/" rel="next" title="Notes on Shell Scripting">
                 Notes on Shell Scripting <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -586,7 +591,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>
@@ -654,7 +659,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Python-初探"><span class="nav-number">1.</span> <span class="nav-text">Python 初探</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#The-Zen-of-Python"><span class="nav-number">1.1.</span> <span class="nav-text">The Zen of Python</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Python-基本元素"><span class="nav-number">2.</span> <span class="nav-text">Python 基本元素</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Python-基本类型"><span class="nav-number">2.1.</span> <span class="nav-text">Python 基本类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#变量-名字和对象"><span class="nav-number">2.2.</span> <span class="nav-text">变量, 名字和对象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数字"><span class="nav-number">2.3.</span> <span class="nav-text">数字</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#基数"><span class="nav-number">2.3.1.</span> <span class="nav-text">基数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#类型转换"><span class="nav-number">2.3.2.</span> <span class="nav-text">类型转换</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#浮点数"><span class="nav-number">2.3.3.</span> <span class="nav-text">浮点数</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字符串"><span class="nav-number">2.4.</span> <span class="nav-text">字符串</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#使用引号创建字符串"><span class="nav-number">2.4.1.</span> <span class="nav-text">使用引号创建字符串</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#使用-str-进行类型转换"><span class="nav-number">2.4.2.</span> <span class="nav-text">使用 str() 进行类型转换</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#使用-转义"><span class="nav-number">2.4.3.</span> <span class="nav-text">使用 \ 转义</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#使用-拼接字符串"><span class="nav-number">2.4.4.</span> <span class="nav-text">使用 + 拼接字符串</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#使用-复制字符串"><span class="nav-number">2.4.5.</span> <span class="nav-text">使用 * 复制字符串</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#使用-提取字符"><span class="nav-number">2.4.6.</span> <span class="nav-text">使用 [] 提取字符</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用切片-start-end-step-提取字符串"><span class="nav-number">2.5.</span> <span class="nav-text">使用切片 [start:end:step] 提取字符串</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Python-初探"><span class="nav-number">1.</span> <span class="nav-text">Python 初探</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#The-Zen-of-Python"><span class="nav-number">1.1.</span> <span class="nav-text">The Zen of Python</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Python-基本元素"><span class="nav-number">2.</span> <span class="nav-text">Python 基本元素</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Python-基本类型"><span class="nav-number">2.1.</span> <span class="nav-text">Python 基本类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#变量-名字和对象"><span class="nav-number">2.2.</span> <span class="nav-text">变量, 名字和对象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数字"><span class="nav-number">2.3.</span> <span class="nav-text">数字</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#基数"><span class="nav-number">2.3.1.</span> <span class="nav-text">基数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#类型转换"><span class="nav-number">2.3.2.</span> <span class="nav-text">类型转换</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#浮点数"><span class="nav-number">2.3.3.</span> <span class="nav-text">浮点数</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字符串"><span class="nav-number">2.4.</span> <span class="nav-text">字符串</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#使用引号创建字符串"><span class="nav-number">2.4.1.</span> <span class="nav-text">使用引号创建字符串</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#使用-str-进行类型转换"><span class="nav-number">2.4.2.</span> <span class="nav-text">使用 str() 进行类型转换</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#使用-转义"><span class="nav-number">2.4.3.</span> <span class="nav-text">使用 \ 转义</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#使用-拼接字符串"><span class="nav-number">2.4.4.</span> <span class="nav-text">使用 + 拼接字符串</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#使用-复制字符串"><span class="nav-number">2.4.5.</span> <span class="nav-text">使用 * 复制字符串</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#使用-提取字符"><span class="nav-number">2.4.6.</span> <span class="nav-text">使用 [] 提取字符</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#使用切片-start-end-step-提取字符串"><span class="nav-number">2.4.7.</span> <span class="nav-text">使用切片 [start:end:step] 提取字符串</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#使用-len-获取长度"><span class="nav-number">2.4.8.</span> <span class="nav-text">使用 len() 获取长度</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>

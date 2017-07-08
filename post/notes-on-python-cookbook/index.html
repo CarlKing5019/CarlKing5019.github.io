@@ -72,7 +72,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Python,Coding,Notes,Studying," />
 
 
 
@@ -88,15 +88,17 @@
 
 
 
-<meta name="description" content="Yet, another funny blog">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hogwarts">
-<meta property="og:url" content="/index.html">
+<meta name="description" content="A note on Python Cookbook.">
+<meta name="keywords" content="Python,Coding,Notes,Studying">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Notes on Python Cookbook">
+<meta property="og:url" content="/post/notes-on-python-cookbook/index.html">
 <meta property="og:site_name" content="Hogwarts">
-<meta property="og:description" content="Yet, another funny blog">
+<meta property="og:description" content="A note on Python Cookbook.">
+<meta property="og:updated_time" content="2017-07-08T15:08:28.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hogwarts">
-<meta name="twitter:description" content="Yet, another funny blog">
+<meta name="twitter:title" content="Notes on Python Cookbook">
+<meta name="twitter:description" content="A note on Python Cookbook.">
 
 
 
@@ -124,13 +126,13 @@
 
 
 
-  <link rel="canonical" href="/"/>
+  <link rel="canonical" href="/post/notes-on-python-cookbook/"/>
 
 
 
 
 
-  <title>Hogwarts</title>
+  <title>Notes on Python Cookbook | Hogwarts</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -156,9 +158,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -291,9 +291,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -319,9 +319,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/post/notes-on-python-cookbook/" itemprop="url">Notes on Python Cookbook</a></h1>
+          <h1 class="post-title" itemprop="name headline">Notes on Python Cookbook</h1>
         
 
         <div class="post-meta">
@@ -375,6 +373,11 @@
           
 
           
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
 
           
 
@@ -394,340 +397,103 @@
       
 
       
+        <p><strong>《Python Cookbook, 3rd Edition》</strong>, 中文名称:《Python Cookbook, 第三版》.<br>英文版有 706 页, 中文版有 619 页, 出版于 May 2013, 涵盖 15 个方面，共计 260 个例子. 本书介绍了Python应用在各个领域中的一些使用技巧和方法, 覆盖了Python应用中的很多常见问题, 并提出了通用的解决方案, 适合有一定Python基础的用户阅读.<br>这本书的中文版有人民邮电出版社 2015 年出版的 《Python Cookbook, (第 3 版)中文版》, 翻看了网上一个 99 页的样书 (对, 就是微盘下载的那个大小为 30M 的, 其实只包含了前两张的内容, 而且还是图片版的), 发现翻译的有诸多错误, 此外对于代码也没有高亮处理, 使用的也不是等宽字体. 另一个中文版是 readthedocs 上熊能翻译的版本, 总体翻译质量较高, 但也有少许错误, 方便的是既有在线版本的, 也有 pdf 版本的. 对不少量翻译错误可以对照着英文版阅读.<br>相关链接: <a href="https://pan.baidu.com/s/1i4Jypff" target="_blank" rel="external">中文版 pdf</a>, <a href="http://python3-cookbook.readthedocs.io/zh_CN/latest/" target="_blank" rel="external">中文版在线阅读</a>, <a href="https://github.com/yidao620c/python3-cookbook" target="_blank" rel="external">中文版翻译项目主页</a>, <a href="https://learko.github.io/books/coding/Python_Cookbook_3rd_Edition.pdf" target="_blank" rel="external">英文版 pdf</a>, <a href="http://shop.oreilly.com/product/0636920027072.do" target="_blank" rel="external">O Reilly website</a>, <a href="http://www.oreilly.com/catalog/errata.csp?isbn=0636920027072" target="_blank" rel="external">Errata</a></p>
+<h2 id="第一章-数据额结构和算法"><a href="#第一章-数据额结构和算法" class="headerlink" title="第一章: 数据额结构和算法"></a>第一章: 数据额结构和算法</h2><h3 id="解压序列并赋值给多个变量"><a href="#解压序列并赋值给多个变量" class="headerlink" title="解压序列并赋值给多个变量"></a>解压序列并赋值给多个变量</h3><p><strong>收获</strong>:<br>任何的序列(或者是可迭代对象)可以通过一个简单的赋值语句解压并赋值给多个变量. 唯一的前提就是变量的数量必须跟序列元素的数量是一样的. 可迭代对象包括列表, 元组, 字符串, 文件对象, 迭代器和生成器.</p>
+<p>例子:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>p = (<span class="number">1</span>, <span class="number">2</span>)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>x, y = p</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>x</div><div class="line"><span class="number">1</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>y</div><div class="line"><span class="number">2</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>p = &#123;<span class="number">3</span>, <span class="number">4</span>&#125;</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>x, y = p</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>x</div><div class="line"><span class="number">3</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>y</div><div class="line"><span class="number">4</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>p = [<span class="number">5</span>, <span class="number">6</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>x, y = p</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>x</div><div class="line"><span class="number">5</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>y</div><div class="line"><span class="number">6</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>p = &#123; <span class="string">'a'</span>: <span class="string">'A'</span>, <span class="string">'b'</span>: <span class="string">'B'</span>&#125;</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>x, y = p</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>x</div><div class="line"><span class="string">'a'</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>y</div><div class="line"><span class="string">'b'</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>s = <span class="string">'Hello'</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>a, b, c, d, e = s</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>a</div><div class="line"><span class="string">'H'</span></div></pre></td></tr></table></figure>
+<p>甚至对于更深的层级也可以提取, 只要变量也使用同样的层级结构, 例如:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>data = [ <span class="string">'ACME'</span>, <span class="number">50</span>, <span class="number">91.1</span>, (<span class="number">2012</span>, <span class="number">12</span>, <span class="number">21</span>) ]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>name, shares, price, date = data</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>name</div><div class="line"><span class="string">'ACME'</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>date</div><div class="line">(<span class="number">2012</span>, <span class="number">12</span>, <span class="number">21</span>)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>name, shares, price, (year, mon, day) = data</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>year</div><div class="line"><span class="number">2012</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>mon</div><div class="line"><span class="number">12</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>day</div><div class="line"><span class="number">21</span></div></pre></td></tr></table></figure>
+<p>如果只想提取一部分值, 可以使用任意变量名去占位, 通常使用 <code>_</code>, 这非常类似于 Mathematica 中的不命名匹配.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>data = [ <span class="string">'Hello'</span>, <span class="string">'Mike'</span>, <span class="string">'Welcome'</span>, <span class="string">'to'</span>, <span class="string">'Python world'</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>_, name, _, _, addr = data</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>name</div><div class="line"><span class="string">'Mike'</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>addr</div><div class="line"><span class="string">'Python world'</span></div></pre></td></tr></table></figure>
+<h3 id="解压任意长度的可迭代对象给多个变量"><a href="#解压任意长度的可迭代对象给多个变量" class="headerlink" title="解压任意长度的可迭代对象给多个变量"></a>解压任意长度的可迭代对象给多个变量</h3><p><strong>收获</strong>:<br>Python 中的星号变量可以代表任意长度的列表. 例如:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>record = (<span class="string">'Carl'</span>, <span class="string">'carl@example.com'</span>, <span class="string">'346-253-1235'</span>, <span class="string">'534-546-3245'</span>)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>name, email, *phone_numbers = record</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>name</div><div class="line"><span class="string">'Carl'</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>email</div><div class="line"><span class="string">'carl@example.com'</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>phone_numbers</div><div class="line">[<span class="string">'346-253-1235'</span>, <span class="string">'534-546-3245'</span>]</div></pre></td></tr></table></figure>
+<p>上面解压出的 <code>phone_numbers</code> 变量永远是列表类型, 不管其中的元素数量是多少 (包括 0 个). 例如:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>record = (<span class="string">'Carl'</span>, <span class="string">'carl@example.com'</span>)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>name, email, *phone_numbers = record</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>phone_numbers</div><div class="line">[]</div></pre></td></tr></table></figure>
+<p>使用星号表达式可以很容易地将一个列表分割成前后两部分, 这跟 Haskell 中的语法很像, 例如:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>items = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>head, *tail = items</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>head</div><div class="line"><span class="number">1</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>tail</div><div class="line">[<span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>]</div></pre></td></tr></table></figure>
+<p>很容易实现一个递归算法, 例如:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="function"><span class="keyword">def</span> <span class="title">sum</span><span class="params">(items)</span>:</span></div><div class="line"><span class="meta">... </span>    head, *tail = items</div><div class="line"><span class="meta">... </span>    <span class="keyword">return</span> head + sum(tail) <span class="keyword">if</span> tail <span class="keyword">else</span> head</div><div class="line">...</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>sum(items)</div><div class="line"><span class="number">28</span></div></pre></td></tr></table></figure>
+<p><strong>Warning</strong>: 由于 Python 对递归没有优化, 以上递归算法是低效的.</p>
+<p>附带一个 Haskell 中递归版本的累加算法</p>
+<figure class="highlight haskell"><table><tr><td class="code"><pre><div class="line"><span class="title">sum</span> :: (<span class="type">Num</span> a) =&gt; [a] -&gt; a</div><div class="line"><span class="title">sum</span> (x:xs) = x + sum xs</div><div class="line"><span class="title">sum</span> [] = <span class="number">0</span></div></pre></td></tr></table></figure>
+<p>尾递归版本的累加算法</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">sum :: (Num a) =&gt; [a] -&gt; a -&gt; a</div><div class="line">sum (x:xs) total = sum xs x + total</div><div class="line">sum [] total = total</div></pre></td></tr></table></figure>
+<p>完全是规则式的, 很简洁有木有.</p>
+<hr>
+<p>Last update: Jul 8, 2017</p>
+
+      
+    </div>
+
+    <div>
+      
         
-          
-          《Python Cookbook, 3rd Edition》, 中文名称:《Python Cookbook, 第三版》.英文版有 706 页, 中文版有 619 页, 出版于 May 2013, 涵盖 15 个方面，共计 260 个例子. 本书介绍了Python应用在各个领域中的一些使用技巧和方法, 覆盖了Python应用中的很多常见问题, 并提出了通用的解决方案, 适合有一定Python基础的用
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/post/notes-on-python-cookbook/" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
-      
-    </div>
-
-    <div>
       
     </div>
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="/post/notes-on-introducing-python/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Carl King">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hogwarts">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/post/notes-on-introducing-python/" itemprop="url">Python 学习笔记</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-07-06T00:00:00+08:00">
-                2017-07-06
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/coding/" itemprop="url" rel="index">
-                    <span itemprop="name">Coding</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
+            <a href="/tags/python/" rel="tag"># Python</a>
           
-
+            <a href="/tags/coding/" rel="tag"># Coding</a>
           
-            
+            <a href="/tags/notes/" rel="tag"># Notes</a>
           
-
+            <a href="/tags/studying/" rel="tag"># Studying</a>
           
-          
-
-          
-
-          
-
-          
-              <div class="post-description">
-                  A note on Python learning.
-              </div>
-          
-
         </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
         
-          
-          Python 初探The Zen of Python&gt;&gt;&gt; import thisThe Zen of Python, by Tim PetersBeautiful is better than ugly.Explicit is better than implicit.Simple is better than complex.Complex is better than co
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/post/notes-on-introducing-python/" rel="contents">
-              Read more &raquo;
-            </a>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
           </div>
-          <!--/noindex-->
-        
-      
-    </div>
 
-    <div>
-      
-    </div>
+          <span class="post-nav-divider"></span>
 
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="/post/notes-on-shell-scripting/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Carl King">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hogwarts">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/post/notes-on-shell-scripting/" itemprop="url">Notes on Shell Scripting</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+          <div class="post-nav-prev post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-05-24T00:00:00+08:00">
-                2017-05-24
-              </time>
+              <a href="/post/notes-on-introducing-python/" rel="next" title="Python 学习笔记">
+                Python 学习笔记 <i class="fa fa-chevron-right"></i>
+              </a>
             
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/coding/" itemprop="url" rel="index">
-                    <span itemprop="name">Coding</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-              <div class="post-description">
-                  A short note on shell scripting.
-              </div>
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-          Shell 相关命令Shell 文件管理命令cd              # 切换目录ls              # 列出文件(夹)cp              # 复制文件(夹)mv              # 移动/重命名文件(夹)rm              # 删除文件(夹)pwd             # 显示当前目录mkdir           # 创建目录open  
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/post/notes-on-shell-scripting/" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -735,6 +501,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -754,8 +524,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -828,6 +607,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#第一章-数据额结构和算法"><span class="nav-number">1.</span> <span class="nav-text">第一章: 数据额结构和算法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#解压序列并赋值给多个变量"><span class="nav-number">1.1.</span> <span class="nav-text">解压序列并赋值给多个变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解压任意长度的可迭代对象给多个变量"><span class="nav-number">1.2.</span> <span class="nav-text">解压任意长度的可迭代对象给多个变量</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -961,6 +756,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
 
   
 
